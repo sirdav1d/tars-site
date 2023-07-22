@@ -1,7 +1,9 @@
+import Header from '@/components/atoms/header';
+
 export default function Home() {
 	return (
-		<main>
-			<h2>Hello World</h2>
+		<main className='min-h-screen w-full text-brand-neutral-50 '>
+			<Header />
 		</main>
 	);
 }
