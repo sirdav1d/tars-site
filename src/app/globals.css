@@ -1,8 +1,17 @@
 @tailwind base;
 
+*{
+  scroll-behavior: smooth
+}
+
 body {
   background: radial-gradient(15.18% 60.49% at 54.83% 53.55%, rgba(0, 128, 204, 0.25) 0%, rgba(0, 128, 204, 0.00) 100%), radial-gradient(31.74% 79.17% at 39.37% 77.18%, rgba(242, 64, 88, 0.20) 0%, rgba(242, 64, 88, 0.00) 100%), radial-gradient(62.64% 37.92% at 78.85% 100.00%, rgba(0, 128, 204, 0.20) 0%, rgba(0, 128, 204, 0.00) 100%), radial-gradient(18.85% 80.98% at 0.00% 9.21%, rgba(242, 64, 88, 0.20) 0%, rgba(242, 64, 88, 0.00) 100%), #1E1E1E;
+
+
+ 
 }
 
 @tailwind components;
+
 @tailwind utilities;
+
