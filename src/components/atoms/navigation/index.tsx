@@ -10,7 +10,7 @@ export default function Navigation() {
 				<a href='#who'>Quem Somos</a>
 			</li>
 			<li className='border-b border-transparent  hover:text-brand-red-500 hover:border-brand-red-500 transition duration-300 '>
-				<a href='#services'>Serviços</a>
+				<a href='#service'>Serviços</a>
 			</li>
 			<li className='border-b border-transparent  hover:text-brand-red-500 hover:border-brand-red-500 transition duration-300 '>
 				<a href='#plans'>Planos</a>
