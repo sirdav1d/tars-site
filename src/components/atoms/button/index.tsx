@@ -8,7 +8,6 @@ const montSerrat = Montserrat({
 	weight: ['700', '900'],
 });
 
-
 interface ButtonProps {
 	text: string;
 	role?: string;
