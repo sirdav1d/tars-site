@@ -13,17 +13,16 @@ export default function HeroSection() {
 	return (
 		<div
 			id='home'
-			className='relative h-[96vh]'>
+			className='relative h-[100vh] '>
 			<Header />
 			<BgHero />
-			<div className='flex flex-col gap-14 mt-[25vh] max-w-[1280px] mx-6 xl:mx-auto '>
-				<div className='flex flex-col gap-3 drop-shadow-lg'>
+			<div className='flex flex-col gap-14 mt-[25vh] max-w-[1024px] mx-6 xl:mx-auto md:items-center'>
+				<div className='flex flex-col gap-4 drop-shadow-md'>
 					<h2
-						className={`font-bold text-4xl lg:text-6xl leading-tight ${montSerrat.className}`}>
-						Construímos pontes entre
-						<br /> sua marca e seu público
+						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
+						Construímos pontes entre sua marca e seu público
 					</h2>
-					<p className='text-md lg:text-2xl '>
+					<p className='text-sm md:text-2xl text-left md:text-center  '>
 						Criamos experiências digitais que inspiram e conectam
 					</p>
 				</div>
