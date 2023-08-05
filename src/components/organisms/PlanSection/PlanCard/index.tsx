@@ -17,12 +17,12 @@ interface PlanCardProps {
 export default function PlanCard({ text, style, role }: PlanCardProps) {
 	return (
 		<>
-			<div className='w-[364px] h-[500px] rounded bg-brand-neutral-800/40 border border-brand-neutral-100/20 backdrop-blur-md flex flex-col gap-5 p-4 items-center'>
+			<div className='z-30 w-[364px] h-[500px] rounded bg-brand-neutral-800/40 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-5 p-4 items-center'>
 				<h3
-					className={`text-3xl text-center ${montSerrat.className} font-bold`}>
+					className={`text-3xl text-center ${montSerrat.className} font-bold drop-shadow-lg`}>
 					{role}
 				</h3>
-				<div className='flex flex-col gap-3 mt-1'>
+				<div className='flex flex-col gap-3 mt-1 drop-shadow-lg'>
 					{text.map((t, index) => {
 						return (
 							<div

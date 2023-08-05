@@ -45,7 +45,7 @@ export default function Button({ text, role }: ButtonProps) {
 	if (role === 'CTA') {
 		return (
 			<a
-				className={`p-4 bg-brand-blue-500 rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide ${montSerrat.className}`}
 				href='#'
 				target='_blank'
 				referrerPolicy='no-referrer'>

@@ -46,10 +46,10 @@ export const benefitsInitial = {
 		'ADEQUAÇÃO LGPD',
 		'SSL GRATUITA',
 		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
+		'FORMULÁRIO INTEGRADO',
+		'BANCO DE DADOS',
 		'DOMÍNIO GRÁTIS',
 		'GESTÃO DE TRÁFEGO INTEGRADA',
-		'BANCO DE DADOS',
-		'FORMULÁRIO INTEGRADO',
 	],
 	style: [
 		'#34d399',

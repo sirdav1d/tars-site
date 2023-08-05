@@ -17,7 +17,7 @@ export default function HeroSection() {
 			<Header />
 			<BgHero />
 			<div className='flex flex-col gap-14  max-w-[1024px] mx-6 xl:mx-auto md:items-center justify-center'>
-				<div className='flex flex-col mt-[30vh] gap-4 drop-shadow-md'>
+				<div className='flex flex-col mt-[30vh] lg:mt-[40vh] gap-4 drop-shadow-md'>
 					<h2
 						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
 						Construímos pontes entre sua marca e seu público

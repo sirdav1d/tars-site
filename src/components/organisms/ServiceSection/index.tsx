@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google';
 import { servicesData } from '@/mock/services.data';
 import Card from '@/components/atoms/card';
 
+
 const montSerrat = Montserrat({
 	subsets: ['latin'],
 	weight: ['700', '900'],
