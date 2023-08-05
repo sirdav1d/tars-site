@@ -17,23 +17,107 @@ export const servicesData: ServicesProps[] = [
 		description: '',
 	},
 	{
-		name: 'Site Institucional',
+		name: 'SITE INSTITUCIONAL',
 		description: '',
 	},
 	{
-		name: 'Hospedagem',
+		name: 'HOSPEDAGEM',
 		description: '',
 	},
 	{
-		name: 'Web Design',
+		name: 'WEB DESIGN',
 		description: '',
 	},
 	{
-		name: 'Google ADS',
+		name: 'GOOGLE ADS',
 		description: '',
 	},
 	{
-		name: 'Copy Writing',
+		name: 'COPY WRITING',
 		description: '',
 	},
-]; ;
+];
+
+export const benefitsInitial = {
+	text: [
+		'01 APLICAÇÃO PARA WEB',
+		'WEB DESIGN RESPONSIVO UI/UX',
+		'OTIMIZAÇÃO SEO',
+		'ADEQUAÇÃO LGPD',
+		'SSL GRATUITA',
+		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
+		'DOMÍNIO GRÁTIS',
+		'GESTÃO DE TRÁFEGO INTEGRADA',
+		'BANCO DE DADOS',
+		'FORMULÁRIO INTEGRADO',
+	],
+	style: [
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-brand-neutral-400',
+		'text-brand-neutral-400',
+		'text-brand-neutral-400',
+		'text-brand-neutral-400',
+	],
+};
+
+
+export const benefitsPro = {
+	text: [
+		'03 APLICAÇÕES PARA WEB',
+		'WEB DESIGN RESPONSIVO UI/UX',
+		'OTIMIZAÇÃO SEO',
+		'ADEQUAÇÃO LGPD',
+		'SSL GRATUITA',
+		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
+		'FORMULÁRIO INTEGRADO',
+		'BANCO DE DADOS',
+		'DOMÍNIO GRÁTIS',
+		'GESTÃO DE TRÁFEGO INTEGRADA',
+	],
+	style: [
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-brand-neutral-400',
+		'text-brand-neutral-400',
+		'text-brand-neutral-400',
+	],
+};
+
+
+
+export const benefitsBussiness = {
+	text: [
+		'APLICAÇÕES PARA WEB - ILIMITADAS',
+		'WEB DESIGN RESPONSIVO UI/UX',
+		'OTIMIZAÇÃO SEO',
+		'ADEQUAÇÃO LGPD',
+		'SSL GRATUITA',
+		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
+		'FORMULÁRIO INTEGRADO',
+		'BANCO DE DADOS',
+		'DOMÍNIO GRÁTIS',
+		'GESTÃO DE TRÁFEGO INTEGRADA',
+	],
+	style: [
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+		'text-emerald-400',
+	],
+};

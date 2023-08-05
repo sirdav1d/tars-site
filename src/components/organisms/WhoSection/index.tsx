@@ -15,11 +15,11 @@ export default function WhoSection() {
 			id='who'
 			className='pt-10 shadow-md rounded  flex  ml-5 lg:ml-16 mr-5 lg:mr-16 flex-col lg:flex-row justify-between items-end '>
 			<div className='flex flex-col items-center w-full lg:w-1/2 h-full p-5 lg:p-10'>
-				<h2 className={`${montSerrat.className} text-2xl text-center`}>
-					Descubra a Tars Projetos
+				<h2 className={`${montSerrat.className} text-3xl text-center`}>
+					Conheça a Tars Projetos
 				</h2>
 				<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1' />
-				<p className='mt-6 leading-8 text-lg '>
+				<p className='mt-6 leading-8 text-base '>
 					A Tars Projetos atua no mercado de tecnologia a mais de 3 anos,
 					expandimos nossos horizontes e nos tornamos especialistas em criação
 					de Landing Pages e publicidade online. Nosso objetivo é impulsionar o
@@ -43,7 +43,7 @@ export default function WhoSection() {
 							Missão
 						</h3>
 					</div>
-					<p className='text-justify text-base'>
+					<p className='text-left text-base'>
 						Impulsionar o sucesso de nossos parceiros, oferecendo soluções
 						digitais que ampliam a visibilidade e atraem um público qualificado
 					</p>
@@ -58,7 +58,7 @@ export default function WhoSection() {
 							Visão
 						</h3>
 					</div>
-					<p className='text-justify text-base'>
+					<p className='text-left text-base'>
 						Inspirar uma nova era de negócios de sucesso, fornecendo soluções
 						digitais que alavancam o crescimento, e fortalecem a vantagem
 						competitiva dos nossos clientes.
@@ -74,7 +74,7 @@ export default function WhoSection() {
 							Valores
 						</h3>
 					</div>
-					<p className='text-justify text-base'>
+					<p className='text-left text-base'>
 						Foco na qualidade - Inovação Ética - Trabalho em equipe
 						Empreendedorismo
 					</p>
