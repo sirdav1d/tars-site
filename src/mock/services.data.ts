@@ -52,19 +52,18 @@ export const benefitsInitial = {
 		'FORMULÁRIO INTEGRADO',
 	],
 	style: [
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-brand-neutral-400',
-		'text-brand-neutral-400',
-		'text-brand-neutral-400',
-		'text-brand-neutral-400',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#A3A3A3',
+		'#A3A3A3',
+		'#A3A3A3',
+		'#A3A3A3',
 	],
 };
-
 
 export const benefitsPro = {
 	text: [
@@ -80,20 +79,18 @@ export const benefitsPro = {
 		'GESTÃO DE TRÁFEGO INTEGRADA',
 	],
 	style: [
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-brand-neutral-400',
-		'text-brand-neutral-400',
-		'text-brand-neutral-400',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#A3A3A3',
+		'#A3A3A3',
+		'#A3A3A3',
 	],
 };
-
-
 
 export const benefitsBussiness = {
 	text: [
@@ -109,15 +106,15 @@ export const benefitsBussiness = {
 		'GESTÃO DE TRÁFEGO INTEGRADA',
 	],
 	style: [
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
-		'text-emerald-400',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
+		'#34d399',
 	],
 };

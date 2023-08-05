@@ -30,9 +30,10 @@ export default function PlanCard({ text, style, role }: PlanCardProps) {
 								className='flex justify-start items-center gap-3 divide-y-2 divide-brand-neutral-50/40 divide-y-reverse'>
 								<BsFillCheckCircleFill
 									className={`${style[index]}`}
+									color={'blue'}
 									size={16}
 								/>
-								<p className='text-sm  '>{t}</p>
+								<p className='text-sm'>{t}</p>
 							</div>
 						);
 					})}
