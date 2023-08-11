@@ -3,6 +3,8 @@ import React from 'react';
 import BgHero from './bghero';
 import Button from '@/components/atoms/button';
 import { Montserrat } from 'next/font/google';
+import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
+import { HiStatusOnline } from 'react-icons/hi';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -17,7 +19,7 @@ export default function HeroSection() {
 			<Header />
 			<BgHero />
 			<div className='flex flex-col gap-14  max-w-[1024px] mx-6 xl:mx-auto md:items-center justify-center'>
-				<div className='flex flex-col mt-[30vh] lg:mt-[40vh] gap-4 drop-shadow-md'>
+				<div className='flex flex-col mt-[30vh] lg:mt-[35vh] gap-4 drop-shadow-md'>
 					<h2
 						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
 						Construímos pontes entre sua marca e seu público
@@ -30,6 +32,57 @@ export default function HeroSection() {
 					role='hero'
 					text={'Fazer Orçamento'}
 				/>
+			</div>
+			<div className='w-full hidden xl:flex bg-brand-neutral-600/30 backdrop-blur-md h-[20vh] gap-5 px-12 2xl:px-20 absolute bottom-[-80px]  justify-between items-center '>
+				<div className='flex flex-col max-w-md items-start gap-3'>
+					<div className='flex gap-3 items-center justify-center '>
+						<div className='text-brand-blue-500  drop-shadow-icons '>
+							<BsCashCoin size={32} />
+						</div>
+						<h3 className={`font-bold  lg:text-md ${montSerrat.className}`}>
+							Aumente suas Vendas
+						</h3>
+					</div>
+
+					<p className='text-xs drop-shadow'>
+						Comunique, atraia, venda. Um site é a ferramenta definitiva para
+						contar sua história, atrair interessados e fechar vendas de forma
+						consistente.
+					</p>
+				</div>
+
+				<div className='flex flex-col max-w-md items-start gap-3 '>
+					<div className='flex gap-3 items-center justify-center '>
+						<div className='text-brand-blue-500  drop-shadow-icons '>
+							<HiStatusOnline size={32} />
+						</div>
+						<h3 className={`font-bold  lg:text-md ${montSerrat.className}`}>
+							Conquiste sua visibilidade online
+						</h3>
+					</div>
+
+					<p className='text-xs drop-shadow'>
+						Uma presença sólida na internet não apenas aumenta o alcance, mas
+						também cria confiança. Esteja onde seus clientes estão, e veja suas
+						vendas e reconhecimento dispararem.
+					</p>
+				</div>
+				<div className='flex flex-col max-w-md items-start gap-3 '>
+					<div className='flex gap-3 items-center justify-center '>
+						<div className='text-brand-blue-500  drop-shadow-icons '>
+							<BsSpeedometer2 size={32} />
+						</div>
+						<h3 className={`font-bold  lg:text-md ${montSerrat.className}`}>
+							Adquira seu site em menos de 7 dias
+						</h3>
+					</div>
+
+					<p className='text-xs drop-shadow'>
+						Tempo é dinheiro, e um site original em menos de 7 dias é um
+						investimento que oferece retorno rápido. Alcance um público mais
+						amplo e veja seus negócios prosperarem.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'icons': '0px 0px 20px #00A0FF'
+      },
       colors: {
         brand: {
           red: {

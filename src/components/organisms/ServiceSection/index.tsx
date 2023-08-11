@@ -14,7 +14,7 @@ export default function ServiceSection() {
 		<div
 			id='service'
 			className='mb-20 flex flex-col items-center justify-center'>
-			<h2 className={`${montSerrat.className} text-3xl text-center`}>
+			<h2 className={`${montSerrat.className} text-3xl text-center mt-28`}>
 				Como Vamos <br />
 				Impulsionar o seu Negócio
 			</h2>

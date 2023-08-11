@@ -9,9 +9,10 @@ const montSerrat = Montserrat({
 
 export default function CTA() {
 	return (
-		<div className='my-20 flex  flex-col w-full items-center justify-center gap-10 text-center rounded-sm bg-brand-red-500 p-8'>
+		<div className='mt-20 flex  flex-col w-full items-center justify-center gap-6 text-center rounded-sm bg-brand-red-500 p-6'>
 			<h2 className={`text-2xl md:text-4xl font-bold ${montSerrat.className} `}>
-				Venha descobrir como um site pode te ajudar a vender mais
+				Venha descobrir como um site
+				<br /> pode te ajudar a vender mais
 			</h2>
 			<Button
 				role='CTA'

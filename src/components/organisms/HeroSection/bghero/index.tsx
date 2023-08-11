@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function BgHero() {
 	return (
-		<div className='w-screen absolute left-0 top-0 -z-10 h-screen bg-gradient-to-b from-brand-neutral-900/10 to to-brand-neutral-900/50'>
+		<div className='w-screen bg-gradient-to-b from-brand-neutral-900/10 to to-brand-neutral-900/30 absolute left-0 top-0 -z-10 h-screen md:bg-gradient-to-b md:from-brand-neutral-900/10 to md:to-brand-neutral-900/80'>
 			<video
 				className='h-screen  w-screen object-cover object-bottom lg:object-center mix-blend-overlay'
 				autoPlay={true}
