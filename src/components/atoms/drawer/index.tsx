@@ -1,40 +1,41 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import Navigation from '../navigation';
 
 export default function Drawer() {
 	const [width, setWidth] = useState('0');
+	const [canShow, setCanShow] = useState(false);
 
-	function handleClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-		e.stopPropagation();
-		setWidth('1/2');
+	function handleClick() {
+		setWidth('3/4');
+		setCanShow(true);
+		console.log({ width });
 	}
 
-	function handleClose(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-		e.stopPropagation();
+	function handleClose() {
 		setWidth('0');
+		setCanShow(false);
+		console.log({ width });
 	}
 
 	return (
-		<div className='lg:hidden'>
+		<>
 			<button
-				type='button'
-				className='p-6'
-				onClick={(e) => handleClick(e)}>
+				className='p-4'
+				onClick={handleClick}>
 				<IoMdMenu size={40} />
 			</button>
 
 			<div
-				className={`w-${width} opacity-${width} transition-all duration-1000 h-screen bg-brand-neutral-800 backdrop-blur-md absolute top-0 right-0 `}>
+				className={`w-${width} transition-all delay-150 duration-1000 h-screen bg-brand-neutral-800 absolute top-0 right-0 overflow-hidden `}>
 				<button
-					type='button'
-					onClick={(e) => handleClose(e)}
+					onClick={handleClose}
 					className='p-4 absolute right-2 top-2 text-brand-red-500 drop-shadow-btnClose'>
 					<IoMdClose size={40} />
 				</button>
-				<Navigation />
+				{canShow && <Navigation />}
 			</div>
-		</div>
+		</>
 	);
 }

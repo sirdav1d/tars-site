@@ -23,7 +23,9 @@ export default function Header() {
 					role='whatsapp'
 				/>
 			</div>
-			<Drawer />
+			<div className='lg:hidden'>
+				<Drawer />
+			</div>
 		</div>
 	);
 }
