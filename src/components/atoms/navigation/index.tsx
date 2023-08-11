@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Navigation() {
 	return (
-		<ul className='flex gap-4 text-md font-normal'>
+		<ul
+			className={`flex gap-4 text-md font-normal flex-col lg:flex-row h-full  w-full items-center justify-center`}>
 			<li className='border-b border-transparent  hover:text-brand-red-500 hover:border-brand-red-500 transition duration-300 '>
 				<a href='#home'>Home</a>
 			</li>

@@ -17,7 +17,7 @@ export default function Button({ text, role }: ButtonProps) {
 	if (role === 'whatsapp') {
 		return (
 			<a
-				className={`p-4 bg-green-600 rounded flex gap-2 items-center hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  ${montSerrat.className}`}
+				className={`p-4 bg-green-600 rounded flex gap-2 items-center justify-between min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  ${montSerrat.className}`}
 				href='#'
 				target='_blank'
 				referrerPolicy='no-referrer'>

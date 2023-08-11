@@ -3,7 +3,6 @@ import { Montserrat } from 'next/font/google';
 import { servicesData } from '@/mock/services.data';
 import Card from '@/components/atoms/card';
 
-
 const montSerrat = Montserrat({
 	subsets: ['latin'],
 	weight: ['700', '900'],
@@ -18,7 +17,7 @@ export default function ServiceSection() {
 				Como Vamos <br />
 				Impulsionar o seu Negócio
 			</h2>
-			<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1' />
+			<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
 			<div className='grid gap-4 md:grid-cols-2 md:grid-rows-4 lg:grid-cols-4 lg:grid-rows-2 mt-20 xl:gap-6'>
 				{servicesData.map((s, index) => {
 					return (

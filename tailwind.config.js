@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        'icons': '0px 0px 20px #00A0FF'
+        'icons': '0px 0px 20px #00A0FF',
+        'btnClose': '0px 0px 12px #F24058'
       },
       colors: {
         brand: {
@@ -43,5 +44,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ]
+  ,
 }

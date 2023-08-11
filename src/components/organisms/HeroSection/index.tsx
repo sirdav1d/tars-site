@@ -5,6 +5,7 @@ import Button from '@/components/atoms/button';
 import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
+import Drawer from '@/components/atoms/drawer';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -17,6 +18,7 @@ export default function HeroSection() {
 			id='home'
 			className='relative h-[100vh] '>
 			<Header />
+			<Drawer />
 			<BgHero />
 			<div className='flex flex-col gap-14  max-w-[1024px] mx-6 xl:mx-auto md:items-center justify-center'>
 				<div className='flex flex-col mt-[30vh] lg:mt-[35vh] gap-4 drop-shadow-md'>
@@ -24,7 +26,7 @@ export default function HeroSection() {
 						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
 						Construímos pontes entre sua marca e seu público
 					</h2>
-					<p className='text-sm md:text-2xl text-left md:text-center  '>
+					<p className='text-xs md:text-2xl text-left md:text-center  '>
 						Criamos experiências digitais que inspiram e conectam
 					</p>
 				</div>

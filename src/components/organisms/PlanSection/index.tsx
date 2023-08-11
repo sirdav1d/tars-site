@@ -30,7 +30,7 @@ export default function PlanSection() {
 					className={`${montSerrat.className} text-3xl text-center mx-5 drop-shadow-lg`}>
 					Adquira o Plano Ideal para você
 				</h2>
-				<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1' />
+				<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
 			</div>
 			<div className='flex flex-col lg:flex-row px-40 gap-12 items-center justify-center pb-20 '>
 				<PlanCard
