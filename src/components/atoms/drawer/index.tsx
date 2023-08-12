@@ -4,6 +4,7 @@ import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import Navigation from '../navigation';
 import { motion } from 'framer-motion';
 import { drawerAnimation } from '../../../animations';
+import Button from '../button';
 
 export default function Drawer() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,16 @@ export default function Drawer() {
 					className='p-4 absolute right-2 top-2 text-brand-red-500 drop-shadow-btnClose'>
 					<IoMdClose size={40} />
 				</button>
-				{canShow && <Navigation />}
+				{canShow && (
+					<div className='flex flex-col items-center justify-center h-full pb-6'>
+						{' '}
+						<Navigation />{' '}
+						<Button
+							role='whatsapp'
+							text='Iniciar Conversa'
+						/>
+					</div>
+				)}
 			</motion.div>
 		</>
 	);
