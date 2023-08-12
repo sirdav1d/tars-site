@@ -20,8 +20,8 @@ export default function HeroSection() {
 			<Header />
 			<Drawer />
 			<BgHero />
-			<div className='flex flex-col gap-14  max-w-[1024px] mx-6 xl:mx-auto md:items-center justify-center'>
-				<div className='flex flex-col mt-[30vh] lg:mt-[35vh] gap-4 drop-shadow-md'>
+			<div className='flex flex-col gap-14  max-w-[1024px] md:mx-auto md:items-center justify-center px-6'>
+				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
 					<h2
 						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
 						Construímos pontes entre sua marca e seu público
@@ -35,7 +35,7 @@ export default function HeroSection() {
 					text={'Fazer Orçamento'}
 				/>
 			</div>
-			<div className='w-full hidden xl:flex bg-brand-neutral-600/30 backdrop-blur-md h-[20vh] gap-5 px-12 2xl:px-20 absolute bottom-[-80px]  justify-between items-center '>
+			<div className='w-full hidden xl:flex bg-brand-neutral-600/30 backdrop-blur-md h-[20vh] gap-10 px-12 2xl:px-20 absolute bottom-[-0px]  justify-between items-center '>
 				<div className='flex flex-col max-w-md items-start gap-3'>
 					<div className='flex gap-3 items-center justify-center '>
 						<div className='text-brand-blue-500  drop-shadow-icons '>
