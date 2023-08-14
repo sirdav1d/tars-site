@@ -6,6 +6,7 @@ import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
 import Drawer from '@/components/atoms/drawer';
+import Image from 'next/image';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -20,6 +21,7 @@ export default function HeroSection() {
 			<Header />
 			<Drawer />
 			<BgHero />
+
 			<div className='flex flex-col gap-14  max-w-[1024px] md:mx-auto md:items-center justify-center px-6'>
 				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
 					<h2

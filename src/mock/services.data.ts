@@ -5,7 +5,15 @@ export interface ServicesProps {
 
 export const servicesData: ServicesProps[] = [
 	{
-		name: 'Landing Page',
+		name: 'LANDING PAGE',
+		description: '',
+	},
+	{
+		name: 'SITE INSTITUCIONAL',
+		description: '',
+	},
+	{
+		name: 'BLOG EMPRESARIAL',
 		description: '',
 	},
 	{
@@ -16,10 +24,7 @@ export const servicesData: ServicesProps[] = [
 		name: 'SEO',
 		description: '',
 	},
-	{
-		name: 'SITE INSTITUCIONAL',
-		description: '',
-	},
+
 	{
 		name: 'HOSPEDAGEM',
 		description: '',
@@ -30,10 +35,6 @@ export const servicesData: ServicesProps[] = [
 	},
 	{
 		name: 'GOOGLE ADS',
-		description: '',
-	},
-	{
-		name: 'COPY WRITING',
 		description: '',
 	},
 ];
