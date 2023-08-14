@@ -25,14 +25,14 @@ export default function PlanSection() {
 				src={image}
 				alt='Apertando as mãos'
 			/>
-			<div className='flex flex-col items-center justify-center mt-16 '>
+			<div className='flex flex-col items-center justify-center mt-10 '>
 				<h2
 					className={`${montSerrat.className} text-3xl text-center mx-5 drop-shadow-lg`}>
 					Adquira o Plano Ideal para você
 				</h2>
 				<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
 			</div>
-			<div className='flex flex-col lg:flex-row px-40 gap-12 items-center justify-center pb-20 '>
+			<div className='flex flex-col lg:flex-row px-40 gap-12 items-center justify-center pb-10 '>
 				<PlanCard
 					role='Iniciante'
 					style={benefitsInitial.style}

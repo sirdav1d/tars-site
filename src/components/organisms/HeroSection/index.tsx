@@ -1,12 +1,10 @@
-import Header from '@/components/molecules/header';
-import React from 'react';
-import BgHero from './bghero';
 import Button from '@/components/atoms/button';
+import Drawer from '@/components/atoms/drawer';
+import Header from '@/components/molecules/header';
 import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
-import Drawer from '@/components/atoms/drawer';
-import Image from 'next/image';
+import BgHero from './bghero';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],

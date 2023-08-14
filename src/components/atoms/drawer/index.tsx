@@ -34,7 +34,7 @@ export default function Drawer() {
 			<motion.div
 				variants={drawerAnimation}
 				animate={isOpen ? 'open' : 'closed'}
-				className={`h-screen bg-brand-neutral-900/95 backdrop-filter backdrop-blur-md  absolute top-0 right-0 overflow-hidden `}>
+				className={`h-screen bg-brand-neutral-900  absolute top-0 right-0 overflow-hidden `}>
 				<button
 					onClick={handleClose}
 					className='p-4 absolute right-2 top-2 text-brand-red-500 drop-shadow-btnClose'>

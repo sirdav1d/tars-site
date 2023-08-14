@@ -57,4 +57,17 @@ export default function Button({ text, role }: ButtonProps) {
 			</a>
 		);
 	}
+
+	if (role === 'form') {
+		return (
+			<button
+				className={`p-4 bg-brand-red-500 rounded z-50 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300  text-lg font-bold tracking-wide ${montSerrat.className}`}>
+				{text}
+				<RiNavigationFill
+					className='rotate-90'
+					size={20}
+				/>
+			</button>
+		);
+	}
 }
