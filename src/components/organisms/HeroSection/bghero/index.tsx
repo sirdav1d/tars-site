@@ -8,6 +8,7 @@ export default function BgHero() {
 				autoPlay={true}
 				preload='auto'
 				muted
+				poster='/images/poster.png'
 				loop={true}>
 				<source
 					src='/video/vídeoponte.mp4'

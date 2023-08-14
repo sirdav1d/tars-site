@@ -35,7 +35,7 @@ export default function HeroSection() {
 					text={'Fazer Orçamento'}
 				/>
 			</div>
-			<div className='w-full hidden xl:flex bg-brand-neutral-600/30 backdrop-blur-md h-[20vh] gap-10 px-12 2xl:px-20 absolute bottom-[-0px]  justify-between items-center '>
+			<div className='w-full hidden xl:flex bg-brand-neutral-300/25 backdrop-blur-md h-[20vh] gap-10 px-12 2xl:px-20 absolute bottom-[-0px]  justify-between items-center '>
 				<div className='flex flex-col max-w-md items-start gap-3'>
 					<div className='flex gap-3 items-center justify-center '>
 						<div className='text-brand-blue-500  drop-shadow-icons '>
