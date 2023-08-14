@@ -11,7 +11,7 @@ export default function BgHero() {
 				poster='/images/poster.png'
 				loop={true}>
 				<source
-					// src='/video/vídeoponte.mp4'
+					src='/video/vídeoponte.mp4'
 					type='video/mp4'
 				/>
 			</video>
