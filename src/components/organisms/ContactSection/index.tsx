@@ -53,9 +53,9 @@ export default function ContactSection() {
 				</a>
 			</div>
 
-			<section className='flex  mb-16 flex-col lg:flex-row items-baseline justify-between gap-12 max-w-[1440px]'>
+			<section className='flex  mb-16 flex-col lg:flex-row items-center lg:items-baseline justify-between gap-12 max-w-[1440px]'>
 				<legend
-					className={`${montSerrat.className} lg:hidden flex items-center justify-center gap-3`}>
+					className={`${montSerrat.className} lg:hidden flex items-center justify-center gap-3 mx-6`}>
 					<h3>Links Úteis</h3>
 					<FaArrowTurnDown
 						size={32}
