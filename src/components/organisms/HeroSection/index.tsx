@@ -34,10 +34,10 @@ export default function HeroSection() {
 					text={'Fazer Orçamento'}
 				/>
 			</div>
-			<div className='w-full flex bg-brand-neutral-300/25 backdrop-blur-md h-[20vh] gap-3 lg:gap-10  px-4 mx-auto 2xl:px-20 absolute bottom-[-0px]  justify-between items-center '>
+			<div className='w-full flex  bg-brand-neutral-300/25 backdrop-blur-md h-[10vh] lg:h-[20vh] gap-3 lg:gap-10  px-4 mx-auto 2xl:px-20 absolute bottom-[0px]  justify-between items-center '>
 				<div className='flex flex-col w-1/3 items-start gap-3'>
 					<div className='flex gap-2 items-center justify-center'>
-						<div className='text-brand-blue-500  drop-shadow-icons'>
+						<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
 							<BsCashCoin
 								size={32}
 								className='w-5 md:w-8'
@@ -58,7 +58,7 @@ export default function HeroSection() {
 
 				<div className='flex flex-col w-1/3 items-start gap-3 '>
 					<div className='flex gap-2 items-center justify-center '>
-						<div className='text-brand-blue-500  drop-shadow-icons '>
+						<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
 							<HiStatusOnline
 								size={32}
 								className='w-5 md:w-8'
@@ -78,7 +78,7 @@ export default function HeroSection() {
 				</div>
 				<div className='flex flex-col w-1/3 items-start gap-3 '>
 					<div className='flex gap-2 items-center justify-center '>
-						<div className='text-brand-blue-500  drop-shadow-icons'>
+						<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
 							<BsSpeedometer2
 								size={32}
 								className='w-5 md:w-8'
