@@ -2,7 +2,7 @@ import Image from 'next/image';
 import logo from 'public/logos/logoHeader.png';
 import Button from '../../atoms/button';
 import Navigation from '@/components/atoms/navigation';
-import Drawer from '@/components/atoms/drawer';
+import Drawer from '../drawer';
 
 export default function Header() {
 	return (

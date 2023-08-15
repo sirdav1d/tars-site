@@ -2,7 +2,15 @@ import Button from '@/components/atoms/button';
 import React from 'react';
 import Image from 'next/image';
 import Footer from '@/components/atoms/footer';
+import {
+	LiaFacebookSquare,
+	LiaInstagram,
+	LiaLinkedin,
+	LiaEnvelopeSolid,
+} from 'react-icons/lia';
+import { FaArrowTurnDown } from 'react-icons/fa6';
 import { Montserrat } from 'next/font/google';
+import FormItem from '@/components/atoms/formItem';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -13,75 +21,115 @@ export default function ContactSection() {
 	return (
 		<div
 			id='contact'
-			className='px-4 py-3 lg:p-20 flex items-start justify-center gap-10 lg:gap-48 flex-col lg:flex-row '>
-			<aside className='flex flex-col items-start justify-center gap-5 lg:gap-10 '>
-				<div>
-					<ul className='flex items-center justify-center gap-5 lg:gap-10'>
-						<li>facebook</li>
-						<li>instagram</li>
-						<li>Linkedin</li>
-						<li>Email</li>
-					</ul>
-				</div>
-				<div>
-					<ul className='flex items-center justify-center gap-5 lg:gap-10 text-sm'>
-						<li>Home</li>
-						<li>Quem Somos</li>
-						<li>Serviços</li>
-						<li>Planos</li>
-						<li>Contato</li>
-					</ul>
-				</div>
-			</aside>
-			<div className='w-full lg:w-1/4 px-10 py-8 mb-16 '>
-				<form>
-					<h2 className={`${montSerrat.className} text-center text-xl`}>
-						Entre em contato e faça seu Orçamento
-					</h2>
-					<div className='flex flex-col py-3 gap-2'>
-						<label
-							htmlFor='name'
-							className={`${montSerrat.className} text-sm`}>
-							Nome
-						</label>
-						<input
-							id='name'
-							name='name'
-							className='p-2 rounded'
-							type='text'
-						/>
-					</div>
-					<div className='flex flex-col py-3 gap-2'>
-						<label
-							htmlFor=''
-							className={`${montSerrat.className} text-sm`}>
-							E-mail
-						</label>
-						<input
-							className='p-2 rounded'
-							type='text'
-						/>
-					</div>
-					<div className='flex flex-col pt-3 pb-6 gap-2'>
-						<label
-							htmlFor=''
-							className={`${montSerrat.className} text-sm`}>
-							Telefone
-						</label>
-						<input
-							className='p-2 rounded'
-							type='text'
-						/>
-					</div>
-					<Button
-						role='form'
-						text={'Enviar'}
-					/>
-				</form>
+			className='px-4 py-5 lg:py-10 flex flex-col items-center  justify-center gap-10 lg:gap-20  '>
+			<div className='flex items-center justify-center gap-5 lg:gap-10 w-full '>
+				<a
+					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
+					href='http://'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<LiaFacebookSquare size={80} />
+				</a>
+				<a
+					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
+					href='http://'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<LiaInstagram size={80} />
+				</a>
+				<a
+					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
+					href='http://'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<LiaLinkedin size={80} />
+				</a>{' '}
+				<a
+					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
+					href='http://'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<LiaEnvelopeSolid size={80} />
+				</a>
 			</div>
-			<div className='absolute bottom-0  opacity-20 -z-10 '>
+
+			<section className='flex  mb-16 flex-col lg:flex-row items-baseline justify-between gap-12 max-w-[1440px]'>
+				<legend
+					className={`${montSerrat.className} lg:hidden flex items-center justify-center gap-3`}>
+					<h3>Links Úteis</h3>
+					<FaArrowTurnDown
+						size={32}
+						className='text-brand-blue-500 drop-shadow-icons'
+					/>
+				</legend>
+				<div className='flex flex-wrap lg:flex-col items-start justify-center gap-4 lg:text-lg text-sm w-full lg:w-1/2'>
+					<legend
+						className={`${montSerrat.className} hidden lg:flex items-center justify-center gap-3 no-underline`}>
+						<h3>Links Úteis</h3>
+						<FaArrowTurnDown
+							size={32}
+							className='text-brand-blue-500 drop-shadow-icons'
+						/>
+					</legend>
+					<a
+						className='hover:text-brand-red-500 underline'
+						href='#home'>
+						Home
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#who'>
+						Quem Somos
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#service'>
+						Serviços
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#plans'>
+						Planos
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#contact'>
+						Contato
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#contact'>
+						Políticas de Privacidade
+					</a>
+					<a
+						className='hover:text-brand-red-500 transition duration-300 underline'
+						href='#contact'>
+						Termos de uso
+					</a>
+				</div>
+
+				<div className='px-10 py-8 border rounded w-full lg:w-1/2 border-brand-neutral-100/20'>
+					<form>
+						<div className='flex flex-col items-center justify-center pb-5'>
+							<h2 className={`${montSerrat.className} text-center text-2xl`}>
+								Entre em contato e faça seu Orçamento
+							</h2>
+							<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
+						</div>
+						<FormItem />
+						<FormItem />
+						<FormItem />
+						<Button
+							role='form'
+							text={'Enviar'}
+						/>
+					</form>
+				</div>
+			</section>
+
+			<div className='absolute bottom-0  opacity-30 -z-10 '>
 				<Image
-					className='w-120 h-auto lg:w-[440px] '
+					className='h-auto lg:w-[560px] w-[480px] xl:w-[640px]'
 					src={'/images/ImageFooter.png'}
 					alt={'Logo Tars Projetos'}
 					width={440}

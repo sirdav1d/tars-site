@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
-import Navigation from '../navigation';
+import Navigation from '../../atoms/navigation';
 import { motion } from 'framer-motion';
 import { drawerAnimation } from '../../../animations';
-import Button from '../button';
+import Button from '../../atoms/button';
 
 export default function Drawer() {
 	const [isOpen, setIsOpen] = useState(false);
