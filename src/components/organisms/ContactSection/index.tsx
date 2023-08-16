@@ -1,16 +1,15 @@
-import Button from '@/components/atoms/button';
-import React from 'react';
-import Image from 'next/image';
 import Footer from '@/components/atoms/footer';
+import Image from 'next/image';
+import { FaArrowTurnDown } from 'react-icons/fa6';
 import {
+	LiaEnvelopeSolid,
 	LiaFacebookSquare,
 	LiaInstagram,
 	LiaLinkedin,
-	LiaEnvelopeSolid,
 } from 'react-icons/lia';
-import { FaArrowTurnDown } from 'react-icons/fa6';
+
 import { Montserrat } from 'next/font/google';
-import FormItem from '@/components/atoms/formItem';
+import Form from '@/components/molecules/form';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -28,28 +27,40 @@ export default function ContactSection() {
 					href='http://'
 					target='_blank'
 					rel='noopener noreferrer'>
-					<LiaFacebookSquare size={80} />
+					<LiaFacebookSquare
+						size={80}
+						className='w-10 lg:w-20'
+					/>
 				</a>
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
 					href='http://'
 					target='_blank'
 					rel='noopener noreferrer'>
-					<LiaInstagram size={80} />
+					<LiaInstagram
+						size={80}
+						className='w-10 lg:w-20'
+					/>
 				</a>
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
 					href='http://'
 					target='_blank'
 					rel='noopener noreferrer'>
-					<LiaLinkedin size={80} />
+					<LiaLinkedin
+						size={80}
+						className='w-10 lg:w-20'
+					/>
 				</a>{' '}
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
 					href='http://'
 					target='_blank'
 					rel='noopener noreferrer'>
-					<LiaEnvelopeSolid size={80} />
+					<LiaEnvelopeSolid
+						size={80}
+						className='w-10 lg:w-20'
+					/>
 				</a>
 			</div>
 
@@ -62,7 +73,7 @@ export default function ContactSection() {
 						className='text-brand-blue-500 drop-shadow-icons'
 					/>
 				</legend>
-				<div className='flex flex-wrap lg:flex-col items-start justify-center gap-4 lg:text-lg text-sm w-full lg:w-1/2'>
+				<div className='flex flex-wrap lg:flex-col items-start justify-center gap-4 lg:text-lg text-sm w-full lg:w-1/2 px-3'>
 					<legend
 						className={`${montSerrat.className} hidden lg:flex items-center justify-center gap-3 no-underline`}>
 						<h3>Links Úteis</h3>
@@ -108,28 +119,14 @@ export default function ContactSection() {
 					</a>
 				</div>
 
-				<div className='px-10 py-8 border rounded w-full lg:w-1/2 border-brand-neutral-100/20'>
-					<form>
-						<div className='flex flex-col items-center justify-center pb-5'>
-							<h2 className={`${montSerrat.className} text-center text-2xl`}>
-								Entre em contato e faça seu Orçamento
-							</h2>
-							<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
-						</div>
-						<FormItem />
-						<FormItem />
-						<FormItem />
-						<Button
-							role='form'
-							text={'Enviar'}
-						/>
-					</form>
+				<div className=' w-full lg:w-1/2 '>
+					<Form />
 				</div>
 			</section>
 
 			<div className='absolute bottom-0  opacity-30 -z-10 '>
 				<Image
-					className='h-auto lg:w-[560px] w-[480px] xl:w-[640px]'
+					className='h-auto lg:w-[560px] w-[480px] '
 					src={'/images/ImageFooter.png'}
 					alt={'Logo Tars Projetos'}
 					width={440}

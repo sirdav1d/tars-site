@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Attributes, DOMAttributes } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { RiNavigationFill } from 'react-icons/ri';
 import { Montserrat } from 'next/font/google';
@@ -11,9 +11,10 @@ const montSerrat = Montserrat({
 interface ButtonProps {
 	text: string;
 	role?: string;
+	onclick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export default function Button({ text, role }: ButtonProps) {
+export default function Button({ text, role, onclick }: ButtonProps) {
 	if (role === 'whatsapp') {
 		return (
 			<a
@@ -61,7 +62,8 @@ export default function Button({ text, role }: ButtonProps) {
 	if (role === 'form') {
 		return (
 			<button
-				className={`p-3 bg-brand-red-500 rounded z-50 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300  text-lg font-bold tracking-wide ${montSerrat.className}`}>
+				onClick={onclick}
+				className={`p-3 bg-brand-red-500 rounded z-50 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide ${montSerrat.className}`}>
 				{text}
 				<RiNavigationFill
 					className='rotate-90'

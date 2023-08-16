@@ -9,8 +9,13 @@ module.exports = {
     extend: {
       dropShadow: {
         'icons': '0px 0px 20px #00A0FF',
-        'btnClose': '0px 0px 12px #F24058'
+        'btnClose': '0px 0px 12px #F24058',
+
       },
+      boxShadow: {
+        'input': '0px 4px 20px -12px #00A0FF'
+      },
+
       colors: {
         brand: {
           red: {
