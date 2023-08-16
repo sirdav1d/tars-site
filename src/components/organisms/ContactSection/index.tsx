@@ -29,7 +29,7 @@ export default function ContactSection() {
 					rel='noopener noreferrer'>
 					<LiaFacebookSquare
 						size={80}
-						className='w-10 lg:w-20'
+						className='w-14 lg:w-20'
 					/>
 				</a>
 				<a
@@ -39,7 +39,7 @@ export default function ContactSection() {
 					rel='noopener noreferrer'>
 					<LiaInstagram
 						size={80}
-						className='w-10 lg:w-20'
+						className='w-14 lg:w-20'
 					/>
 				</a>
 				<a
@@ -49,7 +49,7 @@ export default function ContactSection() {
 					rel='noopener noreferrer'>
 					<LiaLinkedin
 						size={80}
-						className='w-10 lg:w-20'
+						className='w-14 lg:w-20'
 					/>
 				</a>{' '}
 				<a
@@ -59,7 +59,7 @@ export default function ContactSection() {
 					rel='noopener noreferrer'>
 					<LiaEnvelopeSolid
 						size={80}
-						className='w-10 lg:w-20'
+						className='w-14 lg:w-20'
 					/>
 				</a>
 			</div>
