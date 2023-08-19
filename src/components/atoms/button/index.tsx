@@ -11,10 +11,10 @@ const montSerrat = Montserrat({
 interface ButtonProps {
 	text: string;
 	role?: string;
-	onclick?: React.MouseEventHandler<HTMLButtonElement>;
+	disabled?: boolean;
 }
 
-export default function Button({ text, role, onclick }: ButtonProps) {
+export default function Button({ text, role, disabled }: ButtonProps) {
 	if (role === 'whatsapp') {
 		return (
 			<a
@@ -62,8 +62,9 @@ export default function Button({ text, role, onclick }: ButtonProps) {
 	if (role === 'form') {
 		return (
 			<button
-				onClick={onclick}
-				className={`p-3 bg-brand-red-500 rounded z-50 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide ${montSerrat.className}`}>
+				disabled={disabled}
+				type='submit'
+				className={`p-3 bg-brand-red-500 rounded z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide ${montSerrat.className}`}>
 				{text}
 				<RiNavigationFill
 					className='rotate-90'

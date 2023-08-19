@@ -8,8 +8,8 @@ import {
 	LiaLinkedin,
 } from 'react-icons/lia';
 
+import FormComponent from '@/components/molecules/form';
 import { Montserrat } from 'next/font/google';
-import Form from '@/components/molecules/form';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -120,7 +120,7 @@ export default function ContactSection() {
 				</div>
 
 				<div className=' w-full lg:w-1/2 '>
-					<Form />
+					<FormComponent />
 				</div>
 			</section>
 
