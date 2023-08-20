@@ -4,7 +4,6 @@ import Label from '@/components/atoms/label';
 import axios from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-// import {} from '../../../app/api/subscribe'
 import { Montserrat } from 'next/font/google';
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -46,11 +45,18 @@ export default function FormComponent() {
 					PHONE: phone,
 				},
 				email_address: email,
+				status: 'subscribed',
 			};
-			await axios.post('/api/post/subscribe', payload);
-			alert('Success');
+			console.log('TENTANDO');
+			await fetch('http://localhost:3000/api', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(payload),
+			})
+				.then((response) => response.json())
+				.then((data) => console.log(data));
 		} catch (error) {
-			alert('Error');
+			console.log('DEU RUIM');
 			console.log(error);
 		}
 	}
@@ -125,35 +131,6 @@ export default function FormComponent() {
 					</Form>
 				)}
 			</Formik>
-			{/* <form >
-				
-				<FormItem
-					value={formData.NAME}
-					onchange={(e) => handleChange(e)}
-					label='Nome'
-					name='NAME'
-					type='text'
-					placeholder='Digite seu nome'
-				/>
-				<FormItem
-					value={formData.EMAIL}
-					onchange={(e) => handleChange(e)}
-					label='E-mail'
-					name='EMAIL'
-					type='email'
-					placeholder='Digite seu e-mail'
-				/>
-				<FormItem
-					value={formData.PHONE}
-					onchange={(e) => handleChange(e)}
-					label='Telefone'
-					name='PHONE'
-					type='tel'
-					placeholder='Digite seu telefone'
-				/>
-			
-				<p className='text-lg text-brand-neutral-50'>{message}</p>
-			</form> */}
 		</>
 	);
 }

@@ -5,6 +5,7 @@ import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
 import BgHero from './bghero';
+import Test from '@/components/molecules/form/test';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function HeroSection() {
 				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
 					<h2
 						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
+						{/* <Test /> */}
 						Construímos pontes entre sua marca e seu público
 					</h2>
 					<p className='text-xs md:text-2xl text-left md:text-center  '>
