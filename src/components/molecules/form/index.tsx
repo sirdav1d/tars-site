@@ -1,10 +1,9 @@
 'use client';
 import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
-import axios from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import * as Yup from 'yup';
 import { Montserrat } from 'next/font/google';
+import * as Yup from 'yup';
 const montSerrat = Montserrat({
 	subsets: ['latin'],
 	weight: ['700', '900'],
