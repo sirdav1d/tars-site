@@ -2,6 +2,7 @@ import React, { Attributes, DOMAttributes } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { RiNavigationFill } from 'react-icons/ri';
 import { Montserrat } from 'next/font/google';
+import LoadingBtn from '../loading';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -12,9 +13,10 @@ interface ButtonProps {
 	text: string;
 	role?: string;
 	disabled?: boolean;
+	loading?: boolean;
 }
 
-export default function Button({ text, role, disabled }: ButtonProps) {
+export default function Button({ text, role, disabled, loading }: ButtonProps) {
 	if (role === 'whatsapp') {
 		return (
 			<a
@@ -65,11 +67,17 @@ export default function Button({ text, role, disabled }: ButtonProps) {
 				disabled={disabled}
 				type='submit'
 				className={`p-3 bg-brand-red-500 rounded z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide ${montSerrat.className}`}>
-				{text}
-				<RiNavigationFill
-					className='rotate-90'
-					size={20}
-				/>
+				{loading ? (
+					<LoadingBtn />
+				) : (
+					<p className='flex gap-3 items-center justify-center'>
+						{text}{' '}
+						<RiNavigationFill
+							className='rotate-90'
+							size={20}
+						/>
+					</p>
+				)}
 			</button>
 		);
 	}

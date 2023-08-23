@@ -10,6 +10,7 @@ import {
 
 import FormComponent from '@/components/molecules/form';
 import { Montserrat } from 'next/font/google';
+import LoadingBtn from '@/components/atoms/loading';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -24,7 +25,7 @@ export default function ContactSection() {
 			<div className='flex items-center justify-center gap-5 lg:gap-10 w-full '>
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
-					href='http://'
+					href='https://www.facebook.com/people/Tars-Projetos/100094457547971/?mibextid=ZbWKwL'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<LiaFacebookSquare
@@ -34,7 +35,7 @@ export default function ContactSection() {
 				</a>
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
-					href='http://'
+					href='https://instagram.com/tars_projetos?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<LiaInstagram
@@ -54,7 +55,7 @@ export default function ContactSection() {
 				</a>{' '}
 				<a
 					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
-					href='http://'
+					href='http://tars.Projetos@gmail.com'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<LiaEnvelopeSolid
@@ -109,12 +110,14 @@ export default function ContactSection() {
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='#contact'>
+						target='_blank'
+						href='/resources/Politica.pdf'>
 						Políticas de Privacidade
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='#contact'>
+						target='_blank'
+						href='/resources/Termos.pdf'>
 						Termos de uso
 					</a>
 				</div>

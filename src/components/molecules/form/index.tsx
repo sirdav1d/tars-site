@@ -3,6 +3,8 @@ import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { Montserrat } from 'next/font/google';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import * as Yup from 'yup';
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -10,6 +12,8 @@ const montSerrat = Montserrat({
 });
 
 export default function FormComponent() {
+	const [loading, setLoading] = useState(false);
+
 	interface FormValues {
 		fullName: string;
 		phone: string;
@@ -34,8 +38,11 @@ export default function FormComponent() {
 			.required('O preenchimento é obrigatório'),
 	});
 
+	const router = useRouter();
+
 	async function handleSubmit(values: FormValues) {
-		console.log(values);
+		setLoading(true);
+
 		const { fullName, phone, email } = values;
 		try {
 			const payload = {
@@ -54,6 +61,7 @@ export default function FormComponent() {
 			})
 				.then((response) => response.json())
 				.then((data) => console.log(data));
+			router.push('/thanks');
 		} catch (error) {
 			console.log('DEU RUIM');
 			console.log(error);
@@ -123,6 +131,7 @@ export default function FormComponent() {
 							/>
 						</div>
 						<Button
+							loading={loading}
 							disabled={!formik.isValid || !formik.dirty}
 							role='form'
 							text={'Enviar'}

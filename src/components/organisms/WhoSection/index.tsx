@@ -16,13 +16,13 @@ export default function WhoSection() {
 		<div
 			id='who'
 			className='pt-10 shadow-md rounded mt-12 flex px-6  xl:px-20 flex-col  justify-between items-end  gap-10'>
-			<div className='flex items-center justify-between gap-5 '>
+			<div className='flex items-center justify-between gap-5 max-w-[1440px] mx-auto'>
 				<div className='flex flex-col items-center w-full'>
 					<h2 className={`${montSerrat.className} text-3xl text-center`}>
 						Conheça a Tars Projetos
 					</h2>
 					<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
-					<p className='mt-6 leading-8 md:text-lg text-sm '>
+					<p className='mt-6 leading-8 md:text-lg xl:text-xl text-sm '>
 						A Tars Projetos atua no mercado de tecnologia a mais de 3 anos,
 						expandimos nossos horizontes e nos tornamos especialistas em criação
 						de Landing Pages e publicidade online. Nosso objetivo é impulsionar
@@ -44,7 +44,7 @@ export default function WhoSection() {
 					/>
 				</div>
 			</div>
-			<div className='flex flex-col lg:flex-row justify-between gap-5 w-full  h-full '>
+			<div className='flex flex-col lg:flex-row justify-between gap-5 w-full max-w-[1440px] h-full mx-auto '>
 				<div className='flex flex-col  gap-3 shadow-md p-3 rounded items-center  w-full'>
 					<div className='flex gap-3 items-center '>
 						<PiTargetDuotone

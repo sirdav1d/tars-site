@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: 'Tars Projetos',
+	title: 'Agência Tars Projetos',
 	description:
 		'A Tars Projetos atua no mercado de tecnologia a mais de 3 anos, expandimos nossos horizontes e nos tornamos especialistas em criação de Landing Pages e publicidade online.',
 };
