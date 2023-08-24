@@ -15,7 +15,7 @@ export default function HeroSection() {
 	return (
 		<div
 			id='home'
-			className='relative h-[100vh] '>
+			className='relative h-[90vh] lg:h-screen'>
 			<Header />
 			<BgHero />
 
