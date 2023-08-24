@@ -54,7 +54,7 @@ export default function FormComponent() {
 				status: 'subscribed',
 			};
 			console.log('TENTANDO');
-			await fetch('http://localhost:3000/api', {
+			await fetch('/api', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(payload),
@@ -63,6 +63,7 @@ export default function FormComponent() {
 				.then((data) => console.log(data));
 			router.push('/thanks');
 		} catch (error) {
+			router.push('/global-error');
 			console.log('DEU RUIM');
 			console.log(error);
 		}

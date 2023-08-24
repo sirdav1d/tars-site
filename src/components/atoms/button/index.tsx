@@ -1,7 +1,7 @@
-import React, { Attributes, DOMAttributes } from 'react';
+'use client';
+import { Montserrat } from 'next/font/google';
 import { BsWhatsapp } from 'react-icons/bs';
 import { RiNavigationFill } from 'react-icons/ri';
-import { Montserrat } from 'next/font/google';
 import LoadingBtn from '../loading';
 
 const montSerrat = Montserrat({
@@ -17,6 +17,17 @@ interface ButtonProps {
 }
 
 export default function Button({ text, role, disabled, loading }: ButtonProps) {
+	function handleAccept() {
+		const req = JSON.stringify(localStorage.setItem('lgpd', 'accept'));
+		return req;
+	}
+
+	function handleDeny() {
+		window.alert(
+			'Para ter uma melhor experiência de usuário, recomendamos que aceite nossas políticas de privacidade e termos de uso',
+		);
+	}
+
 	if (role === 'whatsapp') {
 		return (
 			<a
@@ -76,6 +87,40 @@ export default function Button({ text, role, disabled, loading }: ButtonProps) {
 							className='rotate-90'
 							size={20}
 						/>
+					</p>
+				)}
+			</button>
+		);
+	}
+
+	if (role === 'accept') {
+		return (
+			<button
+				onClick={() => handleAccept()}
+				disabled={disabled}
+				type='button'
+				className={`px-5 py-3 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-fit text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
+				{loading ? (
+					<LoadingBtn />
+				) : (
+					<p className='flex gap-3 items-center justify-center'>{text} </p>
+				)}
+			</button>
+		);
+	}
+
+	if (role === 'deny') {
+		return (
+			<button
+				onClick={() => handleDeny()}
+				type='button'
+				className={`
+				flex items-center justify-center w-fit text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
+				{loading ? (
+					<LoadingBtn />
+				) : (
+					<p className='flex gap-3 items-center justify-center underline'>
+						{text}{' '}
 					</p>
 				)}
 			</button>

@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function ThanksPage() {
-	return <div>thanks</div>;
+	return <div >thanks</div>;
 }
