@@ -1,5 +1,6 @@
 'use client';
 import { Montserrat } from 'next/font/google';
+import { MouseEventHandler } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { RiNavigationFill } from 'react-icons/ri';
 import LoadingBtn from '../loading';
@@ -14,9 +15,10 @@ interface ButtonProps {
 	role?: string;
 	disabled?: boolean;
 	loading?: boolean;
+	onclick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export default function Button({ text, role, disabled, loading }: ButtonProps) {
+export default function Button({ text, role, disabled, loading, onclick }: ButtonProps) {
 	function handleAccept() {
 		const req = JSON.stringify(localStorage.setItem('lgpd', 'accept'));
 		return req;
@@ -96,7 +98,7 @@ export default function Button({ text, role, disabled, loading }: ButtonProps) {
 	if (role === 'accept') {
 		return (
 			<button
-				onClick={() => handleAccept()}
+				onClick={onclick}
 				disabled={disabled}
 				type='button'
 				className={`px-5 py-3 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-fit text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
@@ -112,7 +114,7 @@ export default function Button({ text, role, disabled, loading }: ButtonProps) {
 	if (role === 'deny') {
 		return (
 			<button
-				onClick={() => handleDeny()}
+				onClick={onclick}
 				type='button'
 				className={`
 				flex items-center justify-center w-fit text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
