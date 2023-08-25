@@ -1,41 +1,68 @@
+import lpImage from '../../public/icons/landing-page-icon.png';
+import siteImage from '../../public/icons/local-na-rede-internet-icon.png';
+import blogImage from '../../public/icons/blog-icon.png';
+import lgpdImage from '../../public/icons/seguranca-icon.png';
+import seoImage from '../../public/icons/seo-icon.png';
+import hostImage from '../../public/icons/hospedagem-icon.png';
+import designImage from '../../public/icons/designer-de-web-icon.png';
+import adsImage from '../../public/icons/logotype-ads-icon.png';
+import { StaticImageData } from 'next/image';
+
 export interface ServicesProps {
 	name: string;
 	description: string;
+	url: StaticImageData;
 }
 
 export const servicesData: ServicesProps[] = [
 	{
 		name: 'LANDING PAGE',
-		description: '',
+		description:
+			'lLorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: lpImage,
 	},
 	{
 		name: 'SITE INSTITUCIONAL',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: siteImage,
 	},
 	{
 		name: 'BLOG EMPRESARIAL',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: blogImage,
 	},
 	{
 		name: 'LGPD',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: lgpdImage,
 	},
 	{
 		name: 'SEO',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: seoImage,
 	},
 
 	{
 		name: 'HOSPEDAGEM',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: hostImage,
 	},
 	{
 		name: 'WEB DESIGN',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: designImage,
 	},
 	{
 		name: 'GOOGLE ADS',
-		description: '',
+		description:
+			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+		url: adsImage,
 	},
 ];
 
