@@ -15,6 +15,9 @@ module.exports = {
       boxShadow: {
         'input': '0px 4px 20px -12px #00A0FF'
       },
+      backgroundImage: {
+        'bgThanks': "url('/images/bgThanks.png')"
+      },
 
       colors: {
         brand: {
@@ -44,7 +47,7 @@ module.exports = {
             800: "#3D3D3D",
             900: "#242424",
             950: "#1e1e1e"
-          }
+          },
         }
       }
     },

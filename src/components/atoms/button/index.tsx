@@ -2,6 +2,7 @@
 import { Montserrat } from 'next/font/google';
 import { MouseEventHandler } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
+import { BiDownload } from 'react-icons/bi';
 import { RiNavigationFill } from 'react-icons/ri';
 import LoadingBtn from '../loading';
 
@@ -18,7 +19,13 @@ interface ButtonProps {
 	onclick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export default function Button({ text, role, disabled, loading, onclick }: ButtonProps) {
+export default function Button({
+	text,
+	role,
+	disabled,
+	loading,
+	onclick,
+}: ButtonProps) {
 	function handleAccept() {
 		const req = JSON.stringify(localStorage.setItem('lgpd', 'accept'));
 		return req;
@@ -126,6 +133,19 @@ export default function Button({ text, role, disabled, loading, onclick }: Butto
 					</p>
 				)}
 			</button>
+		);
+	}
+
+	if (role === 'thanks') {
+		return (
+			<a
+				className={`p-4 bg-brand-red-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide ${montSerrat.className}`}
+				href='/resources/trafego.pdf'
+				target='_blank'
+				referrerPolicy='no-referrer'>
+				{text}
+				<BiDownload size={24} />
+			</a>
 		);
 	}
 }
