@@ -13,6 +13,7 @@ const montSerrat = Montserrat({
 
 export default function FormComponent() {
 	const [loading, setLoading] = useState(false);
+	const [dataError, setDataError] = useState('');
 
 	interface FormValues {
 		fullName: string;
@@ -60,10 +61,14 @@ export default function FormComponent() {
 				body: JSON.stringify(payload),
 			})
 				.then((response) => response.json())
-				.then((data) => console.log(data));
+				.then((data) => {
+					setDataError(data.data.detail);
+					console.log({ dataError });
+				});
+
 			router.push('/thanks');
 		} catch (error) {
-			router.push('/global-error');
+			router.push('/not-found.tsx');
 			console.log('DEU RUIM');
 			console.log(error);
 		}

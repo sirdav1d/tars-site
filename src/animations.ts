@@ -19,16 +19,14 @@ export const drawerAnimation = {
 
 export const CardAnimation = {
 	open: {
-		height: '360px',
-		transition: {
-			duration: 0.8,
-			type: 'tween',
-			when: 'beforeChildren',
-		},
+		scaleY: 1.5,
+		backgroundColor: 'black',
+		zIndex: '9999999999999999',
+		transition: { duration: .6, delay: 0.2 },
 	},
 	closed: {
 		height: '240px',
-		transition: { duration: 0.4, type: 'tween' },
+		transition: { duration: 0.5 },
 	},
 };
 

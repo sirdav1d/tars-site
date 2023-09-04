@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
 	title: 'Página não encontrada - Agência Tars Projetos',
@@ -7,10 +8,22 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
 	return (
-		<div className='w-full h-screen flex justify-center items-center max-w-3xl text-brand-neutral-50'>
-			<h2>Página não encontrada!</h2>
-			<p>Clique no link abaixo para retornar</p>
-			<Link href='/'>Voltar ao Site</Link>
-		</div>
+		<main className='p-10 h-full min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
+			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto justify-center m-auto'>
+				<h2 className='text-4xl lg:text-6xl text-center font-bold mt-20 mb-5'>
+					Página não encontrada!
+				</h2>
+				<p>Clique no link abaixo para retornar</p>
+
+				<div className='w-full items-center font-bold flex justify-center  m-4 mb-20 lg:mb-0'>
+					<a
+						href={'/'}
+						className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
+						<IoArrowBack size={32} />
+						<p className='text-brand-neutral-50'>Voltar ao Site</p>
+					</a>
+				</div>
+			</div>
+		</main>
 	);
 }

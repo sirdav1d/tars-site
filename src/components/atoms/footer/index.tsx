@@ -9,7 +9,7 @@ const montSerrat = Montserrat({
 
 export default function Footer() {
 	return (
-		<div className='flex p-3 items-center justify-center gap-1 bg-brand-neutral-200/10 w-screen backdrop-blur-md'>
+		<div className='flex p-3 items-center justify-center gap-1 bg-brand-neutral-200/10 w-screen backdrop-blur-sm absolute bottom-0 left-0'>
 			<Image
 				className='w-40 h-auto lg:w-120'
 				src={'/logos/logoHeader.png'}
