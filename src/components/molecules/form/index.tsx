@@ -62,11 +62,12 @@ export default function FormComponent() {
 			})
 				.then((response) => response.json())
 				.then((data) => {
-					setDataError(data.data.detail);
-					console.log({ dataError });
+					if (data?.data?.status == 400) {
+						router.push('/not-found.tsx');
+					} else {
+						router.push('/thanks');
+					}
 				});
-
-			router.push('/thanks');
 		} catch (error) {
 			router.push('/not-found.tsx');
 			console.log('DEU RUIM');

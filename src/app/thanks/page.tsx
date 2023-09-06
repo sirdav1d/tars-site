@@ -1,12 +1,10 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import React from 'react';
-import { Montserrat } from 'next/font/google';
 import Button from '@/components/atoms/button';
 import Footer from '@/components/atoms/footer';
 import SocialMediaList from '@/components/molecules/socialMediasList';
+import { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import Image from 'next/image';
 import { IoArrowBack } from 'react-icons/io5';
-import Link from 'next/link';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -19,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
 	return (
-		<main className='h-full min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
-			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto '>
+		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
+			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-14'>
 				<Image
 					className='w-[220px] '
 					src={'/logos/logoThanks.png'}
@@ -44,13 +42,21 @@ export default function ThanksPage() {
 							(Ferramenta de Otimização de Pesquisa) do Google, no seu site, ou
 							da sua empresa.{' '}
 						</p>
+						<div className='w-full font-bold flex '>
+							<a
+								href={'/'}
+								className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
+								<IoArrowBack size={32} />
+								<p className='text-brand-neutral-50'>Voltar ao Site</p>
+							</a>
+						</div>
 					</div>
 					<div className='flex flex-col w-full lg:w-1/3 items-center justify-center '>
 						<Image
 							className='animate-pulse'
 							src={'/images/trafegoImage.png'}
-							width={220}
-							height={320}
+							width={240}
+							height={380}
 							alt='Capa do livro, o manual do tráfego'
 						/>
 						<Button
@@ -62,14 +68,6 @@ export default function ThanksPage() {
 				<SocialMediaList />
 			</div>
 
-			<div className='w-full items-center font-bold flex justify-center  m-4 mb-20 lg:mb-0'>
-				<a
-					href={'/'}
-					className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
-					<IoArrowBack size={32} />
-					<p className='text-brand-neutral-50'>Voltar ao Site</p>
-				</a>
-			</div>
 			<Footer />
 		</main>
 	);

@@ -1,4 +1,3 @@
-import { redirect } from 'next/navigation';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
@@ -25,11 +24,13 @@ export async function POST(request: Request) {
 				},
 				body: JSON.stringify(newContact),
 			},
-		).then((response) => response.json());
-		if (data?.data.status === 400) {
-			throw new Error('Algo deu errado!');
-		}
-		return NextResponse.json({ data: data }, { status: 201 });
+		)
+			.then((response) => response.json())
+			.then((data) => {
+				return data;
+			});
+
+		return NextResponse.json({ data: data }, { status: 200 });
 	} catch (error) {
 		console.log(error);
 		return NextResponse.json({ message: 'Algo deu errado' }, { status: 400 });

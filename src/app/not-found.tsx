@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { IoArrowBack } from 'react-icons/io5';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
 	title: 'Página não encontrada - Agência Tars Projetos',
@@ -8,8 +9,14 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
 	return (
-		<main className='p-10 h-full min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
+		<main className='p-10 h-full flex items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto justify-center m-auto'>
+				<Image
+					className='w-[220px] '
+					src={'/logos/logoThanks.png'}
+					width={480}
+					height={100}
+					alt='logo tars projetos'></Image>
 				<h2 className='text-4xl lg:text-6xl text-center font-bold mt-20 mb-5'>
 					Página não encontrada!
 				</h2>
