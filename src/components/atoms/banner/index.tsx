@@ -1,14 +1,16 @@
 'use client';
 import { useState, MouseEvent } from 'react';
+import { createCookie } from '../cookie/actions';
 
 export default function BannerLGPD() {
 	const [show, setShow] = useState('true');
 
-	function handleAccept(
+	async function handleAccept(
 		e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
 	) {
 		e.preventDefault();
 		e.stopPropagation();
+		await createCookie();
 		setShow('false');
 	}
 	function handleDeny(e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) {

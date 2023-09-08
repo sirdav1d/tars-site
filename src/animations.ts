@@ -20,7 +20,6 @@ export const drawerAnimation = {
 export const CardAnimation = {
 	open: {
 		scaleY: 1.5,
-		backgroundColor: 'black',
 		zIndex: '9999999999999999',
 		transition: { duration: .6, delay: 0.2 },
 	},

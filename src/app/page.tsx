@@ -1,4 +1,5 @@
 import BannerLGPD from '@/components/atoms/banner';
+import CookieComponent from '@/components/atoms/cookie';
 import CTA from '@/components/atoms/cta';
 import ContactSection from '@/components/organisms/ContactSection';
 import HeroSection from '@/components/organisms/HeroSection';
@@ -15,7 +16,7 @@ export default function Home() {
 			<ServiceSection />
 			<PlanSection />
 			<ContactSection />
-			<BannerLGPD />
+			<CookieComponent />
 		</main>
 	);
 }
