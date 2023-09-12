@@ -15,7 +15,7 @@ export default function WhoSection() {
 	return (
 		<div
 			id='who'
-			className='pt-10 shadow-md rounded mt-12 flex px-6  xl:px-20 flex-col  justify-between items-end  gap-10'>
+			className='pt-10 shadow-md rounded mt-12 flex px-6  xl:px-20 flex-col justify-between items-end  gap-10'>
 			<div className='flex items-center justify-between gap-5 max-w-[1440px] mx-auto'>
 				<div className='flex flex-col items-center w-full'>
 					<h2 className={`${montSerrat.className} text-3xl text-center`}>

@@ -1,11 +1,11 @@
-import lpImage from '../../public/icons/landing-page-icon.png';
-import siteImage from '../../public/icons/local-na-rede-internet-icon.png';
-import blogImage from '../../public/icons/blog-icon.png';
-import lgpdImage from '../../public/icons/seguranca-icon.png';
-import seoImage from '../../public/icons/seo-icon.png';
-import hostImage from '../../public/icons/hospedagem-icon.png';
-import designImage from '../../public/icons/designer-de-web-icon.png';
-import adsImage from '../../public/icons/logotype-ads-icon.png';
+import lpImage from '../../public/icons/landing-page.png';
+import siteImage from '../../public/icons/local-na-rede-internet.png';
+import blogImage from '../../public/icons/blog.png';
+import lgpdImage from '../../public/icons/cyber-security.png';
+import seoImage from '../../public/icons/seo.png';
+import hostImage from '../../public/icons/hospedagem.png';
+import designImage from '../../public/icons/designer-de-web.png';
+import adsImage from '../../public/icons/logotype.png';
 import { StaticImageData } from 'next/image';
 
 export interface ServicesProps {
@@ -18,50 +18,50 @@ export const servicesData: ServicesProps[] = [
 	{
 		name: 'LANDING PAGE',
 		description:
-			'lLorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Landing pages simplificam a apresentação de produtos, serviços ou informações, tornando mais fácil para os visitantes tomar a ação desejada',
 		url: lpImage,
 	},
 	{
 		name: 'SITE INSTITUCIONAL',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Um site institucional oferece uma presença constante na web para sua empresa, permitindo que clientes em potencial o encontrem a qualquer momento.',
 		url: siteImage,
 	},
 	{
 		name: 'BLOG EMPRESARIAL',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Um blog permite que sua empresa compartilhe conhecimento e experiência, estabelecendo-se como uma autoridade em seu setor.',
 		url: blogImage,
 	},
 	{
 		name: 'LGPD',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Empresas que respeitam a LGPD podem ganhar uma vantagem competitiva, atraindo clientes preocupados com a privacidade.',
 		url: lgpdImage,
 	},
 	{
 		name: 'SEO',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Posicionar-se bem nos mecanismos de busca aumenta a visibilidade da empresa, tornando-a mais acessível aos usuários.',
 		url: seoImage,
 	},
 
 	{
 		name: 'HOSPEDAGEM',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Com um serviço de hospedagem, é fácil dimensionar recursos conforme seu site cresce, garantindo que ele permaneça eficiente.',
 		url: hostImage,
 	},
 	{
 		name: 'WEB DESIGN',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Sites responsivos se adaptam a diferentes dispositivos, oferecendo uma experiência consistente e agradável para os visitantes',
 		url: designImage,
 	},
 	{
 		name: 'GOOGLE ADS',
 		description:
-			'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+			'Diferentemente do SEO, as campanhas do Google Ads podem gerar tráfego e conversões imediatas, acelerando o retorno sobre o investimento.',
 		url: adsImage,
 	},
 ];

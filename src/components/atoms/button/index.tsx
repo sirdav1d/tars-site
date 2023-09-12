@@ -26,17 +26,6 @@ export default function Button({
 	loading,
 	onclick,
 }: ButtonProps) {
-	function handleAccept() {
-		const req = JSON.stringify(localStorage.setItem('lgpd', 'accept'));
-		return req;
-	}
-
-	function handleDeny() {
-		window.alert(
-			'Para ter uma melhor experiência de usuário, recomendamos que aceite nossas políticas de privacidade e termos de uso',
-		);
-	}
-
 	if (role === 'whatsapp') {
 		return (
 			<a
@@ -68,7 +57,23 @@ export default function Button({
 	if (role === 'CTA') {
 		return (
 			<a
-				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide ${montSerrat.className}`}
+				href='#'
+				target='_blank'
+				referrerPolicy='no-referrer'>
+				{text}
+				<RiNavigationFill
+					className='rotate-90'
+					size={20}
+				/>
+			</a>
+		);
+	}
+
+	if (role === 'plans') {
+		return (
+			<a
+				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center mt-2 hover:bg-brand-blue-300 text-md transition duration-300 w-full justify-center text-md font-bold tracking-wide ${montSerrat.className}`}
 				href='#'
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -124,7 +129,7 @@ export default function Button({
 				onClick={onclick}
 				type='button'
 				className={`
-				flex items-center justify-center w-fit text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
+				flex items-center justify-center w-full text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (

@@ -17,9 +17,9 @@ export default function PlanSection() {
 	return (
 		<div
 			id='plans'
-			className='flex flex-col w-screen bg-brand-red-500 relative gap-20 '>
+			className='flex flex-col w-screen relative gap-20 '>
 			<Image
-				className='absolute object-cover w-full h-full mix-blend-luminosity '
+				className='absolute object-cover w-full h-full mix-blend-overlay '
 				width={1600}
 				height={640}
 				src={image}

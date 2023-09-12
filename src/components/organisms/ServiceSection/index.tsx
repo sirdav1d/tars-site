@@ -12,7 +12,7 @@ export default function ServiceSection() {
 	return (
 		<div
 			id='service'
-			className='mb-20 flex flex-col items-center justify-center mx-6'>
+			className='pb-20 flex flex-col items-center justify-center px-6 bg-bgThanks bg-cover'>
 			<h2 className={`${montSerrat.className} text-3xl text-center mt-28`}>
 				Como Vamos <br />
 				Impulsionar o seu Negócio

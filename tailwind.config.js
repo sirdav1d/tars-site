@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       dropShadow: {
         'icons': '0px 0px 20px #00A0FF',
+        'cards': '0px 0px 40px #00A0FF',
         'btnClose': '0px 0px 12px #F24058',
 
       },
