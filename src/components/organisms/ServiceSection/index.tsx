@@ -18,7 +18,7 @@ export default function ServiceSection() {
 				Impulsionar o seu Negócio
 			</h2>
 			<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
-			<div className='grid gap-8 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-20 '>
+			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-20 '>
 				{servicesData.map((s, index) => {
 					return (
 						<Card

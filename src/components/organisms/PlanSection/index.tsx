@@ -32,7 +32,7 @@ export default function PlanSection() {
 				</h2>
 				<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
 			</div>
-			<div className='flex flex-col lg:flex-row px-40 gap-12 items-center justify-center pb-10 '>
+			<div className='flex flex-col xl:flex-row px-40 gap-12 items-center justify-center pb-10 '>
 				<PlanCard
 					role='Iniciante'
 					style={benefitsInitial.style}

@@ -33,8 +33,6 @@ export const CardAnimation = {
 		},
 	},
 	close: {
-		height: '240px',
-		boxShadow: '0px 20px 120px 4px #fff',
 		transition: {
 			delay: 0.5,
 			duration: 0.5,

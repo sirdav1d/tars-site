@@ -25,9 +25,9 @@ export default function Card({ data }: CardProps) {
 		<>
 			<motion.div
 				variants={CardAnimation}
-				whileHover='open'
+				whileHover={'open'}
 				exit='close'
-				className={`relative w-[300px] h-[240px] lg:w-[240px] lg:h-[200px] bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border border-brand-neutral-100/20 font-bold  text-center px-3 py-1 cursor-pointer`}>
+				className={`relative w-[300px] h-[240px] lg:w-[240px] lg:h-[200px] bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border m-2 border-brand-neutral-100/20 font-bold  text-center px-3 py-1 cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full justify-center '>
 					<motion.h3
 						variants={CardTitle}
