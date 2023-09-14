@@ -25,8 +25,6 @@ export const CardAnimation = {
 		zIndex: '35',
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
-			type: 'tween',
-			ease: 'easeInOut',
 			delay: 0.2,
 			duration: 0.6,
 			staggerChildren: 0.2,
@@ -44,9 +42,6 @@ export const CardTitle = {
 	open: {
 		scaleY: 0.7,
 		y: '-72px',
-		transition: {
-			type: 'tween',
-		},
 	},
 	close: {
 		y: 0,
@@ -61,7 +56,6 @@ export const CardSpan = {
 		width: '64px',
 		height: '4px',
 		transition: {
-			type: 'tween',
 			duration: 0.8,
 		},
 	},
