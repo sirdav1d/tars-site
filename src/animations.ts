@@ -27,14 +27,14 @@ export const CardAnimation = {
 		transition: {
 			type: 'tween',
 			ease: 'easeInOut',
-			delay: 0.3,
+			delay: 0.2,
 			duration: 0.8,
 			staggerChildren: 0.2,
 		},
 	},
 	close: {
 		transition: {
-			delay: 0.5,
+			delay: 0.1,
 			duration: 0.5,
 		},
 	},
@@ -42,9 +42,8 @@ export const CardAnimation = {
 
 export const CardTitle = {
 	open: {
-		scale: 0.75,
-		scaleY: 0.75,
-		y: '-76px',
+		scaleY: 0.7,
+		y: '-72px',
 		transition: {
 			type: 'tween',
 		},
@@ -60,18 +59,16 @@ export const CardTitle = {
 
 export const CardSpan = {
 	open: {
-		scale: 0.65,
-		scaleY: 0.65,
 		opacity: 1,
-		y: '-78px',
+		y: '22px',
 		width: '64px',
+		height: '4px',
 		transition: {
 			type: 'tween',
 			duration: 0.8,
 		},
 	},
 	close: {
-		y: 0,
 		opacity: 0,
 		width: '0px',
 		transition: {
@@ -85,7 +82,7 @@ export const CardDescription = {
 		display: 'block',
 		scaleY: 0.75,
 		opacity: 1,
-
+		y: '20px',
 		x: 0,
 		transition: {
 			type: 'tween',
@@ -106,7 +103,7 @@ export const CardIcon = {
 		display: 'block',
 		scaleY: 0.75,
 		opacity: 1,
-		y: '-36px',
+		y: '40px',
 		x: 0,
 		transition: {
 			type: 'tween',

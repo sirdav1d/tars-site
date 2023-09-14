@@ -2,6 +2,7 @@ import React from 'react';
 import { Montserrat } from 'next/font/google';
 import { servicesData } from '@/mock/services.data';
 import Card from '@/components/atoms/card';
+import CardMobile from '@/components/atoms/card/cardMobile';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -21,10 +22,16 @@ export default function ServiceSection() {
 			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-20 '>
 				{servicesData.map((s, index) => {
 					return (
-						<Card
-							key={index}
-							data={s}
-						/>
+						<>
+							<Card
+								key={index}
+								data={s}
+							/>
+							<CardMobile
+								key={s.name}
+								data={s}
+							/>
+						</>
 					);
 				})}
 			</div>

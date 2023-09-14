@@ -20,18 +20,18 @@ interface CardProps {
 	data: ServicesProps;
 }
 
-export default function Card({ data }: CardProps) {
+export default function CardMobile({ data }: CardProps) {
 	return (
-		<AnimatePresence>
+		<>
 			<motion.div
 				variants={CardAnimation}
-				whileHover={'open'}
-				exit='close'
-				className={`sm:hidden sm:opacity-0 md:block w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 text-center cursor-pointer`}>
-				<div className='flex flex-col items-center h-full relative w-full justify-center gap-2'>
+				whileInView={'open'}
+				viewport={{ amount: 0.9 }}
+				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-16 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>
+				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-2'>
 					<motion.h3
 						variants={CardTitle}
-						className={`${montSerrat.className} text-lg absolute`}>
+						className={`${montSerrat.className} text-2xl absolute`}>
 						{data.name}
 					</motion.h3>
 					<motion.span
@@ -55,6 +55,6 @@ export default function Card({ data }: CardProps) {
 					</motion.p>
 				</div>
 			</motion.div>
-		</AnimatePresence>
+		</>
 	);
 }

@@ -17,9 +17,9 @@ interface PlanCardProps {
 export default function PlanCard({ text, style, role }: PlanCardProps) {
 	return (
 		<>
-			<div className='z-30  min-w-[364px] h-[500px] rounded bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-4 p-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
+			<div className='z-30  min-w-[344px] h-[520px] rounded bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-4 p-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
 				<h3
-					className={`text-3xl text-center ${montSerrat.className} font-bold drop-shadow-lg`}>
+					className={`text-2xl text-center ${montSerrat.className} font-bold drop-shadow-lg`}>
 					{role}
 				</h3>
 				<div className='flex flex-col gap-3 mt-1 drop-shadow-lg'>

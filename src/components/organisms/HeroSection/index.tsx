@@ -1,5 +1,4 @@
 import Button from '@/components/atoms/button';
-
 import Header from '@/components/molecules/header';
 import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
@@ -22,7 +21,7 @@ export default function HeroSection() {
 			<div className='flex flex-col gap-14  max-w-[1024px] md:mx-auto md:items-center justify-center px-6'>
 				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
 					<h2
-						className={`font-bold text-4xl md:text-6xl text-left md:text-center ${montSerrat.className}`}>
+						className={`font-bold text-4xl md:text-5xl xl:text-6xl text-left md:text-center ${montSerrat.className}`}>
 						Construímos pontes entre sua marca e seu público
 					</h2>
 					<p className='text-xs md:text-2xl text-left md:text-center  '>
