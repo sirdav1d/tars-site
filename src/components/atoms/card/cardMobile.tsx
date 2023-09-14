@@ -7,7 +7,7 @@ import {
 	CardTitle,
 } from '@/animations';
 import { ServicesProps } from '@/mock/services.data';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 

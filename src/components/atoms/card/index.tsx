@@ -22,7 +22,7 @@ interface CardProps {
 
 export default function Card({ data }: CardProps) {
 	return (
-		<AnimatePresence>
+		<>
 			<motion.div
 				variants={CardAnimation}
 				whileHover={'open'}
@@ -55,6 +55,6 @@ export default function Card({ data }: CardProps) {
 					</motion.p>
 				</div>
 			</motion.div>
-		</AnimatePresence>
+		</>
 	);
 }
