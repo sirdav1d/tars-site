@@ -23,10 +23,12 @@ export default function ServiceSection() {
 				{servicesData.map((s, index) => {
 					return (
 						<>
-							<Card
-								key={index}
-								data={s}
-							/>
+							<div className='sm:hidden'>
+								<Card
+									key={index}
+									data={s}
+								/>
+							</div>
 							<CardMobile
 								key={s.name}
 								data={s}
