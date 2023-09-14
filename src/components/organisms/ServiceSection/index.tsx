@@ -24,7 +24,7 @@ export default function ServiceSection() {
 					return (
 						<>
 							<CardMobile
-								key={s.name}
+								key={index * 10}
 								data={s}
 							/>
 							<div className='sm:hidden sm:opacity-0 md:block md:opacity-100'>
