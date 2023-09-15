@@ -3,7 +3,7 @@ import React from 'react';
 export default function LoadingBtn() {
 	return (
 		<div>
-			<div className='w-8 h-8 rounded-full animate-spin'>
+			<div className='w-6 h-6 rounded-full animate-spin'>
 				<svg
 					fill='#ffffff'
 					viewBox='0 0 16 16'

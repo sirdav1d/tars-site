@@ -24,15 +24,14 @@ export default function ServiceSection() {
 					return (
 						<>
 							<CardMobile
-								key={index * 10}
+								key={s.name}
 								data={s}
 							/>
-							<div className='sm:hidden sm:opacity-0 md:block md:opacity-100'>
-								<Card
-									key={index}
-									data={s}
-								/>
-							</div>
+
+							<Card
+								key={index}
+								data={s}
+							/>
 						</>
 					);
 				})}

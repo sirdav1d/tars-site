@@ -1,13 +1,16 @@
 'use client';
 import { useState, MouseEvent } from 'react';
 import { createCookie } from '../cookie/actions';
+import LoadingBtn from '../loading';
 
 export default function BannerLGPD() {
 	const [show, setShow] = useState('true');
+	const [loading, setLoading] = useState(false);
 
 	async function handleAccept(
 		e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
 	) {
+		setLoading(true);
 		e.preventDefault();
 		e.stopPropagation();
 		await createCookie();
@@ -24,7 +27,7 @@ export default function BannerLGPD() {
 
 	return show === 'true' ? (
 		<div className='fixed bottom-0 left-0 w-screen h-fit bg-brand-neutral-900 text-brand-neutral-100 text-xs lg:text-base  lg:py-8  p-5 rounded z-50'>
-			<div className=' max-w-[1440px] gap-3 flex flex-col lg:flex-row justify-center items-baseline mx-auto '>
+			<div className=' max-w-[1024px] gap-3 flex flex-col lg:flex-row justify-center items-baseline mx-auto '>
 				<p>
 					Nós utilizamos cookies para melhorar sua experiência como usuário.
 					Para conferir detalhadamente nossas boas práticas, acesse nossas{' '}
@@ -47,8 +50,12 @@ export default function BannerLGPD() {
 					<button
 						onClick={(e) => handleAccept(e)}
 						type='button'
-						className={`px-5 py-3 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-fit text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
-						<p className='flex gap-3 items-center justify-center'>Aceitar</p>
+						className={`w-fit px-4 py-2 lg:w-28 lg:h-12 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
+						{loading ? (
+							<LoadingBtn />
+						) : (
+							<p className='flex gap-3 items-center justify-center'>Aceitar</p>
+						)}
 					</button>
 					<button
 						onClick={(e) => handleDeny(e)}

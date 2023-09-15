@@ -5,6 +5,8 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { BiDownload } from 'react-icons/bi';
 import { RiNavigationFill } from 'react-icons/ri';
 import LoadingBtn from '../loading';
+import { motion } from 'framer-motion';
+import { SubHeadAnimation } from '@/animations';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -40,7 +42,10 @@ export default function Button({
 	}
 	if (role === 'hero') {
 		return (
-			<a
+			<motion.a
+				variants={SubHeadAnimation}
+				initial='close'
+				animate='open'
 				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-lg font-bold tracking-wide ${montSerrat.className}`}
 				href='#'
 				target='_blank'
@@ -50,7 +55,7 @@ export default function Button({
 					className='rotate-90'
 					size={20}
 				/>
-			</a>
+			</motion.a>
 		);
 	}
 

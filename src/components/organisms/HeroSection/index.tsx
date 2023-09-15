@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
 import BgHero from './bghero';
+import Headline from './HeadLine';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -20,13 +21,7 @@ export default function HeroSection() {
 
 			<div className='flex flex-col gap-14  max-w-[1024px] md:mx-auto md:items-center justify-center px-6'>
 				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
-					<h2
-						className={`font-bold text-4xl md:text-5xl xl:text-6xl text-left md:text-center ${montSerrat.className}`}>
-						Construímos pontes entre sua marca e seu público
-					</h2>
-					<p className='text-xs md:text-2xl text-left md:text-center  '>
-						Criamos experiências digitais que inspiram e conectam
-					</p>
+					<Headline />
 				</div>
 				<Button
 					role='hero'

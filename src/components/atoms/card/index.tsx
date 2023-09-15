@@ -7,7 +7,7 @@ import {
 	CardTitle,
 } from '@/animations';
 import { ServicesProps } from '@/mock/services.data';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 
@@ -27,7 +27,7 @@ export default function Card({ data }: CardProps) {
 				variants={CardAnimation}
 				whileHover={'open'}
 				exit='close'
-				className={`sm:hidden sm:opacity-0 md:opacity-100 md:block w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 text-center cursor-pointer`}>
+				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 text-center cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full justify-center gap-2'>
 					<motion.h3
 						variants={CardTitle}

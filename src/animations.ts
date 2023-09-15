@@ -1,5 +1,3 @@
-import { Variant, MotionStyle } from 'framer-motion';
-
 export const drawerAnimation = {
 	open: {
 		opacity: 1,
@@ -22,7 +20,7 @@ export const drawerAnimation = {
 export const CardAnimation = {
 	open: {
 		scaleY: 1.45,
-		zIndex: '35',
+		zIndex: '888888',
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.2,
@@ -90,5 +88,37 @@ export const CardIcon = {
 	close: {
 		opacity: 0,
 		x: '-20px',
+	},
+};
+
+export const FadeAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.6,
+			delay: 0,
+			ease: 'linear',
+		},
+	},
+	close: {
+		x: '-200px',
+		opacity: 0,
+	},
+};
+
+export const SubHeadAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.6,
+			delay: 0.6,
+			ease: 'linear',
+		},
+	},
+	close: {
+		x: '-200px',
+		opacity: 0,
 	},
 };
