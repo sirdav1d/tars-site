@@ -112,13 +112,12 @@ export const SubHeadAnimation = {
 		x: 0,
 		opacity: 1,
 		transition: {
-			duration: 0.6,
+			duration: 0.4,
 			delay: 0.6,
-			ease: 'linear',
 		},
 	},
 	close: {
-		x: '-200px',
+		x: '-150px',
 		opacity: 0,
 	},
 };
