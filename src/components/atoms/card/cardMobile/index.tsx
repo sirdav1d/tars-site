@@ -26,7 +26,7 @@ export default function CardMobile({ data }: CardProps) {
 			<motion.div
 				variants={CardAnimation}
 				whileInView={'open'}
-				viewport={{ amount: 'all' }}
+				viewport={{ amount: 0.9 }}
 				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-20 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-2'>
 					<motion.h3
@@ -36,7 +36,7 @@ export default function CardMobile({ data }: CardProps) {
 					</motion.h3>
 					<motion.span
 						variants={CardSpan}
-						className='w-[0px] opacity-0 h-[0px] bg-brand-blue-500 rounded-full drop-shadow-icons'
+						className='w-[0px] opacity-0 h-[0px] bg-brand-blue-500 rounded-full drop-shadow-spanCards'
 					/>
 					<motion.div
 						variants={CardIcon}

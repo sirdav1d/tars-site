@@ -30,8 +30,7 @@ export const CardAnimation = {
 	},
 	close: {
 		transition: {
-			delay: 0.1,
-			duration: 0.3,
+			duration: 0.2,
 		},
 	},
 };

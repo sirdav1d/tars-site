@@ -1,14 +1,13 @@
 @tailwind base;
 
-*{
-  scroll-behavior: smooth
+* {
+	scroll-behavior: smooth;
 }
 
 body {
-  background:  #242424; 
+	background: #242424;
 }
 
 @tailwind components;
 
 @tailwind utilities;
-

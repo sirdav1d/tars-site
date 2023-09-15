@@ -27,7 +27,7 @@ export default function Card({ data }: CardProps) {
 				variants={CardAnimation}
 				whileHover={'open'}
 				exit='close'
-				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 text-center cursor-pointer`}>
+				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 py-2 text-center cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full justify-center gap-2'>
 					<motion.h3
 						variants={CardTitle}
@@ -36,7 +36,7 @@ export default function Card({ data }: CardProps) {
 					</motion.h3>
 					<motion.span
 						variants={CardSpan}
-						className='w-[0px] opacity-0 h-[0px] bg-brand-blue-500 rounded-full drop-shadow-icons'
+						className='w-[0px] opacity-0 h-[0px] bg-brand-blue-500 rounded-full drop-shadow-spanCards'
 					/>
 					<motion.div
 						variants={CardIcon}
