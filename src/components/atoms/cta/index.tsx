@@ -21,16 +21,11 @@ export default function CTA() {
 				className={`text-2xl md:text-4xl font-bold ${montSerrat.className} max-w-2xl`}>
 				Venha descobrir como um site pode te ajudar a vender mais
 			</motion.h2>
-			<motion.div
-				variants={TitleAnimation}
-				whileInView={'open'}
-				viewport={{ amount: 0.9, once: true }}
-				initial='close'>
-				<Button
-					role='CTA'
-					text={'Entrar em Contato'}
-				/>
-			</motion.div>
+
+			<Button
+				role='CTA'
+				text={'Entrar em Contato'}
+			/>
 		</div>
 	);
 }
