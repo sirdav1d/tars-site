@@ -14,7 +14,7 @@ export default function WhoSection() {
 	return (
 		<div
 			id='who'
-			className='shadow-md rounded flex px-6   xl:px-20 flex-col justify-center gap-20 items-center min-h-screen h-full pt-3'>
+			className='shadow-md rounded flex px-6   xl:px-20 flex-col justify-center gap-20 items-center min-h-screen h-full pt-5'>
 			<div className='flex items-center justify-between gap-5 max-w-[1440px] mx-auto h-fit'>
 				<div className='flex flex-col items-center w-full '>
 					<ContentComponent
