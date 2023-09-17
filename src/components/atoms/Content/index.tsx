@@ -45,28 +45,28 @@ export default function ContentComponent({
 
 			{paragraph1 && (
 				<>
-					<motion.p
+					<motion.div
 						variants={ParagraphAnimation}
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
 						className='mt-3 leading-8 xl:text-base text-sm  '>
 						{paragraph1}
-					</motion.p>
+					</motion.div>
 					<br />
 				</>
 			)}
 
 			{paragraph2 && (
 				<>
-					<motion.p
+					<motion.div
 						variants={ParagraphAnimation}
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
 						className='leading-8 xl:text-base text-sm  '>
 						{paragraph2}
-					</motion.p>
+					</motion.div>
 				</>
 			)}
 		</>

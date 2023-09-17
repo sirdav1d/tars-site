@@ -69,14 +69,14 @@ export default function MVVComponent({ paragraph, role, title }: MVVProps) {
 						{title}
 					</motion.h3>
 				</div>
-				<motion.p
+				<motion.div
 					variants={ParagraphAnimation}
 					whileInView={'open'}
 					viewport={{ amount: 0.9, once: true }}
 					initial='close'
 					className='text-center md:text-base text-sm'>
 					{paragraph}
-				</motion.p>
+				</motion.div>
 			</div>
 		</>
 	);
