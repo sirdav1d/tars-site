@@ -117,7 +117,7 @@ export const SubHeadAnimation = {
 		},
 	},
 	close: {
-		x: '-150px',
+		x: '-80px',
 		opacity: 0,
 	},
 };
@@ -132,7 +132,7 @@ export const TitleAnimation = {
 		},
 	},
 	close: {
-		x: '-80px',
+		x: '-40px',
 		opacity: 0,
 	},
 };
@@ -147,7 +147,7 @@ export const ParagraphAnimation = {
 		},
 	},
 	close: {
-		x: '-80px',
+		x: '-40px',
 		opacity: 0,
 	},
 };

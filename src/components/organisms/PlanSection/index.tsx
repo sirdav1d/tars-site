@@ -26,7 +26,7 @@ export default function PlanSection() {
 				src={image1}
 				alt='Apertando as mãos'
 			/>
-			<div className='mt-6'>
+			<div className='mt-6 mx-5'>
 				<ContentComponent headline='Adquira o Plano Ideal para você' />
 			</div>
 

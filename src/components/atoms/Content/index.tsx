@@ -29,7 +29,7 @@ export default function ContentComponent({
 				<motion.h2
 					variants={TitleAnimation}
 					whileInView={'open'}
-					viewport={{ amount: 0.9, once: true }}
+					viewport={{ once: true }}
 					initial='close'
 					className={`font-bold text-3xl text-center  ${montSerrat.className}`}>
 					{headline}
