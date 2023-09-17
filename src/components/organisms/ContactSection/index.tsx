@@ -1,17 +1,10 @@
 import Footer from '@/components/atoms/footer';
 import Image from 'next/image';
 import { FaArrowTurnDown } from 'react-icons/fa6';
-import {
-	LiaEnvelopeSolid,
-	LiaFacebookSquare,
-	LiaInstagram,
-	LiaLinkedin,
-} from 'react-icons/lia';
 
 import FormComponent from '@/components/molecules/form';
-import { Montserrat } from 'next/font/google';
-import LoadingBtn from '@/components/atoms/loading';
 import SocialMediaList from '@/components/molecules/socialMediasList';
+import { Montserrat } from 'next/font/google';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],

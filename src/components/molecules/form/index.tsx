@@ -13,7 +13,6 @@ const montSerrat = Montserrat({
 
 export default function FormComponent() {
 	const [loading, setLoading] = useState(false);
-	const [dataError, setDataError] = useState('');
 
 	interface FormValues {
 		fullName: string;

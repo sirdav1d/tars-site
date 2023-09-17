@@ -27,7 +27,7 @@ export default function Card({ data }: CardProps) {
 				variants={CardAnimation}
 				whileHover={'open'}
 				exit='close'
-				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 py-2 text-center cursor-pointer`}>
+				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 py-3 text-center cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full justify-center gap-2'>
 					<motion.h3
 						variants={CardTitle}
@@ -44,8 +44,8 @@ export default function Card({ data }: CardProps) {
 						<Image
 							className='drop-shadow-cards animate-bounce'
 							src={data.url}
-							width={60}
-							height={60}
+							width={56}
+							height={56}
 							alt={data.name}></Image>
 					</motion.div>
 					<motion.p

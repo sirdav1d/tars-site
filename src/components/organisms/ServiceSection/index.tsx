@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google';
 import { servicesData } from '@/mock/services.data';
 import Card from '@/components/atoms/card';
 import CardMobile from '@/components/atoms/card/cardMobile';
+import ContentComponent from '@/components/atoms/Content';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -13,13 +14,13 @@ export default function ServiceSection() {
 	return (
 		<div
 			id='service'
-			className='pb-20 flex flex-col items-center justify-center px-6 bg-bgThanks bg-cover'>
-			<h2 className={`${montSerrat.className} text-3xl text-center mt-28`}>
-				Como Vamos <br />
-				Impulsionar o seu Negócio
-			</h2>
-			<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
-			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-20 '>
+			className='pb-20 pt-5 flex flex-col gap-10 items-center justify-center px-6 bg-bgThanks bg-cover'>
+			<ContentComponent
+				headline='Como Vamos
+				Impulsionar o seu Negócio'
+			/>
+
+			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 '>
 				{servicesData.map((s, index) => {
 					return (
 						<>

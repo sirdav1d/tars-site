@@ -61,7 +61,11 @@ export default function Button({
 
 	if (role === 'CTA') {
 		return (
-			<a
+			<motion.a
+				variants={SubHeadAnimation}
+				initial='close'
+				whileInView='open'
+				viewport={{ amount: 0.9, once: true }}
 				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide ${montSerrat.className}`}
 				href='#'
 				target='_blank'
@@ -71,7 +75,7 @@ export default function Button({
 					className='rotate-90'
 					size={20}
 				/>
-			</a>
+			</motion.a>
 		);
 	}
 

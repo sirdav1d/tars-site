@@ -16,14 +16,14 @@ export default function Headline() {
 				variants={FadeAnimation}
 				animate={'open'}
 				initial='close'
-				className={`font-bold text-4xl md:text-5xl xl:text-6xl text-left md:text-center ${montSerrat.className}`}>
+				className={`font-bold max-w-[780px] text-4xl xl:text-5xl 2xl:text-6x text-left md:text-center ${montSerrat.className}`}>
 				Construímos pontes entre sua marca e seu público
 			</motion.h2>
 			<motion.p
 				variants={SubHeadAnimation}
 				animate={'open'}
 				initial='close'
-				className='text-xs md:text-2xl text-left md:text-center  '>
+				className='text-xs md:text-base lg:text-xl text-left md:text-center  '>
 				Criamos experiências digitais que inspiram e conectam
 			</motion.p>
 		</>

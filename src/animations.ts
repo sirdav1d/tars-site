@@ -24,6 +24,7 @@ export const CardAnimation = {
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.2,
+			delayChildren: 0.2,
 			duration: 0.6,
 			staggerChildren: 0.2,
 		},
@@ -67,7 +68,7 @@ export const CardDescription = {
 		display: 'block',
 		scaleY: 0.75,
 		opacity: 1,
-		y: '20px',
+		y: '12px',
 		x: 0,
 	},
 	close: {
@@ -81,7 +82,7 @@ export const CardIcon = {
 		display: 'block',
 		scaleY: 0.75,
 		opacity: 1,
-		y: '40px',
+		y: '32px',
 		x: 0,
 	},
 	close: {
@@ -117,6 +118,83 @@ export const SubHeadAnimation = {
 	},
 	close: {
 		x: '-150px',
+		opacity: 0,
+	},
+};
+
+export const TitleAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			delay: 0.2,
+		},
+	},
+	close: {
+		x: '-80px',
+		opacity: 0,
+	},
+};
+
+export const ParagraphAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			delay: 0.4,
+		},
+	},
+	close: {
+		x: '-80px',
+		opacity: 0,
+	},
+};
+
+export const TitleSpanAnimation = {
+	open: {
+		x: 0,
+		width: '120px',
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			delay: 0.6,
+		},
+	},
+	close: {
+		x: '-80px',
+		width: 0,
+		opacity: 0,
+	},
+};
+
+export const MVVAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			delay: 0.6,
+		},
+	},
+	close: {
+		x: '-80px',
+		opacity: 0,
+	},
+};
+
+export const WhoImageAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.4,
+			delay: 0.6,
+		},
+	},
+	close: {
+		x: '80px',
 		opacity: 0,
 	},
 };
