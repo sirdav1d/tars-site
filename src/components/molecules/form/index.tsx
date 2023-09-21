@@ -83,7 +83,7 @@ export default function FormComponent() {
 				{(formik) => (
 					<Form className='bg-brand-neutral-800/50 backdrop-blur-sm p-8 border border-brand-neutral-100/10 rounded-md shadow-xl max-w-[368px] lg:max-w-full'>
 						<div className='flex flex-col items-center justify-center pb-5'>
-							<h2 className={`${montSerrat.className} text-center text-2xl`}>
+							<h2 className={`${montSerrat.className} text-center text-xl`}>
 								Descubra Como Transformamos Visitantes em
 								Clientes!
 							</h2>
