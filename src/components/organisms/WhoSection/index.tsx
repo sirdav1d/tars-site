@@ -1,14 +1,11 @@
 import ContentComponent from '@/components/atoms/Content';
-import { Montserrat } from 'next/font/google';
+
 import Image from 'next/image';
 import MVVComponent from './mvvComponent';
 import teamImage from '/public/images/team.png';
 import ImageAnimated from './ImageAnimated';
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
+
 
 export default function WhoSection() {
 	return (
