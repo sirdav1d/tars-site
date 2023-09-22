@@ -198,3 +198,18 @@ export const WhoImageAnimation = {
 		opacity: 0,
 	},
 };
+
+export const PlansCardAnimation = {
+	open: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.8,
+			delayChildren: 0.2,
+		},
+	},
+	close: {
+		y: '100px',
+		opacity: 0,
+	},
+};

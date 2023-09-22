@@ -1,6 +1,9 @@
+'use client';
 import Button from '@/components/atoms/button';
 import { Montserrat } from 'next/font/google';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { PlansCardAnimation } from '@/animations';
+import { motion } from 'framer-motion';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
@@ -16,7 +19,12 @@ interface PlanCardProps {
 export default function PlanCard({ text, style, role }: PlanCardProps) {
 	return (
 		<>
-			<div className='z-30  min-w-[344px] h-fit rounded bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-4 p-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
+			<motion.div
+				variants={PlansCardAnimation}
+				initial='close'
+				whileInView={'open'}
+				viewport={{ amount: 0.9, once: true }}
+				className='z-30  min-w-[344px] h-fit rounded bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-4 p-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
 				<h3
 					className={`text-xl text-center ${montSerrat.className} font-bold drop-shadow-lg`}>
 					{role}
@@ -40,7 +48,7 @@ export default function PlanCard({ text, style, role }: PlanCardProps) {
 					text='Consultar Valor'
 					role='plans'
 				/>
-			</div>
+			</motion.div>
 		</>
 	);
 }
