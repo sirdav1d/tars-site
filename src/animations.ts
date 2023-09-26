@@ -209,7 +209,7 @@ export const PlansCardAnimation = {
 		},
 	},
 	close: {
-		y: '100px',
+		y: '60px',
 		opacity: 0,
 	},
 };

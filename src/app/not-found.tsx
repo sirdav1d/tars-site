@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { IoArrowBack } from 'react-icons/io5';
 import Image from 'next/image';
+import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
 	title: 'Página não encontrada - Agência Tars Projetos',

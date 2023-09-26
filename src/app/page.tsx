@@ -1,4 +1,3 @@
-import BannerLGPD from '@/components/atoms/banner';
 import CookieComponent from '@/components/atoms/cookie';
 import CTA from '@/components/atoms/cta';
 import ContactSection from '@/components/organisms/ContactSection';

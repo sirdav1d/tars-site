@@ -1,4 +1,3 @@
-import React, { ChangeEvent, useState } from 'react';
 import { Montserrat } from 'next/font/google';
 
 const montSerrat = Montserrat({

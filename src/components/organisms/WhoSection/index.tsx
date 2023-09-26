@@ -1,11 +1,6 @@
 import ContentComponent from '@/components/atoms/Content';
-
-import Image from 'next/image';
-import MVVComponent from './mvvComponent';
-import teamImage from '/public/images/team.png';
 import ImageAnimated from './ImageAnimated';
-
-
+import MVVComponent from './mvvComponent';
 
 export default function WhoSection() {
 	return (

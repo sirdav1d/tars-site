@@ -1,11 +1,3 @@
-import React from 'react';
-import { FaArrowTurnDown } from 'react-icons/fa6';
-import { Montserrat } from 'next/font/google';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 export default function LinkUs() {
 	return (
 		<div>

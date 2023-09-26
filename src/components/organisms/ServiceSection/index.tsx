@@ -1,14 +1,8 @@
 import React from 'react';
-import { Montserrat } from 'next/font/google';
 import { servicesData } from '@/mock/services.data';
 import Card from '@/components/atoms/card';
 import CardMobile from '@/components/atoms/card/cardMobile';
 import ContentComponent from '@/components/atoms/Content';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 export default function ServiceSection() {
 	return (

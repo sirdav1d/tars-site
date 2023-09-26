@@ -9,6 +9,28 @@ body {
 	background: #242424;
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+	transition: all 300ms ease;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #242424;
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #0d0d0ddd;
+	
+}
+
 @tailwind components;
 
 @tailwind utilities;

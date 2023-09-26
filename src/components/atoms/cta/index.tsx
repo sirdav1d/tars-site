@@ -1,9 +1,8 @@
 'use client';
-import React from 'react';
-import Button from '../button';
-import { MVVAnimation, ParagraphAnimation, TitleAnimation } from '@/animations';
+import { TitleAnimation } from '@/animations';
 import { motion } from 'framer-motion';
 import { Montserrat } from 'next/font/google';
+import Button from '../button';
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],

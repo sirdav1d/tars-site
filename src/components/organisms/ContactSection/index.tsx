@@ -1,8 +1,7 @@
 import Footer from '@/components/atoms/footer';
-import Image from 'next/image';
 import FormComponent from '@/components/molecules/form';
 import SocialMediaList from '@/components/molecules/socialMediasList';
-import LinkUs from '../../atoms/footer/linksUs';
+import Image from 'next/image';
 
 export default function ContactSection() {
 	return (
