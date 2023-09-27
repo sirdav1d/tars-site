@@ -1,21 +1,16 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins, Montserrat } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['300', '400', '500', '600', '700', '900'],
 });
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
-
 export const metadata: Metadata = {
 	title: 'Agência Tars Projetos',
 	description:
-		'A Tars Projetos atua no mercado de tecnologia a mais de 3 anos, expandimos nossos horizontes e nos tornamos especialistas em criação de Landing Pages e publicidade online.',
+		'A Tars Projetos atua no mercado de tecnologia a mais de 3 anos, expandimos nossos horizontes e nos tornamos especialistas em criação de Landing Pages',
 };
 
 export default function RootLayout({

@@ -12,13 +12,13 @@ const montSerrat = Montserrat({
 export default function Headline() {
 	return (
 		<>
-			<motion.h2
+			<motion.h1
 				variants={FadeAnimation}
 				animate={'open'}
 				initial='close'
 				className={`font-bold max-w-[780px] text-4xl xl:text-5xl 2xl:text-6x text-left md:text-center ${montSerrat.className}`}>
 				Construímos pontes entre sua marca e seu público
-			</motion.h2>
+			</motion.h1>
 			<motion.p
 				variants={SubHeadAnimation}
 				animate={'open'}
