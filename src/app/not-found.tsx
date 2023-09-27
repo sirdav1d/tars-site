@@ -4,6 +4,8 @@ import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
 	title: 'Página não encontrada - Agência Tars Projetos',
+	description:
+		'Você está nessa página porque houve um erro na sua requisição, volte à página principal do site e preencha o formulário novamente',
 };
 
 export default function NotFound() {

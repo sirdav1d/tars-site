@@ -34,9 +34,7 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${poppins.className}${montSerrat.className}`}>
-				{children}
-			</body>
+			<body className={`${poppins.className}`}>{children}</body>
 		</html>
 	);
 }

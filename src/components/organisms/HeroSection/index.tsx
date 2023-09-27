@@ -44,7 +44,7 @@ export default function HeroSection() {
 							</h3>
 						</div>
 
-						<p className=' drop-shadow hidden xl:flex text-xs'>
+						<p className=' drop-shadow hidden xl:flex text-xs Poppins'>
 							Comunique, atraia, venda. Um site é a ferramenta definitiva para
 							contar sua história, atrair interessados e fechar vendas de forma
 							consistente.

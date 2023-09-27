@@ -19,7 +19,7 @@ interface MVVProps {
 export default function MVVComponent({ paragraph, role, title }: MVVProps) {
 	return (
 		<>
-			<div className='flex flex-col  gap-3 shadow-md rounded items-center  w-full'>
+			<div className='flex flex-col  gap-3 rounded items-center  w-full'>
 				<div className='flex gap-3 items-center '>
 					{role == 'missao' && (
 						<motion.div

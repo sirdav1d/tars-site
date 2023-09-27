@@ -1,11 +1,11 @@
-import lpImage from '../../public/icons/landing-page.png';
-import siteImage from '../../public/icons/local-na-rede-internet.png';
-import blogImage from '../../public/icons/blog.png';
-import lgpdImage from '../../public/icons/cyber-security.png';
-import seoImage from '../../public/icons/seo.png';
-import hostImage from '../../public/icons/hospedagem.png';
-import designImage from '../../public/icons/designer-de-web.png';
-import adsImage from '../../public/icons/logotype.png';
+import lpImage from '../../public/icons/landing-page.webp';
+import siteImage from '../../public/icons/local-na-rede-internet.webp';
+import blogImage from '../../public/icons/blog.webp';
+import lgpdImage from '../../public/icons/cyber-security.webp';
+import seoImage from '../../public/icons/seo.webp';
+import hostImage from '../../public/icons/hospedagem.webp';
+import designImage from '../../public/icons/designer-de-web.webp';
+import adsImage from '../../public/icons/logotype.webp';
 import { StaticImageData } from 'next/image';
 
 export interface ServicesProps {

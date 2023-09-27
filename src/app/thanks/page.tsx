@@ -13,6 +13,8 @@ const montSerrat = Montserrat({
 
 export const metadata: Metadata = {
 	title: 'Obrigado! - Agência Tars Projetos',
+	description:
+		'Agradeçemos pela confiança, a equipe comercial da Tars Projetos entrará em contato o mais rápido possível, mas deixamos de presente um e-book te ensinando estratégias de como trabalhar com tráfego pago',
 };
 
 export default function ThanksPage() {
@@ -21,7 +23,7 @@ export default function ThanksPage() {
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-14'>
 				<Image
 					className='w-[220px] '
-					src={'/logos/logoThanks.png'}
+					src={'/logos/logoThanks.webp'}
 					width={480}
 					height={100}
 					alt='logo tars projetos'></Image>
@@ -67,8 +69,9 @@ export default function ThanksPage() {
 				</div>
 				<SocialMediaList />
 			</div>
-
-			<Footer />
+			<div className='absolute bottom-0'>
+				<Footer />
+			</div>
 		</main>
 	);
 }
