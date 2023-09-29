@@ -1,7 +1,7 @@
 'use server';
 import { cookies } from 'next/headers';
 
-export default async function createCookie() {
+export async function createCookie() {
 	cookies().set({
 		name: 'lgpd',
 		value: 'accept',
