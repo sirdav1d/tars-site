@@ -23,7 +23,7 @@ export default function ThanksPage() {
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-14'>
 				<Image
 					className='w-[220px] '
-					src={'/logos/logoThanks.webp'}
+					src={'/logos/logoThanks.png'}
 					width={480}
 					height={100}
 					alt='logo tars projetos'></Image>
