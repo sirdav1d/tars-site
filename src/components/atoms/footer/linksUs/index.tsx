@@ -5,27 +5,27 @@ export default function LinkUs() {
 				<div className='flex flex-wrap items-start justify-center gap-4 lg:text-lg text-sm w-full px-3 text-brand-neutral-300'>
 					<a
 						className='hover:text-brand-red-500 underline'
-						href='https://tars-site.vercel.app/#home'>
+						href='https://tarsprojetos.com/#home'>
 						Home
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='https://tars-site.vercel.app/#who'>
+						href='https://tarsprojetos.com/#who'>
 						Quem Somos
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='https://tars-site.vercel.app/#service'>
+						href='https://tarsprojetos.com/#service'>
 						Serviços
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='https://tars-site.vercel.app/#plans'>
+						href='https://tarsprojetos.com/#plans'>
 						Planos
 					</a>
 					<a
 						className='hover:text-brand-red-500 transition duration-300 underline'
-						href='https://tars-site.vercel.app/#contact'>
+						href='https://tarsprojetos.com/#contact'>
 						Contato
 					</a>
 					<a

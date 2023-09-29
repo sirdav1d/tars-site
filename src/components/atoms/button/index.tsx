@@ -16,6 +16,7 @@ const montSerrat = Montserrat({
 interface ButtonProps {
 	text: string;
 	role?: string;
+	link?:string;
 	disabled?: boolean;
 	loading?: boolean;
 	onclick?: MouseEventHandler<HTMLButtonElement>;
@@ -25,6 +26,7 @@ export default function Button({
 	text,
 	role,
 	disabled,
+	link,
 	loading,
 	onclick,
 }: ButtonProps) {
@@ -32,7 +34,7 @@ export default function Button({
 		return (
 			<a
 				className={`p-4 bg-green-600 rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  ${montSerrat.className}`}
-				href='#'
+				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				<BsWhatsapp size={20} />
@@ -47,7 +49,7 @@ export default function Button({
 				initial='close'
 				animate='open'
 				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-lg font-bold tracking-wide ${montSerrat.className}`}
-				href='#'
+				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
@@ -67,7 +69,7 @@ export default function Button({
 				whileInView='open'
 				viewport={{ amount: 0.9, once: true }}
 				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide ${montSerrat.className}`}
-				href='#'
+				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
@@ -83,7 +85,7 @@ export default function Button({
 		return (
 			<a
 				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center mt-2 hover:bg-brand-blue-300 text-md transition duration-300 w-full justify-center text-md font-bold tracking-wide ${montSerrat.className}`}
-				href='#'
+				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}

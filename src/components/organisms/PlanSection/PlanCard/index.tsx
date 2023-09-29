@@ -14,9 +14,10 @@ interface PlanCardProps {
 	text: string[];
 	style: string[];
 	role: string;
+	link?:string;
 }
 
-export default function PlanCard({ text, style, role }: PlanCardProps) {
+export default function PlanCard({ text, style, role, link }: PlanCardProps) {
 	return (
 		<>
 			<motion.div
@@ -47,6 +48,7 @@ export default function PlanCard({ text, style, role }: PlanCardProps) {
 				<Button
 					text='Consultar Valor'
 					role='plans'
+					link={link}
 				/>
 			</motion.div>
 		</>
