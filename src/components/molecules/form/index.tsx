@@ -61,7 +61,7 @@ export default function FormComponent() {
 			})
 				.then((response) => response.json())
 				.then((data) => {
-					if (data?.data?.status == 400) {
+					if (data?.data?.status !== 200) {
 						router.push('/not-found.tsx');
 					} else {
 						router.push('/thanks');
