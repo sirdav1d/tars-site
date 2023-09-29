@@ -10,7 +10,7 @@ const montSerrat = Montserrat({
 
 export default function Footer() {
 	return (
-		<div className='flex flex-col items-center justify-between bg-brand-neutral-900/40 border-t border-brand-neutral-100/20 w-screen backdrop-blur-sm'>
+		<div className='flex flex-col items-center justify-between bg-brand-neutral-900/40 border-t border-brand-neutral-100/20 w-screen backdrop-blur-sm pb-5'>
 			<LinkUs />
 			<div className='flex items-center justify-center'>
 				<Image

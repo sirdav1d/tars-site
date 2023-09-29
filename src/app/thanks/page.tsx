@@ -69,7 +69,7 @@ export default function ThanksPage() {
 				</div>
 				<SocialMediaList />
 			</div>
-			<div className='absolute bottom-0'>
+			<div className='absolute -bottom-24'>
 				<Footer />
 			</div>
 		</main>
