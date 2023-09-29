@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
-	const apiKey = '80117a2fb6265870978e3c590e7b9272-us14';
+	const apiKey = '9a2ad8da46631a1daea5b4cf0ec8297d-us14';
 
 	const listId = 'a17186e5c0';
 
