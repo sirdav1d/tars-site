@@ -11,8 +11,8 @@ export default function Header() {
 				<a href='/'>
 					<Image
 						className='hover:drop-shadow-md transition duration-100'
-						src={'/logos/logoHeader.png'}
-						alt='Logo da tas Projetos'
+						src={'/public/logos/logoHeader.png'}
+						alt='Logo da tars Projetos'
 						width={200}
 						height={40}
 					/>
