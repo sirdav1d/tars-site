@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -21,6 +22,13 @@ export default function RootLayout({
 	return (
 		<html lang='pt-BR'>
 			<head>
+				<Script src='https://www.googletagmanager.com/gtag/js?id=AW-11357924550' />
+				<Script id='google-ads'>{`
+         	window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+  				gtag('config', 'AW-11357924550');
+        `}</Script>
 				<link
 					rel='icon'
 					href='/logos/favicon.png'
