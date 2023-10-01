@@ -9,10 +9,10 @@ export default function Header() {
 		<div className='fixed left-0 top-0 flex z-[9999999999999] justify-between bg-brand-neutral-900/40  w-full h-20 items-center py-3 xl:px-20  px-6 border-b  border-brand-neutral-100 border-opacity-20 shadow-lg backdrop-blur-md'>
 			<div className='max-w-[1440px] flex justify-between items-center w-full mx-auto'>
 				<a href='/'>
-					<Image
+					<img
 						className='hover:drop-shadow-md transition duration-100'
-						src={logo}
-						alt='Logo da tas Projetos'
+						src={'/public/logos/logoHeader.png'}
+						alt='Logo da tars Projetos'
 						width={200}
 						height={40}
 					/>
