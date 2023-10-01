@@ -29,6 +29,21 @@ export default function RootLayout({
   				gtag('config', 'AW-11357924550');
         `}</Script>
 				<Script src='https://www.googletagmanager.com/gtag/js?id=AW-11357924550' />
+				<Script id='google-clicks'>{`	
+					function gtag_report_conversion(url) {
+					var callback = function () {
+						if (typeof(url) != 'undefined') {
+							window.location = url;
+						}
+					};
+						gtag('event', 'conversion', {
+							'send_to': 'AW-11357924550/Z4XACPmGsOcYEMbZ8Kcq',
+      				'event_callback': callback
+					});
+					return false;
+				}
+
+`}</Script>
 				<link
 					rel='icon'
 					href='/logos/favicon.png'
