@@ -1,5 +1,4 @@
 'use client';
-import { Montserrat } from 'next/font/google';
 import { MouseEventHandler } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { BiDownload } from 'react-icons/bi';
@@ -8,10 +7,7 @@ import LoadingBtn from '../loading';
 import { motion } from 'framer-motion';
 import { SubHeadAnimation } from '@/animations';
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
+
 
 interface ButtonProps {
 	text: string;
@@ -33,7 +29,7 @@ export default function Button({
 	if (role === 'whatsapp') {
 		return (
 			<a
-				className={`p-4 bg-green-600 rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  ${montSerrat.className}`}
+				className={`p-4 bg-green-600 rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  font-montserratTitle`}
 				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -48,7 +44,7 @@ export default function Button({
 				variants={SubHeadAnimation}
 				initial='close'
 				animate='open'
-				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-lg font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-lg font-bold tracking-wide font-montserratTitle`}
 				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -68,7 +64,7 @@ export default function Button({
 				initial='close'
 				whileInView='open'
 				viewport={{ amount: 0.9, once: true }}
-				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide font-montserratTitle`}
 				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -84,7 +80,7 @@ export default function Button({
 	if (role === 'plans') {
 		return (
 			<a
-				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center mt-2 hover:bg-brand-blue-300 text-md transition duration-300 w-full justify-center text-md font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center mt-2 hover:bg-brand-blue-300 text-md transition duration-300 w-full justify-center text-md font-bold tracking-wide font-montserratTitle`}
 				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -102,7 +98,7 @@ export default function Button({
 			<button
 				disabled={disabled}
 				type='submit'
-				className={`p-3 bg-brand-red-500 rounded z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide ${montSerrat.className}`}>
+				className={`p-3 bg-brand-red-500 rounded z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide font-montserratTitle`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (
@@ -124,7 +120,7 @@ export default function Button({
 				onClick={onclick}
 				disabled={disabled}
 				type='button'
-				className={`px-5 py-3 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-fit text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
+				className={`px-5 py-3 bg-brand-red-500 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-fit text-center hover:bg-brand-red-300  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide font-montserratTitle`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (
@@ -140,7 +136,7 @@ export default function Button({
 				onClick={onclick}
 				type='button'
 				className={`
-				flex items-center justify-center w-full text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide ${montSerrat.className}`}>
+				flex items-center justify-center w-full text-center hover:opacity-80 transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide font-montserratTitle`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (
@@ -155,7 +151,7 @@ export default function Button({
 	if (role === 'thanks') {
 		return (
 			<a
-				className={`p-4 bg-brand-red-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide ${montSerrat.className}`}
+				className={`p-4 bg-brand-red-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide font-montserratTitle`}
 				href='/resources/trafego.pdf'
 				target='_blank'
 				referrerPolicy='no-referrer'>

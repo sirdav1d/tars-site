@@ -21,7 +21,7 @@ export const drawerAnimation: Variants = {
 
 export const CardAnimation = {
 	open: {
-		scaleY:1.45,
+		scaleY: 1.45,
 		zIndex: '88888',
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
@@ -98,13 +98,12 @@ export const FadeAnimation = {
 		x: 0,
 		opacity: 1,
 		transition: {
-			duration: 0.6,
-			delay: 0,
+			duration: 0.7,
 			ease: 'linear',
 		},
 	},
 	close: {
-		x: '-200px',
+		x: '-160px',
 		opacity: 0,
 	},
 };

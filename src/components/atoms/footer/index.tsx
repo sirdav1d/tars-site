@@ -1,12 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { Montserrat } from 'next/font/google';
 import LinkUs from '@/components/atoms/footer/linksUs';
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
+
 
 export default function Footer() {
 	return (
@@ -20,7 +16,7 @@ export default function Footer() {
 					width={240}
 					height={60}
 				/>
-				<p className={`${montSerrat.className} text-xs`}>
+				<p className={`font-montserratTitle text-xs`}>
 					&copy; 2023 All Rights Reserved
 				</p>
 			</div>

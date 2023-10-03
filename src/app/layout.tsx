@@ -1,11 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Poppins } from 'next/font/google';
+import { Poppins, Montserrat } from 'next/font/google';
 
 const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['300', '400', '500', '600', '700', '900'],
+	display: 'swap',
+	variable:'--poppins-body'
+});
+
+const montSerrat = Montserrat({
+	subsets: ['latin'],
+	weight: ['500','700', '900'],
+	display: 'swap',
+	variable: '--montserrat-title',
 });
 
 export const metadata: Metadata = {
@@ -56,7 +65,7 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${poppins.className}`}>{children}</body>
+			<body className={`${poppins.className} ${montSerrat.className}`}>{children}</body>
 		</html>
 	);
 }

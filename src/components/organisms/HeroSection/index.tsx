@@ -1,15 +1,9 @@
 import Button from '@/components/atoms/button';
 import Header from '@/components/molecules/header';
-import { Montserrat } from 'next/font/google';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
 import BgHero from './bghero';
 import Headline from './HeadLine';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 export default function HeroSection() {
 	return (
@@ -39,7 +33,7 @@ export default function HeroSection() {
 								/>
 							</div>
 							<h3
-								className={`font-bold text-[8px] md:text-xs lg:text-base ${montSerrat.className}`}>
+								className={`font-bold text-[8px] md:text-xs lg:text-base font-montserratTitle `}>
 								Aumente suas Vendas
 							</h3>
 						</div>
@@ -60,7 +54,7 @@ export default function HeroSection() {
 								/>
 							</div>
 							<h3
-								className={`font-bold text-[8px] md:text-xs  lg:text-base ${montSerrat.className}`}>
+								className={`font-bold text-[8px] md:text-xs  lg:text-base font-montserratTitle `}>
 								Conquiste sua visibilidade online
 							</h3>
 						</div>
@@ -80,7 +74,7 @@ export default function HeroSection() {
 								/>
 							</div>
 							<h3
-								className={`font-bold text-[8px]  md:text-xs lg:text-base ${montSerrat.className}`}>
+								className={`font-bold text-[8px]  md:text-xs lg:text-base font-montserratTitle`}>
 								Adquira seu site em menos de 7 dias
 							</h3>
 						</div>

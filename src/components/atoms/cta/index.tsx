@@ -1,13 +1,9 @@
 'use client';
 import { TitleAnimation } from '@/animations';
 import { motion } from 'framer-motion';
-import { Montserrat } from 'next/font/google';
 import Button from '../button';
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
+
 
 export default function CTA() {
 	return (
@@ -17,7 +13,7 @@ export default function CTA() {
 				whileInView={'open'}
 				viewport={{ amount: 0.9, once: true }}
 				initial='close'
-				className={`text-2xl md:text-4xl font-bold ${montSerrat.className} max-w-2xl`}>
+				className={`text-2xl md:text-4xl font-bold font-montserratTitle max-w-2xl`}>
 				Venha descobrir como um site pode te ajudar a vender mais
 			</motion.h2>
 

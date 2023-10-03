@@ -2,14 +2,9 @@
 import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { Montserrat } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import * as Yup from 'yup';
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 export default function FormComponent() {
 	const [loading, setLoading] = useState(false);
@@ -83,7 +78,7 @@ export default function FormComponent() {
 				{(formik) => (
 					<Form className='bg-brand-neutral-800/50 backdrop-blur-sm p-8 border border-brand-neutral-100/10 rounded-md shadow-xl max-w-[368px] lg:max-w-full'>
 						<div className='flex flex-col items-center justify-center pb-5'>
-							<h2 className={`${montSerrat.className} text-center text-xl`}>
+							<h2 className={`font-montserratTitle text-center text-xl`}>
 								Descubra o Potencial do Seu Negócio!
 							</h2>
 							<span className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />

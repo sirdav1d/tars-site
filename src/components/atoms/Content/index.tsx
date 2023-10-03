@@ -5,12 +5,6 @@ import {
 	TitleSpanAnimation,
 } from '@/animations';
 import { motion } from 'framer-motion';
-import { Montserrat } from 'next/font/google';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 interface TitleProps {
 	headline: string;
@@ -31,7 +25,7 @@ export default function ContentComponent({
 					whileInView={'open'}
 					viewport={{ once: true }}
 					initial='close'
-					className={`font-bold text-3xl text-center  ${montSerrat.className}`}>
+					className={`font-bold text-3xl text-center  font-montserratTitle`}>
 					{headline}
 				</motion.h2>
 				<motion.span

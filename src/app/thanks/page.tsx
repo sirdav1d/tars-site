@@ -2,14 +2,8 @@ import Button from '@/components/atoms/button';
 import Footer from '@/components/atoms/footer';
 import SocialMediaList from '@/components/molecules/socialMediasList';
 import { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import { IoArrowBack } from 'react-icons/io5';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 export const metadata: Metadata = {
 	title: 'Obrigado! - Agência Tars Projetos',
@@ -31,7 +25,7 @@ export default function ThanksPage() {
 					<div className='flex w-full lg:w-2/3  flex-col gap-5'>
 						<div className='flex flex-col gap-4'>
 							<span className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
-							<h2 className={`${montSerrat.className} text-5xl font-extrabold`}>
+							<h2 className={`font-montserratTitle text-5xl font-extrabold`}>
 								Obrigado!
 							</h2>
 						</div>

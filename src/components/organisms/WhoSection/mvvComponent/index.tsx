@@ -1,15 +1,9 @@
 'use client';
 import { MVVAnimation, ParagraphAnimation, TitleAnimation } from '@/animations';
 import { motion } from 'framer-motion';
-import { Montserrat } from 'next/font/google';
 import { BsPeople } from 'react-icons/bs';
 import { PiTargetDuotone } from 'react-icons/pi';
 import { TfiTarget } from 'react-icons/tfi';
-
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
 
 interface MVVProps {
 	role: string;
@@ -65,7 +59,7 @@ export default function MVVComponent({ paragraph, role, title }: MVVProps) {
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className={`${montSerrat.className} text-2xl `}>
+						className={`font-montserratTitle font-bold text-2xl `}>
 						{title}
 					</motion.h3>
 				</div>

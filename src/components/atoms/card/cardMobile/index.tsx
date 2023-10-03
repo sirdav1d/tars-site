@@ -8,13 +8,8 @@ import {
 } from '@/animations';
 import { ServicesProps } from '@/mock/services.data';
 import { motion } from 'framer-motion';
-import { Montserrat } from 'next/font/google';
-import Image from 'next/image';
 
-const montSerrat = Montserrat({
-	subsets: ['latin'],
-	weight: ['700', '900'],
-});
+import Image from 'next/image';
 
 interface CardProps {
 	data: ServicesProps;
@@ -31,7 +26,7 @@ export default function CardMobile({ data }: CardProps) {
 				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-2'>
 					<motion.h3
 						variants={CardTitle}
-						className={`${montSerrat.className} text-2xl absolute`}>
+						className={'font-montserratTitle text-2xl absolute'}>
 						{data.name}
 					</motion.h3>
 					<motion.span
