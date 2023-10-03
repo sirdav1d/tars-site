@@ -1,7 +1,9 @@
-export const drawerAnimation = {
+import { Variants } from 'framer-motion';
+
+export const drawerAnimation: Variants = {
 	open: {
+		transform: 'translateX(0px)',
 		opacity: 1,
-		x: 0,
 		width: '75%',
 		transition: {
 			duration: 0.5,
@@ -11,7 +13,7 @@ export const drawerAnimation = {
 	},
 	closed: {
 		opacity: 0,
-		x: '100%',
+		transform: 'translateX(100%)',
 		width: '0px',
 		transition: { duration: 0.5, type: 'tween' },
 	},
@@ -19,11 +21,11 @@ export const drawerAnimation = {
 
 export const CardAnimation = {
 	open: {
-		scaleY: 1.45,
-		zIndex: '888888',
+		scaleY:1.45,
+		zIndex: '88888',
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
-			delay: 0.2,
+			delay: 0.3,
 			delayChildren: 0.2,
 			duration: 0.6,
 			staggerChildren: 0.2,

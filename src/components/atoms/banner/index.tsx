@@ -26,7 +26,7 @@ export default function BannerLGPD() {
 	}
 
 	return show === 'true' ? (
-		<div className='fixed bottom-0 left-0 w-screen h-fit bg-brand-neutral-900 text-brand-neutral-100 text-xs lg:text-base  lg:py-8  p-5 rounded z-50'>
+		<div className='fixed bottom-0 left-0 w-screen h-fit bg-brand-neutral-900 text-brand-neutral-100 text-xs lg:text-base  lg:py-8  p-5 rounded z-[999999999999999]'>
 			<div className=' max-w-[1024px] gap-3 flex flex-col lg:flex-row justify-center items-baseline mx-auto '>
 				<p>
 					Nós utilizamos cookies para melhorar sua experiência como usuário.
