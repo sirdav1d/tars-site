@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from 'public/logos/logoHeader.png';
+import logo from 'public/logos/logoHorizontal.webp';
 import Button from '../../atoms/button';
 import Navigation from '@/components/atoms/navigation';
 import Drawer from '../drawer';

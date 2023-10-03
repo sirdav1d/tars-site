@@ -23,7 +23,7 @@ export default function ThanksPage() {
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-14'>
 				<Image
 					className='w-[220px] '
-					src={'/logos/logoThanks.png'}
+					src={'/logos/logoHorizontal.webp'}
 					width={480}
 					height={100}
 					alt='logo tars projetos'></Image>
@@ -56,7 +56,7 @@ export default function ThanksPage() {
 					<div className='flex flex-col w-full lg:w-1/3 items-center justify-center '>
 						<Image
 							className='animate-pulse'
-							src={'/images/trafegoImage.png'}
+							src={'/images/trafegoImage.webp'}
 							width={240}
 							height={380}
 							alt='Capa do livro, o manual do tráfego'

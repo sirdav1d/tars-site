@@ -15,7 +15,7 @@ export default function Footer() {
 			<div className='flex items-center justify-center'>
 				<Image
 					className='w-40 lg:w-120'
-					src={'/logos/logoHeader.png'}
+					src={'/logos/logoHorizontal.webp'}
 					alt='Logo Tars Projetos'
 					width={240}
 					height={60}

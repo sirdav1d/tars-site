@@ -6,7 +6,7 @@ import {
 } from '@/mock/services.data';
 import Image from 'next/image';
 import PlanCard from './PlanCard';
-import image1 from '/public/images/plansImage.png';
+import image1 from '/public/images/plansImage.webp';
 
 export default function PlanSection() {
 	return (

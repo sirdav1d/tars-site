@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import teamImage from '/public/images/team.png';
+import teamImage from '/public/images/team.webp';
 import { WhoImageAnimation } from '@/animations';
 
 export default function ImageAnimated() {

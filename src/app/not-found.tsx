@@ -14,7 +14,7 @@ export default function NotFound() {
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto justify-center m-auto'>
 				<Image
 					className='w-[220px] '
-					src={'/logos/logoThanks.png'}
+					src={'/logos/logoHorizontal.webp'}
 					width={480}
 					height={100}
 					alt='logo tars projetos'></Image>

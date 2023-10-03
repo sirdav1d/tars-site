@@ -50,7 +50,7 @@ export default function RootLayout({
 				/>
 				<link
 					rel='icon'
-					href='/logos/favicon.png'
+					href='/logos/favicon.webp'
 					sizes='32x32'
 					type='image/png'
 				/>
