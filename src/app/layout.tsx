@@ -44,6 +44,10 @@ export default function RootLayout({
 				}
 
 `}</Script>
+				<meta
+					name='google-site-verification'
+					content='soyOKU1yTH8hYtbuHo-Q2hL-0k7Ucs-N-Fh_rUkyaao'
+				/>
 				<link
 					rel='icon'
 					href='/logos/favicon.png'
