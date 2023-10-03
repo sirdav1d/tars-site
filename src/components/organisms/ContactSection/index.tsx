@@ -14,7 +14,7 @@ export default function ContactSection() {
 			<div className='absolute opacity-30 -z-10 '>
 				<Image
 					className='h-auto lg:w-[1024px] w-[380px] '
-					src={'/images/logoHorizontal.webp'}
+					src={'/logos/logoHorizontal.webp'}
 					alt={'Logo Tars Projetos'}
 					width={1440}
 					height={600}
