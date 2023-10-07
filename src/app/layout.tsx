@@ -35,30 +35,30 @@ export default function RootLayout({
 					async
 					src='https://www.googletagmanager.com/gtag/js?id=AW-11357924550'
 				/>
-				<Script id='google-analytics'>{`
-         window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11357924550');
+				<Script id='AW-11357924550'>{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'AW-11357924550');
         `}</Script>
 
-				<Script id='google-clicks'>{`	
+				<Script id='AW-11357924550'>{`	
 					function gtag_report_conversion(url) {
-					var callback = function () {
-						if (typeof(url) != 'undefined') {
-							window.location = url;
-						}
-					};
-						gtag('event', 'conversion', {
-							'send_to': 'AW-11357924550/Z4XACPmGsOcYEMbZ8Kcq',
-      				'event_callback': callback
-					});
-					return false;
-				}
+  				var callback = function () {
+    			if (typeof(url) != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+						'send_to': 'AW-11357924550/Z4XACPmGsOcYEMbZ8Kcq',
+						'event_callback': callback
+				});
+				return false;
+}
 
 `}</Script>
 
-				<meta
-					name='google-site-verification'
-					content='soyOKU1yTH8hYtbuHo-Q2hL-0k7Ucs-N-Fh_rUkyaao'
-				/>
 				<link
 					rel='icon'
 					href='/logos/favicon.webp'
