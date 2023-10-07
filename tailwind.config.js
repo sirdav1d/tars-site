@@ -21,8 +21,8 @@ module.exports = {
         'bgThanks': "url('/images/bgThanks.webp')",
         'bgCTA': 'linear-gradient(109deg, #F24058 35.99%, rgba(242, 64, 88, 0.00) 90.88%)'
       },
-      fontFamily:{
-        poppinsBody:'var(--poppins-body)',
+      fontFamily: {
+        poppinsBody: 'var(--poppins-body)',
         montserratTitle: 'var(--montserrat-title)',
       },
 
