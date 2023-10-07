@@ -25,7 +25,8 @@ export const CardAnimation = {
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,
-			delayChildren: 0.4,
+			duration:.5,
+			delayChildren: 0.5,
 			staggerChildren: 0.2,
 		},
 	},
