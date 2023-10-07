@@ -78,7 +78,7 @@ export default function FormComponent() {
 				{(formik) => (
 					<Form className='bg-brand-neutral-800/50 backdrop-blur-sm p-8 border border-brand-neutral-100/10 rounded-md shadow-xl max-w-[368px] lg:max-w-full'>
 						<div className='flex flex-col items-center justify-center pb-5'>
-							<h2 className={`font-montserratTitle text-center text-xl`}>
+							<h2 className={'text-center text-xl font-bold'}>
 								Descubra o Potencial do Seu Negócio!
 							</h2>
 							<span className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />

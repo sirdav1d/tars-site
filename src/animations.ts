@@ -7,7 +7,6 @@ export const drawerAnimation: Variants = {
 		width: '75%',
 		transition: {
 			duration: 0.5,
-			type: 'tween',
 			when: 'beforeChildren',
 		},
 	},
@@ -15,81 +14,75 @@ export const drawerAnimation: Variants = {
 		opacity: 0,
 		transform: 'translateX(100%)',
 		width: '0px',
-		transition: { duration: 0.5, type: 'tween' },
+		transition: { duration: 0.5 },
 	},
 };
 
 export const CardAnimation = {
 	open: {
-		scaleY: 1.45,
+		height: 280,
 		zIndex: '88888',
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,
-			delayChildren: 0.2,
-			duration: 0.6,
+			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},
 	},
 	close: {
 		transition: {
-			duration: 0.2,
+			delay: 0.3,
 		},
 	},
 };
 
 export const CardTitle = {
 	open: {
-		scaleY: 0.7,
-		y: '-72px',
+		y: -100,
 	},
 	close: {
 		y: 0,
-		scale: 1,
 	},
 };
 
 export const CardSpan = {
 	open: {
 		opacity: 1,
-		y: '22px',
-		width: '64px',
-		height: '4px',
-		transition: {
-			duration: 0.8,
-		},
+		y: 12,
+		width: 64,
+		height: 4,
+		x: 0,
 	},
 	close: {
 		opacity: 0,
-		width: '0px',
+		width: 0,
+		x: -20,
 	},
 };
 
 export const CardDescription = {
 	open: {
 		display: 'block',
-		scaleY: 0.75,
 		opacity: 1,
-		y: '12px',
+		y: 24,
 		x: 0,
 	},
 	close: {
 		opacity: 0,
-		x: '-20px',
+		x: -20,
 	},
 };
 
 export const CardIcon = {
 	open: {
 		display: 'block',
-		scaleY: 0.75,
 		opacity: 1,
-		y: '32px',
+		y: 30,
 		x: 0,
 	},
 	close: {
 		opacity: 0,
-		x: '-20px',
+		x: 20,
 	},
 };
 
@@ -118,7 +111,7 @@ export const SubHeadAnimation = {
 		},
 	},
 	close: {
-		x: '-80px',
+		x: 80,
 		opacity: 0,
 	},
 };
@@ -156,15 +149,11 @@ export const ParagraphAnimation = {
 export const TitleSpanAnimation = {
 	open: {
 		x: 0,
-		width: '120px',
+		width: 120,
 		opacity: 1,
-		transition: {
-			duration: 0.4,
-			delay: 0.6,
-		},
 	},
 	close: {
-		x: '-80px',
+		x: -80,
 		width: 0,
 		opacity: 0,
 	},
@@ -174,13 +163,9 @@ export const MVVAnimation = {
 	open: {
 		x: 0,
 		opacity: 1,
-		transition: {
-			duration: 0.4,
-			delay: 0.6,
-		},
 	},
 	close: {
-		x: '-80px',
+		x: -80,
 		opacity: 0,
 	},
 };
@@ -189,13 +174,9 @@ export const WhoImageAnimation = {
 	open: {
 		x: 0,
 		opacity: 1,
-		transition: {
-			duration: 0.4,
-			delay: 0.6,
-		},
 	},
 	close: {
-		x: '80px',
+		x: 80,
 		opacity: 0,
 	},
 };
@@ -204,13 +185,9 @@ export const PlansCardAnimation = {
 	open: {
 		y: 0,
 		opacity: 1,
-		transition: {
-			duration: 0.8,
-			delayChildren: 0.2,
-		},
 	},
 	close: {
-		y: '60px',
+		y: 64,
 		opacity: 0,
 	},
 };

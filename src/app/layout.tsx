@@ -7,12 +7,12 @@ const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['300', '400', '500', '600', '700', '900'],
 	display: 'swap',
-	variable:'--poppins-body'
+	variable: '--poppins-body',
 });
 
 const montSerrat = Montserrat({
 	subsets: ['latin'],
-	weight: ['500','700', '900'],
+	weight: ['500', '700', '900'],
 	display: 'swap',
 	variable: '--montserrat-title',
 });
@@ -31,13 +31,14 @@ export default function RootLayout({
 	return (
 		<html lang='pt-BR'>
 			<head>
+				<Script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=AW-11357924550'
+				/>
 				<Script id='google-analytics'>{`
-         	window.dataLayer = window.dataLayer || [];
-  				function gtag(){dataLayer.push(arguments);}
-  				gtag('js', new Date());
-  				gtag('config', 'AW-11357924550');
+         window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11357924550');
         `}</Script>
-				<Script src='https://www.googletagmanager.com/gtag/js?id=AW-11357924550' />
+
 				<Script id='google-clicks'>{`	
 					function gtag_report_conversion(url) {
 					var callback = function () {
@@ -53,6 +54,7 @@ export default function RootLayout({
 				}
 
 `}</Script>
+
 				<meta
 					name='google-site-verification'
 					content='soyOKU1yTH8hYtbuHo-Q2hL-0k7Ucs-N-Fh_rUkyaao'
@@ -65,7 +67,9 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${poppins.className} ${montSerrat.className}`}>{children}</body>
+			<body className={`${poppins.className} ${montSerrat.className}`}>
+				{children}
+			</body>
 		</html>
 	);
 }

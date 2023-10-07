@@ -23,7 +23,7 @@ export default function Card({ data }: CardProps) {
 				whileHover={'open'}
 				exit='close'
 				className={`hidden opacity-0 md:opacity-100 w-[248px] h-[200px] bg-brand-neutral-800/40 backdrop-blur-md md:flex items-center justify-center rounded border  border-brand-neutral-100/20 font-bold px-3 py-3 text-center cursor-pointer`}>
-				<div className='flex flex-col items-center h-full relative w-full justify-center gap-2'>
+				<div className='flex flex-col items-center h-full relative w-full justify-center gap-5'>
 					<motion.h3
 						variants={CardTitle}
 						className={`font-montserratTitle text-lg absolute`}>

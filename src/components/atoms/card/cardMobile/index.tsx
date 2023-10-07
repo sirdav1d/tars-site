@@ -22,11 +22,11 @@ export default function CardMobile({ data }: CardProps) {
 				variants={CardAnimation}
 				whileInView={'open'}
 				viewport={{ amount: 0.9, once: true }}
-				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-20 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>
-				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-2'>
+				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>
+				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-5'>
 					<motion.h3
 						variants={CardTitle}
-						className={'font-montserratTitle text-2xl absolute'}>
+						className={'font-montserratTitle text-xl absolute'}>
 						{data.name}
 					</motion.h3>
 					<motion.span
@@ -39,13 +39,13 @@ export default function CardMobile({ data }: CardProps) {
 						<Image
 							className='drop-shadow-cards animate-bounce'
 							src={data.url}
-							width={60}
-							height={60}
+							width={52}
+							height={52}
 							alt={data.name}></Image>
 					</motion.div>
 					<motion.p
 						variants={CardDescription}
-						className='text-xs font-light text-center opacity-0 leading-normal tracking-wide'>
+						className='text-sm font-light text-center opacity-0 leading-normal tracking-wide'>
 						{data.description}
 					</motion.p>
 				</div>

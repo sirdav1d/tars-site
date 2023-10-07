@@ -14,7 +14,7 @@ export default function ServiceSection() {
 				Impulsionar o seu Negócio'
 			/>
 
-			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 '>
+			<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 md:h-[480px]'>
 				{servicesData.map((s, index) => {
 					return (
 						<>
