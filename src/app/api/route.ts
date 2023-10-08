@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
-	const apiKey = process.env.API_KEY;
+	const apiKey = '9a2ad8da46631a1daea5b4cf0ec8297d-us14';
 
-	const listId = process.env.AUDIENCE_ID;
+	const listId = 'a17186e5c0';
 
 	const { email_address, merge_fields, status } = await request.json();
 
