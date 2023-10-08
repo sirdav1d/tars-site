@@ -40,12 +40,12 @@ export default function ThanksPage() {
 							da sua empresa.{' '}
 						</p>
 						<div className='w-full font-bold flex '>
-							<Link
+							<a
 								href={'/'}
 								className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
 								<IoArrowBack size={32} />
 								<p className='text-brand-neutral-50'>Voltar ao Site</p>
-							</Link>
+							</a>
 						</div>
 					</div>
 					<div className='flex flex-col w-full lg:w-1/3 items-center justify-center '>

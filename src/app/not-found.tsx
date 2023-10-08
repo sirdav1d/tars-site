@@ -25,12 +25,12 @@ export default function NotFound() {
 				<p className='text-center font-semibold'>Clique no link abaixo para retornar</p>
 
 				<div className='w-full items-center font-bold flex justify-center  m-4 mb-20 lg:mb-0'>
-					<Link
+					<a
 						href={'/'}
 						className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
 						<IoArrowBack size={32} />
 						<p className='text-brand-neutral-50'>Voltar ao Site</p>
-					</Link>
+					</a>
 				</div>
 			</div>
 		</main>
