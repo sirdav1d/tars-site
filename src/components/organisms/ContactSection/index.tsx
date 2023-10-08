@@ -7,7 +7,7 @@ export default function ContactSection() {
 	return (
 		<div
 			id='contact'
-			className='px-4 pt-5 pb-48 flex flex-col items-center relative justify-center gap-10'>
+			className='px-4 pt-10 pb-48 flex flex-col items-center relative justify-center gap-10'>
 			<SocialMediaList />
 			<FormComponent />
 
