@@ -4,6 +4,7 @@ import {
 	benefitsInitial,
 	benefitsPro,
 } from '@/mock/services.data';
+import { GiThorHammer, GiRobotGrab, GiRocket } from 'react-icons/gi';
 import Image from 'next/image';
 import PlanCard from './PlanCard';
 import image1 from '/public/images/plansImage.webp';
@@ -13,7 +14,7 @@ export default function PlanSection() {
 		<>
 			<div
 				id='plans'
-				className='flex flex-col w-screen relative gap-6  items-center justify-center'>
+				className='flex flex-col w-screen relative gap-6  items-center justify-center sm:bg-brand-neutral-100 md:bg-transparent'>
 				<Image
 					className='hidden md:block md:absolute object-cover w-full h-full mix-blend-overlay'
 					width={1600}
@@ -27,6 +28,15 @@ export default function PlanSection() {
 
 				<div className='flex flex-col xl:flex-row px-40 gap-12 items-center justify-center pb-10'>
 					<PlanCard
+						icon={
+							<GiRobotGrab
+								size={40}
+								color={'#c0c0c0'}
+								style={{
+									filter: 'drop-shadow(0px 0px 20px #ffffff)',
+								}}
+							/>
+						}
 						link={
 							'https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20iniciante.'
 						}
@@ -36,6 +46,15 @@ export default function PlanSection() {
 						text={benefitsInitial.text}
 					/>
 					<PlanCard
+						icon={
+							<GiThorHammer
+								size={40}
+								color={'#0080CC'}
+								style={{
+									filter: 'drop-shadow(0px 0px 20px #00A0FF)',
+								}}
+							/>
+						}
 						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20profissional.'
 						key={String(benefitsPro.text[0])}
 						role='Profissional'
@@ -43,6 +62,16 @@ export default function PlanSection() {
 						text={benefitsPro.text}
 					/>
 					<PlanCard
+						icon={
+							<GiRocket
+								size={40}
+								color={'#F24058'}
+								style={{
+									transform: 'rotatex(180deg)',
+									filter: 'drop-shadow(0px 0px 20px #F57082)',
+								}}
+							/>
+						}
 						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20empresarial.'
 						key={String(benefitsBussiness.text[0])}
 						role='Empresarial'

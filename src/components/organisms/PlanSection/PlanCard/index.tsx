@@ -1,30 +1,44 @@
 'use client';
 import Button from '@/components/atoms/button';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
+
 import { PlansCardAnimation } from '@/animations';
 import { motion } from 'framer-motion';
+import { IconType } from 'react-icons';
+import { ReactElement } from 'react';
 
 interface PlanCardProps {
 	text: string[];
 	style: string[];
 	role: string;
 	link?: string;
+	icon: ReactElement<any, any>;
 }
 
-export default function PlanCard({ text, style, role, link }: PlanCardProps) {
+export default function PlanCard({
+	text,
+	style,
+	role,
+	link,
+	icon,
+}: PlanCardProps) {
 	return (
 		<>
 			<motion.div
 				variants={PlansCardAnimation}
 				initial='close'
 				whileInView={'open'}
+				data-role={role}
 				viewport={{ amount: 0.75, once: true }}
-				className='z-30  min-w-[344px] h-fit rounded bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col gap-4 p-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
-				<h3
-					className={`text-xl text-center font-montserratTitle font-bold drop-shadow-lg`}>
-					{role}
-				</h3>
-				<div className='flex flex-col gap-3 mt-1 drop-shadow-lg'>
+				className='z-30  data-[role=Profissional]:h-[520px]  min-w-[344px] h-fit rounded-lg bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col justify-between gap-4  pb-5 items-center shadow-xl hover:scale-110 transition-all duration-300 ease-in-out'>
+				<div className='flex gap-5 items-center justify-center bg-brand-neutral-950 w-full rounded-lg p-3'>
+					<div>{icon}</div>
+					<h3 className={`text-2xl text-center font-bold drop-shadow-lg`}>
+						{role}
+					</h3>
+				</div>
+
+				<div className='flex flex-col gap-3 mt-1 drop-shadow-lg px-5 justify-between h-full'>
 					{text.map((t, index) => {
 						return (
 							<div
@@ -38,12 +52,12 @@ export default function PlanCard({ text, style, role, link }: PlanCardProps) {
 							</div>
 						);
 					})}
+					<Button
+						text='Consultar Valor'
+						role='plans'
+						link={link}
+					/>
 				</div>
-				<Button
-					text='Consultar Valor'
-					role='plans'
-					link={link}
-				/>
 			</motion.div>
 		</>
 	);
