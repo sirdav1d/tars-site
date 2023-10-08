@@ -90,6 +90,7 @@ export default function FormComponent() {
 								variants={FadeAnimation}
 								initial='close'
 								whileInView={'open'}
+								viewport={{ once: true, amount: 'all' }}
 								className={'text-center text-xl font-bold'}>
 								Descubra o Potencial do Seu Negócio!
 							</motion.h2>
