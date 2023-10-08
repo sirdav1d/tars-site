@@ -119,7 +119,7 @@ export const FadeAnimation = {
 		},
 	},
 	close: {
-		x: '-160px',
+		x: '-80px',
 		opacity: 0,
 	},
 };
