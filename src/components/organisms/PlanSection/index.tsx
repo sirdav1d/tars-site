@@ -15,7 +15,7 @@ export default function PlanSection() {
 				id='plans'
 				className='flex flex-col w-screen relative gap-6  items-center justify-center'>
 				<Image
-					className='absolute object-cover w-full h-full mix-blend-overlay'
+					className='hidden md:block md:absolute object-cover w-full h-full mix-blend-overlay'
 					width={1600}
 					height={640}
 					src={image1}

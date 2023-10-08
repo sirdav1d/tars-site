@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
 	return (
-		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50'>
+		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full pb-48 text-brand-neutral-50'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-6'>
 				<Image
 					className='w-[220px] '
