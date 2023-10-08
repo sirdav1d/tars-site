@@ -3,6 +3,7 @@ import Footer from '@/components/atoms/footer';
 import SocialMediaList from '@/components/molecules/socialMediasList';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
 	return (
-		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
-			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-14'>
+		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50'>
+			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-6'>
 				<Image
 					className='w-[220px] '
 					src={'/logos/logoHorizontal.webp'}
@@ -39,12 +40,12 @@ export default function ThanksPage() {
 							da sua empresa.{' '}
 						</p>
 						<div className='w-full font-bold flex '>
-							<a
+							<Link
 								href={'/'}
 								className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
 								<IoArrowBack size={32} />
 								<p className='text-brand-neutral-50'>Voltar ao Site</p>
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className='flex flex-col w-full lg:w-1/3 items-center justify-center '>
@@ -63,9 +64,8 @@ export default function ThanksPage() {
 				</div>
 				<SocialMediaList />
 			</div>
-			<div className='absolute -bottom-24'>
-				<Footer />
-			</div>
+
+			<Footer />
 		</main>
 	);
 }

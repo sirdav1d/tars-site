@@ -26,7 +26,26 @@ export const CardAnimation = {
 		transition: {
 			delay: 0.3,
 			duration:.5,
-			delayChildren: 0.5,
+			delayChildren: 0.4,
+			staggerChildren: 0.2,
+		},
+	},
+	close: {
+		transition: {
+			delay: 0.3,
+		},
+	},
+};
+
+export const CardMobileAnimation = {
+	open: {
+		height: 340,
+		zIndex: '88888',
+		boxShadow: '0px 0px 16px #00A0FF',
+		transition: {
+			delay: 0.3,
+			duration: 0.5,
+			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},
 	},
@@ -40,6 +59,9 @@ export const CardAnimation = {
 export const CardTitle = {
 	open: {
 		y: -100,
+		transition: {
+			delay: 0.4,
+		},
 	},
 	close: {
 		y: 0,

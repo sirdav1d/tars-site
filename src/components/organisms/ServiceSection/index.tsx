@@ -8,7 +8,7 @@ export default function ServiceSection() {
 	return (
 		<div
 			id='service'
-			className='pb-20 pt-5 flex flex-col gap-10 items-center justify-center px-6 bg-bgThanks bg-cover'>
+			className='pb-20 pt-5 flex flex-col gap-10 items-center justify-center px-6'>
 			<ContentComponent
 				headline='Como Vamos
 				Impulsionar o seu Negócio'

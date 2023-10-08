@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
 	return (
-		<main className='p-10 h-full flex items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 bg-bgThanks bg-no-repeat bg-cover'>
+		<main className='p-10 h-full flex items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto justify-center m-auto'>
 				<Image
 					className='w-[220px] '
@@ -24,12 +25,12 @@ export default function NotFound() {
 				<p className='text-center'>Clique no link abaixo para retornar</p>
 
 				<div className='w-full items-center font-bold flex justify-center  m-4 mb-20 lg:mb-0'>
-					<a
+					<Link
 						href={'/'}
 						className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300 flex items-center justify-center gap-3'>
 						<IoArrowBack size={32} />
 						<p className='text-brand-neutral-50'>Voltar ao Site</p>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</main>

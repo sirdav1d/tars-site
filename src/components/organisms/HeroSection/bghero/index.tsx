@@ -8,7 +8,7 @@ export default function BgHero() {
 				autoPlay={true}
 				preload='auto'
 				muted
-				poster='/images/poster.webp'
+				poster='/images/posterOtimizado.webp'
 				loop={true}>
 				<source
 					src='/video/videoPonte.mp4'

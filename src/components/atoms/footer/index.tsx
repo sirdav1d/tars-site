@@ -6,7 +6,7 @@ import LinkUs from '@/components/atoms/footer/linksUs';
 
 export default function Footer() {
 	return (
-		<div className='flex flex-col items-center justify-between bg-brand-neutral-900/40 border-t border-brand-neutral-100/20 w-screen backdrop-blur-sm pb-5'>
+		<div className='flex flex-col items-center absolute -bottom-48 justify-between bg-brand-neutral-900/40 border-t border-brand-neutral-100/20 w-screen backdrop-blur-sm pb-3 border'>
 			<LinkUs />
 			<div className='flex items-center justify-center'>
 				<Image

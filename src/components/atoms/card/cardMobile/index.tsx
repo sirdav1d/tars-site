@@ -1,6 +1,6 @@
 'use client';
 import {
-	CardAnimation,
+	CardMobileAnimation,
 	CardDescription,
 	CardIcon,
 	CardSpan,
@@ -19,7 +19,7 @@ export default function CardMobile({ data }: CardProps) {
 	return (
 		<>
 			<motion.div
-				variants={CardAnimation}
+				variants={CardMobileAnimation}
 				whileInView={'open'}
 				viewport={{ amount: 0.9, once: true }}
 				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>

@@ -1,7 +1,13 @@
 'use client';
+import {
+	FadeAnimation,
+	SubHeadAnimation,
+	TitleSpanAnimation,
+} from '@/animations';
 import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import * as Yup from 'yup';
@@ -35,7 +41,7 @@ export default function FormComponent() {
 
 	const router = useRouter();
 
-	async function handleSubmit(values: FormValues) {
+	async function handleSubmit(values: FormValues, { resetForm }: any) {
 		setLoading(true);
 
 		const { fullName, phone, email } = values;
@@ -56,8 +62,10 @@ export default function FormComponent() {
 			})
 				.then((response) => response.json())
 				.then((data) => {
-					if (data?.data?.status !== 200) {
-						router.push('/not-found.tsx');
+					if (data?.data?.status !== 'subscribed') {
+						alert(`${data.data.title} - ${data.data.status}`);
+						resetForm({ values: '' });
+						setLoading(false);
 					} else {
 						router.push('/thanks');
 					}
@@ -78,10 +86,20 @@ export default function FormComponent() {
 				{(formik) => (
 					<Form className='bg-brand-neutral-800/50 backdrop-blur-sm p-8 border border-brand-neutral-100/10 rounded-md shadow-xl max-w-[368px] lg:max-w-full'>
 						<div className='flex flex-col items-center justify-center pb-5'>
-							<h2 className={'text-center text-xl font-bold'}>
+							<motion.h2
+								variants={FadeAnimation}
+								initial='close'
+								whileInView={'open'}
+								className={'text-center text-xl font-bold'}>
 								Descubra o Potencial do Seu Negócio!
-							</h2>
-							<span className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
+							</motion.h2>
+							<motion.span
+								variants={SubHeadAnimation}
+								initial='close'
+								whileInView={'open'}
+								viewport={{ once: true, amount: 'all' }}
+								className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons'
+							/>
 						</div>
 						<div className='flex flex-col py-3 gap-2'>
 							<Label

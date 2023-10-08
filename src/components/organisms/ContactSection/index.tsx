@@ -7,7 +7,7 @@ export default function ContactSection() {
 	return (
 		<div
 			id='contact'
-			className='px-4 py-5 lg:py-10 flex flex-col items-center  justify-center gap-10  '>
+			className='px-4 py-5 lg:py-10 flex flex-col items-center relative justify-center gap-10'>
 			<SocialMediaList />
 			<FormComponent />
 
