@@ -29,7 +29,7 @@ export default function PlanCard({
         initial="close"
         whileInView={'open'}
         data-role={role}
-        viewport={{ amount: 0.9, once: true }}
+        viewport={{ amount: 0.5, once: true }}
         className="z-30  data-[role=Profissional]:h-[498px]  min-w-[344px] h-fit rounded-lg bg-brand-neutral-950/50 border border-brand-neutral-100/20 backdrop-blur-sm flex flex-col justify-between gap-4  pb-5 items-center shadow-xl hover:bg-brand-neutral-950 hover:border-brand-blue-500 transition duration-700 ease-in-out"
       >
         <div className="flex gap-5 items-center justify-center bg-brand-neutral-950 w-full rounded-lg p-3">
