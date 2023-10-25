@@ -23,7 +23,7 @@ export default function HeroSection() {
 				/>
 			</div>
 			<div className='w-full flex bg-brand-neutral-900/10 backdrop-blur-md h-[10vh] lg:h-[20vh] boder-t border-neutral-50/20   px-4 mx-auto 2xl:px-20 absolute bottom-[0px]   items-center '>
-				<div className='max-w-[1440px] flex justify-between w-full mx-auto items-center gap-3 lg:gap-10'>
+				<div className='max-w-[1280px] flex justify-between w-full mx-auto items-center gap-3 lg:gap-10'>
 					<div className='flex flex-col w-1/3 items-start gap-2'>
 						<div className='flex gap-2 items-center justify-center'>
 							<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
