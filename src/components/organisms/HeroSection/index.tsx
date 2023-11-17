@@ -1,91 +1,30 @@
 /** @format */
-
+'use client';
 import Button from '@/components/atoms/button';
 import Header from '@/components/molecules/header';
-import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
-import { HiStatusOnline } from 'react-icons/hi';
+import Lottie from 'lottie-react';
+import heroLottie from '../../../../public/lotties/heroLottie.json';
 import Headline from './HeadLine';
 
 export default function HeroSection() {
 	return (
 		<div
 			id='home'
-			className='relative h-[92vh] lg:h-screen bg-cover bg-bgHero'>
+			className='relative h-screen bg-cover bg-bgHero flex items-center md:px-14 px-5'>
 			<Header />
 
-			<div className='flex flex-col gap-28  max-w-[1280px] md:mx-auto justify-center px-6'>
-				<div className='flex flex-wrap mt-[20vh] items-center justify-center gap-4 drop-shadow-md relative'>
+			<div className='flex flex-col w-full gap-40 md:gap-8 lg:gap-0  max-w-[1440px] md:mx-auto justify-between'>
+				<div className='flex mt-20 md:mt-0 items-center justify-between drop-shadow-md relative h-full'>
 					<Headline />
+					<div className='w-full hidden md:block object-contain'>
+						{' '}
+						<Lottie animationData={heroLottie} />
+					</div>
 				</div>
 				<Button
 					role='hero'
 					text={'Fazer Orçamento'}
 				/>
-			</div>
-			<div className='w-full flex bg-brand-neutral-900/10 backdrop-blur-md h-[10vh] lg:h-[20vh] boder-t border-neutral-50/20   px-4 mx-auto 2xl:px-20 absolute bottom-[0px]   items-center '>
-				<div className='max-w-[1440px] flex justify-between w-full mx-auto items-center gap-3 lg:gap-10'>
-					<div className='flex flex-col w-1/3 items-start gap-2'>
-						<div className='flex gap-2 items-center justify-center'>
-							<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
-								<BsCashCoin
-									size={28}
-									className='w-5 md:w-8'
-								/>
-							</div>
-							<h3
-								className={`font-bold text-[8px] md:text-xs lg:text-base font-montserratTitle `}>
-								Aumente suas Vendas
-							</h3>
-						</div>
-
-						<p className=' drop-shadow hidden xl:flex text-xs Poppins'>
-							Comunique, atraia, venda. Um site é a ferramenta definitiva para
-							contar sua história, atrair interessados e fechar vendas de forma
-							consistente.
-						</p>
-					</div>
-
-					<div className='flex flex-col w-1/3 items-start gap-2 '>
-						<div className='flex gap-2 items-center justify-center '>
-							<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
-								<HiStatusOnline
-									size={28}
-									className='w-5 md:w-8'
-								/>
-							</div>
-							<h3
-								className={`font-bold text-[8px] md:text-xs  lg:text-base font-montserratTitle `}>
-								Conquiste sua visibilidade online
-							</h3>
-						</div>
-
-						<p className='drop-shadow  hidden xl:flex text-xs'>
-							Uma presença sólida na internet não apenas aumenta o alcance, mas
-							também cria confiança. Esteja onde seus clientes estão, e veja
-							suas vendas e reconhecimento dispararem.
-						</p>
-					</div>
-					<div className='flex flex-col w-1/3 items-start gap-2 '>
-						<div className='flex gap-2 items-center justify-center '>
-							<div className='text-brand-blue-500  drop-shadow-icons animate-pulse'>
-								<BsSpeedometer2
-									size={28}
-									className='w-5 md:w-8'
-								/>
-							</div>
-							<h3
-								className={`font-bold text-[8px]  md:text-xs lg:text-base font-montserratTitle`}>
-								Adquira seu site em menos de 7 dias
-							</h3>
-						</div>
-
-						<p className='drop-shadow  hidden xl:flex text-xs'>
-							Tempo é dinheiro, e um site original em menos de 7 dias é um
-							investimento que oferece retorno rápido. Alcance um público mais
-							amplo e veja seus negócios prosperarem.
-						</p>
-					</div>
-				</div>
 			</div>
 		</div>
 	);
