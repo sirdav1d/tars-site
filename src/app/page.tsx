@@ -1,3 +1,5 @@
+/** @format */
+
 import CookieComponent from '@/components/atoms/cookie';
 import CTA from '@/components/atoms/cta';
 import ContactSection from '@/components/organisms/ContactSection';
@@ -15,7 +17,6 @@ export default function Home() {
 			<ServiceSection />
 			<PlanSection />
 			<ContactSection />
-			<CookieComponent />
 		</main>
 	);
 }

@@ -1,3 +1,7 @@
+/** @format */
+
+import BannerLGPD from '@/components/atoms/banner';
+import GoogleAnalytics from '@/components/google/GoogleAnalytics';
 import type { Metadata } from 'next';
 import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
@@ -37,9 +41,10 @@ export default function RootLayout({
 					type='image/png'
 				/>
 			</head>
-
+			<GoogleAnalytics GA_MEASUREMENT_ID={'G-YG9ZZ2CMJ4'} />
 			<body className={`${poppins.className} ${montSerrat.className}`}>
 				{children}
+				<BannerLGPD />
 			</body>
 		</html>
 	);
