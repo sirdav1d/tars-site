@@ -1,3 +1,5 @@
+/** @format */
+
 import { Variants } from 'framer-motion';
 
 export const drawerAnimation: Variants = {
@@ -25,7 +27,7 @@ export const CardAnimation = {
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,
-			duration:.5,
+			duration: 0.5,
 			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},
@@ -212,5 +214,23 @@ export const PlansCardAnimation = {
 	close: {
 		y: 64,
 		opacity: 0,
+	},
+};
+
+export const SpanHeadAnimation: Variants = {
+	initial: { y: -15, opacity: 0 },
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.2,
+		},
+	},
+	exit: {
+		y: 25,
+		opacity: 0,
+		transition: {
+			duration: 0.3,
+		},
 	},
 };

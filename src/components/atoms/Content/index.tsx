@@ -1,3 +1,5 @@
+/** @format */
+
 'use client';
 import {
 	ParagraphAnimation,
@@ -44,7 +46,7 @@ export default function ContentComponent({
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className='mt-3 leading-8 xl:text-base text-sm  '>
+						className='mt-3 leading-8 xl:text-lg text-sm text-center '>
 						{paragraph1}
 					</motion.div>
 					<br />

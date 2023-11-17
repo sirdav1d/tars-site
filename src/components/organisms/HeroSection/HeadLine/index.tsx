@@ -1,23 +1,59 @@
+/** @format */
+
 'use client';
-import { motion } from 'framer-motion';
+import { SpanHeadAnimation } from '@/animations';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function Headline() {
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	const text = [' PERFORMANCE', ' LIDERANÇA', ' OPORTUNIDADES'];
+	const [textHero, setTextHero] = useState(text[0]);
+
+	function textSwitch() {
+		setTimeout(() => {
+			if (textHero === text[0]) {
+				setTextHero(text[1]);
+			}
+		}, 1500);
+
+		setTimeout(() => {
+			if (textHero === text[1]) {
+				setTextHero(text[2]);
+			}
+		}, 1500);
+		setTimeout(() => {
+			if (textHero === text[2]) {
+				setTextHero(text[0]);
+			}
+		}, 1500);
+	}
+
+	useEffect(() => {
+		textSwitch();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [textHero]);
+
 	return (
-		<div className='flex flex-col gap-4'>
+		<div className='w-full flex flex-wrap gap-3'>
 			<motion.h1
 				animate={{ opacity: 1, x: 0 }}
 				initial={{ opacity: 0, x: -150 }}
 				transition={{ delay: 0.2, duration: 0.4 }}
-				className={`font-bold max-w-[780px] text-4xl xl:text-5xl mx-auto text-brand-neutral-50 2xl:text-6x text-left md:text-center `}>
-				Construímos pontes entre sua marca e seu público
+				className={`font-bold  text-3xl lg:leading-loose xl:text-5xl mx-auto text-brand-neutral-50 2xl:text-[68px] text-left `}>
+				Oferecemos a chave para o sucesso digital, com serviços que garantem_
+				<AnimatePresence>
+					<motion.span
+						key={textHero}
+						variants={SpanHeadAnimation}
+						animate='animate'
+						initial='initial'
+						exit={'exit'}
+						className='text-brand-red-500 absolute left-0 -bottom-14 lg:bottom-auto lg:left-auto font-bold text-3xl lg:leading-loose xl:text-5xl 2xl:text-[68px]'>
+						{`_${textHero}`}
+					</motion.span>
+				</AnimatePresence>
 			</motion.h1>
-			<motion.p
-				animate={{ opacity: 1, x: 0 }}
-				initial={{ opacity: 0, x: -150 }}
-				transition={{ delay: 0.6, duration: 0.4 }}
-				className='text-sm md:text-base lg:text-xl text-left md:text-center font-semibold max-w-[300px] md:max-w-full  md:mx-auto  text-brand-neutral-100'>
-				Criamos experiências digitais que inspiram e conectam
-			</motion.p>
 		</div>
 	);
 }

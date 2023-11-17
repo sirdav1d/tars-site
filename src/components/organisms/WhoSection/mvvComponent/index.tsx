@@ -1,3 +1,5 @@
+/** @format */
+
 'use client';
 import { MVVAnimation, ParagraphAnimation, TitleAnimation } from '@/animations';
 import { motion } from 'framer-motion';
@@ -59,7 +61,7 @@ export default function MVVComponent({ paragraph, role, title }: MVVProps) {
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className={`font-montserratTitle font-bold text-2xl `}>
+						className={`font-montserratTitle font-bold text-xl `}>
 						{title}
 					</motion.h3>
 				</div>
@@ -68,7 +70,7 @@ export default function MVVComponent({ paragraph, role, title }: MVVProps) {
 					whileInView={'open'}
 					viewport={{ amount: 0.9, once: true }}
 					initial='close'
-					className='text-center md:text-base text-sm'>
+					className='text-sm text-center'>
 					{paragraph}
 				</motion.div>
 			</div>

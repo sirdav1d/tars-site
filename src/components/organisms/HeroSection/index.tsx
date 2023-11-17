@@ -1,20 +1,20 @@
+/** @format */
+
 import Button from '@/components/atoms/button';
 import Header from '@/components/molecules/header';
 import { BsCashCoin, BsSpeedometer2 } from 'react-icons/bs';
 import { HiStatusOnline } from 'react-icons/hi';
-import BgHero from './bghero';
 import Headline from './HeadLine';
 
 export default function HeroSection() {
 	return (
 		<div
 			id='home'
-			className='relative h-[92vh] lg:h-screen'>
+			className='relative h-[92vh] lg:h-screen bg-cover bg-bgHero'>
 			<Header />
-			<BgHero />
 
-			<div className='flex flex-col gap-14  max-w-[1024px] md:mx-auto md:items-center justify-center px-6'>
-				<div className='flex flex-col mt-[25vh]  gap-4 drop-shadow-md'>
+			<div className='flex flex-col gap-28  max-w-[1280px] md:mx-auto justify-center px-6'>
+				<div className='flex flex-wrap mt-[20vh] items-center justify-center gap-4 drop-shadow-md relative'>
 					<Headline />
 				</div>
 				<Button

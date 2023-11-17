@@ -18,7 +18,7 @@ module.exports = {
         'input': '0px 4px 20px -12px #00A0FF'
       },
       backgroundImage: {
-
+        'bgHero': 'url(/images/bgHero.png)',
         'bgCTA': 'linear-gradient(109deg, #F24058 35.99%, rgba(242, 64, 88, 0.00) 90.88%)'
       },
       fontFamily: {
