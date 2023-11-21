@@ -1,14 +1,22 @@
 /** @format */
 
 import ContentComponent from '@/components/atoms/Content';
-import ImageAnimated from './ImageAnimated';
-import MVVComponent from './mvvComponent';
+import Button from '@/components/atoms/button';
+import TitleComponent from '@/components/atoms/title';
+import {
+	BiCloudUpload,
+	BiConversation,
+	BiLogoGoogle,
+	BiLogoReact,
+	BiPaintRoll,
+} from 'react-icons/bi';
+import StepComponent from './StepComponent';
 
 export default function WhoSection() {
 	return (
 		<div
 			id='who'
-			className='shadow-md rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
+			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
 			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit'>
 				<div className='flex flex-col items-center w-full '>
 					<ContentComponent
@@ -18,25 +26,73 @@ export default function WhoSection() {
 				</div>
 			</div>
 			<div className='flex flex-col lg:flex-row justify-between gap-10 w-full max-w-[1440px] mx-auto pb-3'>
-				<MVVComponent
-					paragraph='Impulsionar o sucesso de nossos parceiros, oferecendo soluções
-						digitais que ampliam a visibilidade e atraem um público qualificado'
-					title='Missão'
-					role='missao'
-				/>
+				<div className='flex gap-14 flex-col md:flex-row'>
+					<div className='flex flex-col gap-10 w-full lg:w-1/2'>
+						<TitleComponent
+							headline={
+								'Entenda Nossos 5 Passos Para Transformar Suas Ideias em Realidade'
+							}
+						/>
 
-				<MVVComponent
-					paragraph='Inspirar uma nova era de negócios de sucesso, fornecendo soluções
-						digitais que alavancam o crescimento, e fortalecem a vantagem
-						competitiva dos nossos clientes.'
-					title='Visão'
-					role='visao'
-				/>
-				<MVVComponent
-					paragraph='Foco na experiência do usuário  - Inovação - Ética -	Autorresponsabilidade - Empreendedorismo'
-					title='Valores'
-					role='valores'
-				/>
+						<Button
+							text={'Quero Dar o Primeiro Passo'}
+							role='CTA'
+							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
+						/>
+					</div>
+					<div className='flex flex-col gap-8 w-full lg:w-1/2'>
+						<StepComponent
+							title='Início da Conversa'
+							text='Nós iniciamos o contato com o cliente por e-mail ou WhatsApp, e	através de um formulário, coletamos informações relacionadas ao nicho de mercado, principais produtos, benefícios oferecidos e referências visuais.'
+							icon={
+								<BiConversation
+									size={40}
+									color={'#00A0FF'}
+								/>
+							}
+						/>
+						<StepComponent
+							title='Protótipo Gratuito'
+							text='Criamos um protótipo gratuito do site com base nas informações coletadas. O cliente avalia o protótipo e fornece feedback.'
+							icon={
+								<BiPaintRoll
+									size={40}
+									color={'#00A0FF'}
+								/>
+							}
+						/>
+						<StepComponent
+							title='Desenvolvimento do Site'
+							text='Após a aprovação do protótipo, começamos a desenvolver o site em React JS, incorporando animações e interatividade para uma experiência atraente.'
+							icon={
+								<BiLogoReact
+									size={40}
+									color={'#00A0FF'}
+								/>
+							}
+						/>
+						<StepComponent
+							title='Configuração de Campanha no Google Ads'
+							text='Oferecemos a configuração gratuita de uma campanha no Google Ads, caso o cliente deseje promover seu site. O cliente aprova e valida a campanha.'
+							icon={
+								<BiLogoGoogle
+									size={40}
+									color={'#00A0FF'}
+								/>
+							}
+						/>
+						<StepComponent
+							title='Hospedagem e Suporte Contínuo'
+							text='Após a conclusão da campanha, fornecemos serviços contínuos, incluindo hospedagem, manutenção e atualização do site, com agendamentos para garantir que a presença online do cliente seja sempre otimizada e eficaz'
+							icon={
+								<BiCloudUpload
+									size={40}
+									color={'#00A0FF'}
+								/>
+							}
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

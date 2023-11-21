@@ -1,3 +1,5 @@
+/** @format */
+
 'use client';
 import { MouseEventHandler } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
@@ -43,7 +45,7 @@ export default function Button({
 				initial='close'
 				animate='open'
 				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-700 text-md transition duration-300 w-fit text-lg font-bold tracking-wide font-montserratTitle`}
-				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
+				href='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
