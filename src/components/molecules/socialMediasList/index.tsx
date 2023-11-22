@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import {
 	LiaFacebookSquare,
@@ -31,7 +33,7 @@ export default function SocialMediaList() {
 			</a>
 			<a
 				className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
-				href='http://'
+				href='https://www.linkedin.com/company/tars-projetos/?viewAsMember=true'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<LiaLinkedin
@@ -41,7 +43,7 @@ export default function SocialMediaList() {
 			</a>{' '}
 			<a
 				className='text-brand-blue-500 hover:drop-shadow-icons transition-all duration-300'
-				href='http://tars.Projetos@gmail.com'
+				href='mailto:tars.projetos@gmail.com?subject=Solicitar Orçamento&body=Ol%C3%A1!%20Estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
 				target='_blank'
 				rel='noopener noreferrer'>
 				<LiaEnvelopeSolid
