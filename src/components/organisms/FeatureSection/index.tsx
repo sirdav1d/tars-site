@@ -20,7 +20,7 @@ interface FeatureProps {
 
 export default function FeatureSection(props: FeatureProps) {
 	return (
-		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 items-start h-fit mx-auto'>
+		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 pt-14 items-start h-fit mx-auto'>
 			<div
 				className={`flex gap-14 lg:gap-8  w-full max-w-[1440px] mx-auto justify-between flex-col  items-center  ${
 					props.side === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse'
@@ -51,7 +51,7 @@ export default function FeatureSection(props: FeatureProps) {
 				</div>
 				<Lottie
 					animationData={props.lottie}
-					className='w-full h-fit md:w-1/3 xl:w-1/2 mx-auto object-contain scale-[65%]'
+					className='w-full md:w-1/3 xl:w-1/2 mx-auto object-contain'
 				/>
 			</div>
 		</div>
