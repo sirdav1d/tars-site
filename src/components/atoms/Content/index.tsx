@@ -46,7 +46,7 @@ export default function ContentComponent({
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className='mt-3 leading-7 xl:text-lg text-base md:text-center  '>
+						className='mt-3 xl:text-lg text-base md:text-center  '>
 						{paragraph1}
 					</motion.div>
 					<br />

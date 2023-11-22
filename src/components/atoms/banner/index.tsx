@@ -27,7 +27,7 @@ export default function BannerLGPD() {
 		setCookieConsent(true);
 	}
 
-	function handleDeny() {
+	async function handleDeny() {
 		setCookieConsent(false);
 		alert(
 			'Para ter uma melhor experiência de usuário, recomendamos que aceite nossas políticas de privacidade e termos de uso',
