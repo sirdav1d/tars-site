@@ -21,13 +21,13 @@ export default function ContentComponent({
 }: TitleProps) {
 	return (
 		<>
-			<div className='flex flex-col items-center w-full py-3'>
+			<div className='flex flex-col  w-fit py-3 mx-auto'>
 				<motion.h2
 					variants={TitleAnimation}
 					whileInView={'open'}
 					viewport={{ once: true }}
 					initial='close'
-					className={`font-bold text-3xl text-center  font-montserratTitle`}>
+					className={`font-bold text-3xl  font-montserratTitle md:text-center`}>
 					{headline}
 				</motion.h2>
 				<motion.span
@@ -46,7 +46,7 @@ export default function ContentComponent({
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className='mt-3 md:leading-8 xl:text-lg text-sm text-center '>
+						className='mt-3 leading-7 xl:text-lg text-base md:text-center  '>
 						{paragraph1}
 					</motion.div>
 					<br />

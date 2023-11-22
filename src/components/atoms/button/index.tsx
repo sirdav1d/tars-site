@@ -22,7 +22,7 @@ export default function Button({
 	text,
 	role,
 	disabled,
-	link,
+	link = 'https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.',
 	loading,
 	onclick,
 }: ButtonProps) {
@@ -30,7 +30,7 @@ export default function Button({
 		return (
 			<a
 				className={`p-4 bg-green-600 rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  font-montserratTitle`}
-				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
+				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				<BsWhatsapp size={20} />
@@ -44,8 +44,8 @@ export default function Button({
 				variants={SubHeadAnimation}
 				initial='close'
 				animate='open'
-				className={`p-4 bg-brand-red-500 rounded flex gap-2 items-center hover:bg-brand-red-700 text-md transition duration-300 w-fit text-lg font-bold tracking-wide font-montserratTitle`}
-				href='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
+				className={`p-4 bg-bgButtonHero bg-btnSize bg-left hover:bg-center rounded flex gap-2 items-center  text-md transition-all ease-linear duration-300 w-fit text-lg font-bold tracking-wide font-montserratTitle`}
+				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
@@ -64,8 +64,8 @@ export default function Button({
 				initial='close'
 				whileInView='open'
 				viewport={{ amount: 0.9, once: true }}
-				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-blue-300 text-md transition duration-300 w-fit text-center text-md font-bold tracking-wide font-montserratTitle`}
-				href='https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.'
+				className={`p-4 bg-bgButton bg-btnSize bg-left hover:bg-center cursor-pointer rounded flex gap-2 items-center text-md transition-all ease-linear duration-300 w-fit text-center text-md font-bold tracking-wide font-montserratTitle`}
+				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
@@ -80,7 +80,7 @@ export default function Button({
 	if (role === 'plans') {
 		return (
 			<a
-				className={`p-4 bg-brand-blue-500 cursor-pointer rounded flex gap-2 items-center mt-2 hover:bg-brand-blue-300 text-md transition duration-300 w-full justify-center text-md font-bold tracking-wide font-montserratTitle`}
+				className={`p-4 bg-bgButton bg-btnSize bg-left hover:bg-center cursor-pointer rounded flex gap-2 items-center mt-2  text-md transition-all duration-300 w-full justify-center text-md font-bold tracking-wide font-montserratTitle`}
 				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
@@ -98,7 +98,7 @@ export default function Button({
 			<button
 				disabled={disabled}
 				type='submit'
-				className={`p-3 bg-brand-red-500 rounded z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center w-full text-center hover:bg-brand-red-300 text-md transition duration-300 mt-3 text-lg font-bold tracking-wide font-montserratTitle`}>
+				className={`p-3 bg-bgButtonHero bg-btnSize bg-left  rounded z-50 disabled:grayscale flex gap-2 items-center justify-center w-full text-centertext-md transition duration-300 mt-3 text-lg font-bold tracking-wide font-montserratTitle cursor-pointer`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (
@@ -117,7 +117,7 @@ export default function Button({
 	if (role === 'thanks') {
 		return (
 			<a
-				className={`p-4 bg-brand-red-500 cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide font-montserratTitle`}
+				className={`p-4 bg-bgButtonHero cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide font-montserratTitle`}
 				href='/resources/trafego.pdf'
 				target='_blank'
 				referrerPolicy='no-referrer'>

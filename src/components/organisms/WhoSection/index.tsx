@@ -17,8 +17,8 @@ export default function WhoSection() {
 		<div
 			id='who'
 			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
-			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit'>
-				<div className='flex flex-col items-center w-full '>
+			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit '>
+				<div className='flex flex-col  w-full '>
 					<ContentComponent
 						headline='Sua Jornada Digital Começa Aqui'
 						paragraph1='Nossa agência é a escolha ideal para quem busca resultados reais. Com expertise em web design e marketing digital, criamos websites de alto impacto que não apenas impressionam, mas também geram conversões significativas. Nossa abordagem focada no cliente garante que você participe ativamente do processo, para que o resultado final atenda exatamente às suas necessidades e objetivos'
@@ -33,12 +33,13 @@ export default function WhoSection() {
 								'Entenda Nossos 5 Passos Para Transformar Suas Ideias em Realidade'
 							}
 						/>
-
-						<Button
-							text={'Quero Dar o Primeiro Passo'}
-							role='CTA'
-							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
-						/>
+						<div className='hidden md:block'>
+							<Button
+								text={'Quero Dar o Primeiro Passo'}
+								role='CTA'
+								link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
+							/>
+						</div>
 					</div>
 					<div className='flex flex-col gap-8 w-full lg:w-1/2'>
 						<StepComponent
@@ -90,6 +91,13 @@ export default function WhoSection() {
 									color={'#00A0FF'}
 								/>
 							}
+						/>
+					</div>
+					<div className='md:hidden block'>
+						<Button
+							text={'Quero Dar o Primeiro Passo'}
+							role='CTA'
+							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
 						/>
 					</div>
 				</div>
