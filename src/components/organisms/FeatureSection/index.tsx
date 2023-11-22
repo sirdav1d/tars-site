@@ -27,7 +27,7 @@ export default function FeatureSection(props: FeatureProps) {
 						<Title headline={props.title} />
 						<p className='text-base'>{props.description}</p>
 					</div>
-          
+
 					<div className='flex gap-8 lg:gap-20 flex-col lg:flex-row'>
 						<div className='flex flex-col gap-3'>
 							<div className='flex flex-col gap-2'>
@@ -67,7 +67,7 @@ export default function FeatureSection(props: FeatureProps) {
 				</div>
 				<Lottie
 					animationData={lpLottie}
-					className='w-1/3 xl:w-1/2 mx-auto'
+					className='w-full md:w-1/3 xl:w-1/2 mx-auto'
 				/>
 			</div>
 		</div>
