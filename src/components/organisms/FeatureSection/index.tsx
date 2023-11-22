@@ -20,7 +20,7 @@ interface FeatureProps {
 
 export default function FeatureSection(props: FeatureProps) {
 	return (
-		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 mx-auto min-h-[60vh] h-full pt-14 lg:pt-0 items-center'>
+		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 mx-auto min-h-[60vh] h-full pt-14 xl:pt-0 items-center'>
 			<div
 				className={`flex gap-14 lg:gap-8  w-full max-w-[1440px] mx-auto justify-between flex-col  items-center  ${
 					props.side === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse'
