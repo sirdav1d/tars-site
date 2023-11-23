@@ -21,7 +21,7 @@ export default function PlanSection() {
 								return (
 									<li
 										key={index}
-										className='flex gap-2 items-center justify-center'>
+										className='flex gap-2  items-center'>
 										<BiMedal
 											size={24}
 											color={'#00A0FF'}
