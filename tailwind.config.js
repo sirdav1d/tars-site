@@ -21,7 +21,8 @@ module.exports = {
         'bgHero': 'url(/images/bgHero.png)',
         'bgCTA': 'linear-gradient(109deg, #F24058 35.99%, rgba(242, 64, 88, 0.00) 90.88%)',
         'bgButton': 'linear-gradient(270deg, hsla(202, 100%, 60%, 1) 0%, hsla(202, 100%, 24%, 1) 100%);',
-        'bgButtonHero': 'linear-gradient(270deg, hsla(352, 87%, 70%, 1) 0%, hsla(352, 87%, 40%, 1) 100%);'
+        'bgButtonHero': 'linear-gradient(270deg, hsla(352, 87%, 70%, 1) 0%, hsla(352, 87%, 40%, 1) 100%);',
+        'bgButtonPlans': 'linear-gradient(93deg, #3376EE 0%, #965499 54.58%, #E83752 100%)'
       },
       backgroundSize: {
         'btnSize': '180%'

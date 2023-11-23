@@ -1,3 +1,5 @@
+/** @format */
+
 import lpImage from '../../public/icons/landing-page.webp';
 import siteImage from '../../public/icons/local-na-rede-internet.webp';
 import blogImage from '../../public/icons/blog.webp';
@@ -66,83 +68,16 @@ export const servicesData: ServicesProps[] = [
 	},
 ];
 
-export const benefitsInitial = {
-	text: [
-		'01 APLICAÇÃO PARA WEB',
-		'WEB DESIGN RESPONSIVO UI/UX',
-		'OTIMIZAÇÃO SEO',
-		'ADEQUAÇÃO LGPD',
-		'SSL GRATUITA',
-		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
-		'DOMÍNIO GRÁTIS',
-		'FORMULÁRIO INTEGRADO',
-		'BANCO DE DADOS',
-		'GESTÃO DE TRÁFEGO INTEGRADA',
-	],
-	style: [
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#A3A3A3',
-		'#A3A3A3',
-		'#A3A3A3',
-	],
-};
-
-export const benefitsPro = {
-	text: [
-		'03 APLICAÇÕES PARA WEB',
-		'WEB DESIGN RESPONSIVO UI/UX',
-		'OTIMIZAÇÃO SEO',
-		'ADEQUAÇÃO LGPD',
-		'SSL GRATUITA',
-		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
-		'FORMULÁRIO INTEGRADO',
-		'DOMÍNIO GRÁTIS',
-		'BANCO DE DADOS',
-		'GESTÃO DE TRÁFEGO INTEGRADA',
-	],
-	style: [
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#A3A3A3',
-		'#A3A3A3',
-	],
-};
-
 export const benefitsBussiness = {
 	text: [
-		'APLICAÇÕES PARA WEB - ILIMITADAS',
 		'WEB DESIGN RESPONSIVO UI/UX',
 		'OTIMIZAÇÃO SEO',
 		'ADEQUAÇÃO LGPD',
 		'SSL GRATUITA',
-		'HOSPEDAGEM E MANUTEÇÃO INTEGRADOS',
+		'HOSPEDAGEM E MANUTEÇÃO',
 		'FORMULÁRIO INTEGRADO',
 		'DOMÍNIO GRÁTIS',
-		'BANCO DE DADOS',
-		'GESTÃO DE TRÁFEGO INTEGRADA',
-	],
-	style: [
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
-		'#34d399',
+		'INTEGRAÇÃO COM BANCO DE DADOS',
+		'GESTÃO DE TRÁFEGO',
 	],
 };

@@ -1,85 +1,83 @@
-import ContentComponent from '@/components/atoms/Content';
-import {
-	benefitsBussiness,
-	benefitsInitial,
-	benefitsPro,
-} from '@/mock/services.data';
-import { GiThorHammer, GiRobotGrab, GiRocket } from 'react-icons/gi';
-import Image from 'next/image';
+/** @format */
+
+import LottieComponent from '@/components/atoms/lottie';
+import Title from '@/components/atoms/title';
+import { benefitsBussiness } from '@/mock/services.data';
+import { BiMedal } from 'react-icons/bi';
+import plansLottie from '../../../../public/lotties/plansLottie.json';
 import PlanCard from './PlanCard';
-import image1 from '/public/images/plansImage.webp';
 
 export default function PlanSection() {
 	return (
-		<>
-			<div
-				id='plans'
-				className='flex flex-col w-screen relative gap-6  items-center justify-center sm:bg-brand-neutral-100 md:bg-transparent'>
-				<Image
-					className='hidden md:block md:absolute object-cover w-full h-full mix-blend-overlay'
-					width={1600}
-					height={640}
-					src={image1}
-					alt='Apertando as mãos'
-				/>
-				<div className='mt-6 mx-5'>
-					<ContentComponent headline='Adquira o Plano Ideal para você' />
+		<main
+			id='plans'
+			className=' pt-12 text-brand-neutral-900 flex flex-col w-screen relative bg-brand-neutral-100 gap-6 items-center justify-center '>
+			<div className='w-full max-w-[1440px] mx-auto  px-5 '>
+				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
+					<div className='flex flex-col w-full gap-10'>
+						<Title
+							headline={'Diferenciais Que Só a Tars Consegue te entregar'}
+						/>
+						<div className='flex flex-col gap-3'>
+							{benefitsBussiness.text.map((t, index) => {
+								return (
+									<li
+										key={index}
+										className='flex gap-2'>
+										<BiMedal
+											size={24}
+											color={'#00A0FF'}
+											className='drop-shadow-cards animate-pulse'
+										/>
+										<p className='font-bold text-sm'>{t}</p>
+									</li>
+								);
+							})}
+						</div>
+					</div>
+					<LottieComponent lottie={plansLottie} />
+				</div>
+				<div className='mt-14 mx-5 text-brand-neutral-900 mb-10'>
+					<Title headline='Adquira o Plano Ideal Para Você e Sua Equipe' />
 				</div>
 
-				<div className='flex flex-col xl:flex-row px-40 gap-12 items-center justify-center pb-10'>
+				<div className=' lg:gap-2 gap-5 justify-center flex flex-wrap items-center pb-10 mx-auto '>
 					<PlanCard
-						icon={
-							<GiRobotGrab
-								size={40}
-								color={'#c0c0c0'}
-								style={{
-									filter: 'drop-shadow(0px 0px 20px #ffffff)',
-								}}
-							/>
-						}
+						mainProduct='Site Página Única'
+						mainDescription='Single Page Application (SPA)'
+						mainPrice='R$1.200,00'
 						link={
 							'https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20iniciante.'
 						}
-						key={String(benefitsInitial.text[0])}
+						key='Iniciante'
 						role='Iniciante'
-						style={benefitsInitial.style}
-						text={benefitsInitial.text}
 					/>
 					<PlanCard
-						icon={
-							<GiThorHammer
-								size={40}
-								color={'#0080CC'}
-								style={{
-									filter: 'drop-shadow(0px 0px 20px #00A0FF)',
-								}}
-							/>
-						}
+						mainProduct='Site Multi Pages'
+						mainDescription='Bussiness WebSite de múltiplas páginas'
+						mainPrice='R$1.200,00'
 						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20profissional.'
-						key={String(benefitsPro.text[0])}
+						key='Profissional'
 						role='Profissional'
-						style={benefitsPro.style}
-						text={benefitsPro.text}
 					/>
 					<PlanCard
-						icon={
-							<GiRocket
-								size={40}
-								color={'#F24058'}
-								style={{
-									transform: 'rotatex(180deg)',
-									filter: 'drop-shadow(0px 0px 20px #F57082)',
-								}}
-							/>
-						}
+						mainProduct='Produto Digital On Demand '
+						mainDescription='Sites Ilimitados para atender a demanda específica da sua empresa'
+						mainPrice='R$2.000,00'
 						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20empresarial.'
-						key={String(benefitsBussiness.text[0])}
+						key='Empresarial'
 						role='Empresarial'
-						style={benefitsBussiness.style}
-						text={benefitsBussiness.text}
+					/>
+					<PlanCard
+						mainProduct='Config. Google ADS'
+						mainDescription='Primeira Campanha Gratuita, Configurada e integrada ao seu site'
+						mainPrice='R$1.000,00 por mês'
+						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20empresarial.'
+						key='trafego'
+						role='Tráfego'
 					/>
 				</div>
 			</div>
-		</>
+		</main>
 	);
 }

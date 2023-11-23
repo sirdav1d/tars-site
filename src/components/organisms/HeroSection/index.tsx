@@ -1,8 +1,7 @@
 /** @format */
-'use client';
 import Button from '@/components/atoms/button';
+import LottieComponent from '@/components/atoms/lottie';
 import Header from '@/components/molecules/header';
-import Lottie from 'lottie-react';
 import heroLottie from '../../../../public/lotties/heroLottie.json';
 import Headline from './HeadLine';
 
@@ -25,7 +24,7 @@ export default function HeroSection() {
 					</div>
 					<div className='w-full hidden md:block object-contain'>
 						{' '}
-						<Lottie animationData={heroLottie} />
+						<LottieComponent lottie={heroLottie} />
 					</div>
 				</div>
 			</div>

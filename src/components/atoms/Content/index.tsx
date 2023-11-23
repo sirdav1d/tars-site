@@ -2,11 +2,10 @@
 
 'use client';
 import {
-	ParagraphAnimation,
-	TitleAnimation,
-	TitleSpanAnimation,
+	ParagraphAnimation
 } from '@/animations';
 import { motion } from 'framer-motion';
+import Title from '../title';
 
 interface TitleProps {
 	headline: string;
@@ -22,21 +21,7 @@ export default function ContentComponent({
 	return (
 		<>
 			<div className='flex flex-col  w-fit py-3 mx-auto'>
-				<motion.h2
-					variants={TitleAnimation}
-					whileInView={'open'}
-					viewport={{ once: true }}
-					initial='close'
-					className={`font-bold text-3xl  font-montserratTitle md:text-center`}>
-					{headline}
-				</motion.h2>
-				<motion.span
-					variants={TitleSpanAnimation}
-					whileInView={'open'}
-					viewport={{ amount: 0.9, once: true }}
-					initial='close'
-					className='w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons '
-				/>
+				<Title headline={headline} />
 			</div>
 
 			{paragraph1 && (
@@ -46,7 +31,7 @@ export default function ContentComponent({
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className='mt-3 xl:text-lg text-base md:text-center  '>
+						className='mt-3 xl:text-lg text-base md:text-center leading-7 '>
 						{paragraph1}
 					</motion.div>
 					<br />
@@ -60,7 +45,7 @@ export default function ContentComponent({
 						whileInView={'open'}
 						viewport={{ amount: 0.9, once: true }}
 						initial='close'
-						className='leading-8 xl:text-base text-sm  '>
+						className='leading-7 xl:text-base text-sm  '>
 						{paragraph2}
 					</motion.div>
 				</>

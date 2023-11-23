@@ -80,12 +80,13 @@ export default function Button({
 	if (role === 'plans') {
 		return (
 			<a
-				className={`p-4 bg-bgButton bg-btnSize bg-left hover:bg-center cursor-pointer rounded flex gap-2 items-center mt-2  text-md transition-all duration-300 w-full justify-center text-md font-bold tracking-wide font-montserratTitle`}
+				className={`p-4 bg-bgButtonPlans bg-btnSize bg-left hover:bg-right cursor-pointer rounded flex gap-2 items-center mt-2  text-md transition-all duration-500 ease-linear w-full justify-center text-md font-bold tracking-wide font-montserratTitle text-white`}
 				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
 				{text}
 				<RiNavigationFill
+					color={'#fff'}
 					className='rotate-90'
 					size={20}
 				/>

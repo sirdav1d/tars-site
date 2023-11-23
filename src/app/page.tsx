@@ -9,7 +9,7 @@ import ServiceSection from '@/components/organisms/ServiceSection';
 import WhoSection from '@/components/organisms/WhoSection';
 import { GiTargeting } from 'react-icons/gi';
 import { LiaFunnelDollarSolid } from 'react-icons/lia';
-import { PiHandshakeThin, PiTrophyThin, PiGearThin } from 'react-icons/pi';
+import { PiHandshakeLight, PiTrophyLight, PiGearLight } from 'react-icons/pi';
 
 import lpLottie from '../../public/lotties/lpLottie.json';
 import instLottie from '../../public/lotties/institucuionalLottie.json';
@@ -58,7 +58,7 @@ export default function Home() {
 				lottie={instLottie}
 				title={'Conquiste Uma Presença Institucional Online que Gera Confiança'}
 				description={
-					'Destaque-se da concorrência com um site institucional bem projetado. Ele é a vitrine da sua marca, oferecendo um espaço exclusivo para exibir sua singularidade, destacar seus diferenciais e cativar seu público-alvo, criando uma impressão inesquecível'
+					'Ter um site institucional não é apenas uma presença online; é a porta de entrada para o sucesso nos negócios. Imagine sua empresa tendo uma vitrine digital elegante, aberta 24 horas por dia, 7 dias por semana, acessível a um público global. Um site institucional é a sua identidade digital, uma declaração ousada que transmite profissionalismo, confiança e compromisso. É o meio pelo qual você constrói sua marca e conta sua história de maneira impactante. Além disso, proporciona uma experiência personalizada aos visitantes, destacando seus valores, produtos e conquistas de forma envolvente.'
 				}
 			/>
 			<FeatureSection
@@ -74,7 +74,7 @@ export default function Home() {
 					{
 						head: 'Conexão com o Público-Alvo',
 						icon: (
-							<PiHandshakeThin
+							<PiHandshakeLight
 								size={40}
 								color={'#00A0FF'}
 								className='drop-shadow-cards animate-pulse'
@@ -84,7 +84,7 @@ export default function Home() {
 					{
 						head: 'Demonstração de Autoridade',
 						icon: (
-							<PiTrophyThin
+							<PiTrophyLight
 								size={40}
 								color={'#00A0FF'}
 								className='drop-shadow-cards animate-pulse'
@@ -94,7 +94,7 @@ export default function Home() {
 					{
 						head: 'Apoio à Estratégia de Marketing',
 						icon: (
-							<PiGearThin
+							<PiGearLight
 								size={40}
 								color={'#00A0FF'}
 								className='drop-shadow-cards animate-pulse'

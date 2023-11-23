@@ -18,7 +18,7 @@ export default function WhoSection() {
 			id='who'
 			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
 			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit '>
-				<div className='flex flex-col  w-full '>
+				<div className='flex flex-col w-full '>
 					<ContentComponent
 						headline='Sua Jornada Digital Começa Aqui'
 						paragraph1='Nossa agência é a escolha ideal para quem busca resultados reais. Com expertise em web design e marketing digital, criamos websites de alto impacto que não apenas impressionam, mas também geram conversões significativas. Nossa abordagem focada no cliente garante que você participe ativamente do processo, para que o resultado final atenda exatamente às suas necessidades e objetivos'
