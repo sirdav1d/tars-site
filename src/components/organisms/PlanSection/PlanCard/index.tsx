@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { ReactElement } from 'react';
 
 interface PlanCardProps {
+
 	role?: string;
 	link?: string;
 	icon?: ReactElement<any, any>;
@@ -112,7 +113,7 @@ export default function PlanCard({
 					</div>
 
 					<Button
-						text='Consultar Valor'
+						text='Saiba Mais'
 						role='plans'
 						link={link}
 					/>
