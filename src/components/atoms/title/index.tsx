@@ -19,7 +19,7 @@ export default function TitleComponent(props: TitleProps) {
 				whileInView={'open'}
 				viewport={{ once: true }}
 				initial='close'
-				className={`font-bold text-xl lg:text-3xl font-montserratTitle`}>
+				className={`font-bold text-2xl lg:text-3xl font-montserratTitle`}>
 				{props.headline}
 			</motion.h2>
 			<motion.span
