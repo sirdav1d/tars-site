@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { ReactElement } from 'react';
 
 interface PlanCardProps {
-
 	role?: string;
 	link?: string;
 	icon?: ReactElement<any, any>;
@@ -31,7 +30,7 @@ export default function PlanCard({
 				initial='close'
 				whileInView={'open'}
 				data-role={role}
-				viewport={{ amount: 0.5, once: true }}
+				viewport={{ amount: 'some', once: true }}
 				className='z-30  w-[340px] h-[420px] rounded-lg bg-white border border-brand-neutral-100 backdrop-blur-sm flex flex-col justify-between  pb-4 items-center shadow-xl'>
 				<div className='flex items-center justify-center bg-brand-neutral-950 w-full rounded-t-lg p-2'>
 					<h3
