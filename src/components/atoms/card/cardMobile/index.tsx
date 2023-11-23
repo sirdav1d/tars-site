@@ -1,13 +1,6 @@
-'use client';
-import {
-	CardMobileAnimation,
-	CardDescription,
-	CardIcon,
-	CardSpan,
-	CardTitle,
-} from '@/animations';
+/** @format */
+
 import { ServicesProps } from '@/mock/services.data';
-import { motion } from 'framer-motion';
 
 import Image from 'next/image';
 
@@ -18,38 +11,25 @@ interface CardProps {
 export default function CardMobile({ data }: CardProps) {
 	return (
 		<>
-			<motion.div
-				variants={CardMobileAnimation}
-				whileInView={'open'}
-				viewport={{ amount: 0.9, once: true }}
-				className={`relative w-[300px] h-[248px] md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center px-3 cursor-pointer`}>
-				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-5'>
-					<motion.h3
-						variants={CardTitle}
-						className={'font-montserratTitle text-xl absolute'}>
-						{data.name}
-					</motion.h3>
-					<motion.span
-						variants={CardSpan}
-						className='w-[0px] opacity-0 h-[0px] bg-brand-blue-500 rounded-full drop-shadow-spanCards'
-					/>
-					<motion.div
-						variants={CardIcon}
-						className='opacity-0 '>
-						<Image
-							className='drop-shadow-cards animate-bounce'
-							src={data.url}
-							width={52}
-							height={52}
-							alt={data.name}></Image>
-					</motion.div>
-					<motion.p
-						variants={CardDescription}
-						className='text-sm font-light text-center opacity-0 leading-normal tracking-wide'>
+			<div
+				className={`relative w-[324px] h-fit md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center p-5 cursor-pointer`}>
+				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-8'>
+					<div className='flex flex-col items-center justify-center'>
+						<h3 className={'font-montserratTitle text-xl'}>{data.name}</h3>
+						<span className='w-[48px]  h-[4px] bg-brand-blue-500 rounded-full drop-shadow-spanCards' />
+					</div>
+					<Image
+						className='drop-shadow-cards animate-bounce mt-3'
+						src={data.url}
+						width={52}
+						height={52}
+						alt={data.name}/>
+
+					<p className='text-sm font-light text-center leading-normal tracking-wide'>
 						{data.description}
-					</motion.p>
+					</p>
 				</div>
-			</motion.div>
+			</div>
 		</>
 	);
 }
