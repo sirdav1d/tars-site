@@ -16,7 +16,7 @@ export default function PlanSection() {
 				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
 					<div className='flex flex-col w-full gap-10'>
 						<Title
-							headline={'Diferenciais Que Só a Tars Consegue te entregar'}
+							headline={'Diferenciais Que Nossos Clientes Adoram'}
 						/>
 						<div className='flex flex-col gap-3'>
 							{benefitsBussiness.text.map((t, index) => {
