@@ -15,9 +15,7 @@ export default function PlanSection() {
 			<div className='w-full max-w-[1440px] mx-auto  px-5 '>
 				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
 					<div className='flex flex-col w-full gap-10'>
-						<Title
-							headline={'Diferenciais Que Nossos Clientes Adoram'}
-						/>
+						<Title headline={'Diferenciais Que Nossos Clientes Adoram'} />
 						<div className='flex flex-col gap-3'>
 							{benefitsBussiness.text.map((t, index) => {
 								return (
@@ -29,7 +27,7 @@ export default function PlanSection() {
 											color={'#00A0FF'}
 											className='drop-shadow-cards animate-pulse'
 										/>
-										<p className='font-bold text-sm'>{t}</p>
+										<p className='font-bold text-xs md:text-sm'>{t}</p>
 									</li>
 								);
 							})}
