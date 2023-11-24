@@ -58,7 +58,7 @@ export default function Home() {
 				lottie={instLottie}
 				title={'Conquiste Uma Presença Institucional Online que Gera Confiança'}
 				description={
-					'Ter um site institucional não é apenas uma presença online; é a porta de entrada para o sucesso nos negócios. Imagine sua empresa tendo uma vitrine digital elegante, aberta 24 horas por dia, 7 dias por semana, acessível a um público global. Um site institucional é a sua identidade digital, uma declaração ousada que transmite profissionalismo, confiança e compromisso. É o meio pelo qual você constrói sua marca e conta sua história de maneira impactante. Além disso, proporciona uma experiência personalizada aos visitantes, destacando seus valores, produtos e conquistas de forma envolvente.'
+					'Ter um site institucional não é apenas uma presença online; é a porta de entrada para o sucesso nos negócios. Imagine sua empresa tendo uma vitrine digital elegante, aberta 24 horas por dia, 7 dias por semana, acessível à um público global.'
 				}
 			/>
 			<FeatureSection

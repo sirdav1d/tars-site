@@ -20,9 +20,9 @@ interface FeatureProps {
 
 export default function FeatureSection(props: FeatureProps) {
 	return (
-		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 mx-auto min-h-[64vh] h-full py-14 xl:pt-5 items-center'>
+		<div className='rounded flex px-6 xl:px-20 justify-center gap-14 mx-auto min-h-[64vh] h-full py-10 xl:pt-5 items-center'>
 			<div
-				className={`flex gap-14 lg:gap-8  w-full max-w-[1440px] mx-auto justify-between flex-col  items-center  ${
+				className={`flex gap-4 lg:gap-8  w-full max-w-[1440px] mx-auto justify-between flex-col  items-center  ${
 					props.side === 'left' ? 'lg:flex-row' : 'lg:flex-row-reverse'
 				}`}>
 				<div className='flex flex-col gap-10 lg:w-2/3'>
