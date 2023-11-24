@@ -12,7 +12,7 @@ export default function CardMobile({ data }: CardProps) {
 	return (
 		<>
 			<div
-				className={`relative w-[296px] h-fit md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center p-5 cursor-pointer`}>
+				className={`relative w-full h-fit md:hidden bg-brand-neutral-800/40 backdrop-blur-md flex items-center justify-center rounded border my-5 border-brand-neutral-100/20 font-bold text-center p-5 cursor-pointer`}>
 				<div className='flex flex-col items-center h-full relative w-full  justify-center gap-8'>
 					<div className='flex flex-col items-center justify-center'>
 						<h3 className={'font-montserratTitle text-xl'}>{data.name}</h3>

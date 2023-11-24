@@ -1,8 +1,7 @@
 /** @format */
 
-import ContentComponent from '@/components/atoms/Content';
 import Button from '@/components/atoms/button';
-import TitleComponent from '@/components/atoms/title';
+import Title from '@/components/atoms/title';
 import {
 	BiCloudUpload,
 	BiConversation,
@@ -18,17 +17,23 @@ export default function WhoSection() {
 			id='who'
 			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
 			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit '>
-				<div className='flex flex-col w-full '>
-					<ContentComponent
-						headline='Sua Jornada Digital Começa Aqui'
-						paragraph1='Nossa agência é a escolha ideal para quem busca resultados reais. Com expertise em web design e marketing digital, criamos websites de alto impacto que não apenas impressionam, mas também geram conversões significativas. Nossa abordagem focada no cliente garante que você participe ativamente do processo, para que o resultado final atenda exatamente às suas necessidades e objetivos'
-					/>
+				<div className='flex flex-col w-full gap-5 '>
+					<Title headline={'Sua Jornada Digital Começa Aqui'} />
+					<p className='leading-7 xl:text-base text-sm'>
+						Nossa agência é a escolha ideal para quem busca resultados reais.
+						Com expertise em web design e marketing digital, criamos websites de
+						alto impacto que não apenas impressionam, mas também geram
+						conversões significativas. Nossa abordagem focada no cliente garante
+						que você participe ativamente do processo de construção do seu
+						projeto web, para que o resultado final atenda exatamente às suas
+						necessidades e objetivos
+					</p>
 				</div>
 			</div>
 			<div className='flex flex-col lg:flex-row justify-between gap-10 w-full max-w-[1440px] mx-auto pb-3'>
 				<div className='flex gap-14 flex-col md:flex-row'>
 					<div className='flex flex-col gap-10 w-full lg:w-1/2'>
-						<TitleComponent
+						<Title
 							headline={
 								'Entenda Nossos 5 Passos Para Transformar Suas Ideias em Realidade'
 							}

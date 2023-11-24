@@ -15,7 +15,7 @@ export default function PlanSection() {
 			<div className='w-full max-w-[1440px] mx-auto  px-5 '>
 				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
 					<div className='flex flex-col w-full gap-10'>
-						<Title headline={'Diferenciais Que Nossos Clientes Adoram'} />
+						<Title headline={'Conheça os Diferenciais da Nossa Abordagem'} />
 						<div className='flex flex-col gap-3'>
 							{benefitsBussiness.text.map((t, index) => {
 								return (

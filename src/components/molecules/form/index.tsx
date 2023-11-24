@@ -1,9 +1,7 @@
+/** @format */
+
 'use client';
-import {
-	FadeAnimation,
-	SubHeadAnimation,
-	TitleSpanAnimation,
-} from '@/animations';
+import { SubHeadAnimation } from '@/animations';
 import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
@@ -86,14 +84,9 @@ export default function FormComponent() {
 				{(formik) => (
 					<Form className='bg-brand-neutral-800/50 backdrop-blur-sm p-8 border border-brand-neutral-100/10 rounded-md shadow-xl max-w-[368px] lg:max-w-full'>
 						<div className='flex flex-col items-center justify-center pb-5'>
-							<motion.h2
-								variants={FadeAnimation}
-								initial='close'
-								whileInView={'open'}
-								viewport={{ once: true, amount: 'all' }}
-								className={'text-center text-xl font-bold'}>
-								Descubra o Potencial do Seu Negócio!
-							</motion.h2>
+							<h2 className={'text-center text-xl font-bold'}>
+								Desbloqueie o Potencial da Sua Empresa
+							</h2>
 							<motion.span
 								variants={SubHeadAnimation}
 								initial='close'
@@ -112,8 +105,9 @@ export default function FormComponent() {
 								id='fullName'
 								name='fullName'
 								className='py-2 px-4 rounded outline-none bg-brand-neutral-600/20 border-b text-base font-light border-brand-neutral-400 focus:border-brand-blue-500 focus:shadow-input transition-all duration-200'></Field>
+
 							<ErrorMessage
-								className='text-sm text-brand-red-500 font-bold'
+								className='text-sm text-brand-red-500 font-bold transition-all duration-300 ease'
 								component='div'
 								name='fullName'
 							/>
@@ -128,6 +122,7 @@ export default function FormComponent() {
 								id='email'
 								name='email'
 								className='py-2 px-4 rounded outline-none bg-brand-neutral-600/20 border-b text-base font-light border-brand-neutral-400 focus:border-brand-blue-500 focus:shadow-input transition-all duration-200'></Field>
+
 							<ErrorMessage
 								className='text-sm text-brand-red-500 font-bold'
 								component='div'
@@ -144,6 +139,7 @@ export default function FormComponent() {
 								id='phone'
 								name='phone'
 								className='py-2 px-4 rounded outline-none bg-brand-neutral-600/20 border-b text-base font-light border-brand-neutral-400 focus:border-brand-blue-500 focus:shadow-input transition-all duration-200'></Field>
+
 							<ErrorMessage
 								className='text-sm text-brand-red-500 font-bold'
 								component='div'

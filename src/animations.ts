@@ -27,26 +27,6 @@ export const CardAnimation = {
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,
-			duration: 0.5,
-			delayChildren: 0.4,
-			staggerChildren: 0.2,
-		},
-	},
-	close: {
-		transition: {
-			delay: 0.3,
-		},
-	},
-};
-
-export const CardMobileAnimation = {
-	open: {
-		height: 340,
-		zIndex: '88888',
-		boxShadow: '0px 0px 16px #00A0FF',
-		transition: {
-			delay: 0.3,
-			duration: 0.5,
 			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},
@@ -176,6 +156,9 @@ export const TitleSpanAnimation = {
 		x: 0,
 		width: 120,
 		opacity: 1,
+		transition: {
+			delay: 0.8,
+		},
 	},
 	close: {
 		x: -80,
@@ -223,13 +206,17 @@ export const SpanHeadAnimation: Variants = {
 		y: 0,
 		opacity: 1,
 		transition: {
-			duration: 0.2,
+			duration: 0.8,
+			type: 'spring',
+			bounce: 100,
+			stiffness: 200,
 		},
 	},
 	exit: {
 		y: 25,
 		opacity: 0,
 		transition: {
+			delay: 0.2,
 			duration: 0.3,
 		},
 	},

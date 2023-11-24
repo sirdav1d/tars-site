@@ -1,9 +1,8 @@
 /** @format */
 'use client';
 
-import { TitleAnimation, TitleSpanAnimation } from '@/animations';
+import { TitleSpanAnimation } from '@/animations';
 import { motion } from 'framer-motion';
-import React from 'react';
 
 interface TitleProps {
 	headline: string;
@@ -14,14 +13,9 @@ interface TitleProps {
 export default function TitleComponent(props: TitleProps) {
 	return (
 		<div className='flex flex-col w-full py-3 '>
-			<motion.h2
-				variants={TitleAnimation}
-				whileInView={'open'}
-				viewport={{ once: true }}
-				initial='close'
-				className={`font-bold text-2xl lg:text-3xl font-montserratTitle`}>
+			<h2 className={`font-bold text-2xl lg:text-3xl font-montserratTitle`}>
 				{props.headline}
-			</motion.h2>
+			</h2>
 			<motion.span
 				variants={TitleSpanAnimation}
 				whileInView={'open'}

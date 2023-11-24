@@ -43,7 +43,7 @@ export default function Headline() {
 				className={`font-bold  text-3xl md:leading-relaxed xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
 				Oferecemos a chave para o sucesso digital, com serviços que garantem_
 				<br />
-				<AnimatePresence>
+				<AnimatePresence mode='wait'>
 					<motion.span
 						key={textHero}
 						variants={SpanHeadAnimation}
