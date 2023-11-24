@@ -206,16 +206,15 @@ export const SpanHeadAnimation: Variants = {
 		y: 0,
 		opacity: 1,
 		transition: {
-			type: 'spring',
-			stiffness: 500,
-			damping: 25,
+			delay: 0.2,
+			duration: 0.5,
+			ease: 'linear',
 		},
 	},
 	exit: {
 		y: 30,
 		opacity: 0,
 		transition: {
-			delay: 0.2,
 			duration: 0.3,
 		},
 	},
