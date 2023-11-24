@@ -208,11 +208,11 @@ export const SpanHeadAnimation: Variants = {
 		transition: {
 			type: 'spring',
 			stiffness: 500,
-			damping: 13,
+			damping: 25,
 		},
 	},
 	exit: {
-		y: 45,
+		y: 30,
 		opacity: 0,
 		transition: {
 			delay: 0.2,
