@@ -24,7 +24,7 @@ const montSerrat = Montserrat({
 export const metadata: Metadata = {
 	title: 'Agência Tars Projetos',
 	description:
-		'A Tars Projetos atua no mercado de tecnologia a mais de 3 anos, expandimos nossos horizontes e nos tornamos especialistas em criação de Landing Pages',
+		'A Tars Projetos LTDA atua no mercado de tecnologia à mais de 3 anos, atualmente expandimos nossos horizontes e nos tornamos uma agência de Marketing Digital especialista em criação de Landing Pages e Sites Institucionais',
 };
 
 export default function RootLayout({

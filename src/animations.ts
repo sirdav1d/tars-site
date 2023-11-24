@@ -112,7 +112,7 @@ export const SubHeadAnimation = {
 		opacity: 1,
 		transition: {
 			duration: 0.4,
-			delay: 0.6,
+			delay: 0.3,
 		},
 	},
 	close: {
@@ -207,12 +207,12 @@ export const SpanHeadAnimation: Variants = {
 		opacity: 1,
 		transition: {
 			type: 'spring',
-			bounce: 100,
-			stiffness: 300,
+			stiffness: 500,
+			damping: 13,
 		},
 	},
 	exit: {
-		y: 25,
+		y: 45,
 		opacity: 0,
 		transition: {
 			delay: 0.2,

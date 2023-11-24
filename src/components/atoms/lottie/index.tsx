@@ -10,8 +10,8 @@ interface LottieProps {
 
 export default function LottieComponent(props: LottieProps) {
 	return (
-		<div>
+		<>
 			<Lottie animationData={props.lottie} />
-		</div>
+		</>
 	);
 }

@@ -7,7 +7,7 @@ import Headline from './HeadLine';
 
 export default function HeroSection() {
 	return (
-		<div
+		<main
 			id='home'
 			className='relative h-screen bg-cover bg-bgHero flex items-center md:px-14 px-5'>
 			<Header />
@@ -28,6 +28,6 @@ export default function HeroSection() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }

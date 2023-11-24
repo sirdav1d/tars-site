@@ -18,7 +18,7 @@ module.exports = {
         'input': '0px 4px 20px -12px #00A0FF'
       },
       backgroundImage: {
-        'bgHero': 'url(/images/bgHero.png)',
+        'bgHero': 'linear-gradient(194deg, rgba(36,36,36,0.804359243697479) 20%, rgba(0,194,255,0.24693627450980393) 35%, rgba(36,36,36,0.7987570028011204) 65%);',
         'bgCTA': 'linear-gradient(109deg, #F24058 35.99%, rgba(242, 64, 88, 0.00) 90.88%)',
         'bgButton': 'linear-gradient(270deg, hsla(202, 100%, 60%, 1) 0%, hsla(202, 100%, 24%, 1) 100%);',
         'bgButtonHero': 'linear-gradient(270deg, hsla(352, 87%, 70%, 1) 0%, hsla(352, 87%, 40%, 1) 100%);',
