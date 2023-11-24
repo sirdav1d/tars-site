@@ -40,7 +40,7 @@ export default function Headline() {
 				animate={{ opacity: 1, x: 0 }}
 				initial={{ opacity: 0, x: -150 }}
 				transition={{ delay: 0.2, duration: 0.4 }}
-				className={`font-bold  text-3xl md:leading-relaxed xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
+				className={`font-bold  text-3xl xl:text-5xl 2xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
 				Oferecemos a chave para o sucesso digital, com serviços que garantem_
 				<br />
 				<AnimatePresence mode='wait'>
