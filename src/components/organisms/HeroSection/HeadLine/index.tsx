@@ -38,8 +38,8 @@ export default function Headline() {
 		<AnimatePresence mode='wait'>
 			<motion.div
 				animate={{ opacity: 1, x: 0 }}
-				initial={{ opacity: 0, x: -150 }}
-				transition={{ delay: 0.5, duration: 0.8 }}
+				initial={{ opacity: 0, x: -100 }}
+				transition={{ delay: 0.8 }}
 				className=' flex gap-3  h-full '>
 				<h1
 					className={`font-bold  text-3xl xl:text-5xl 2xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
