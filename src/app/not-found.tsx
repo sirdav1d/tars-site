@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
 	return (
-		<main className='p-10 h-full flex items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50'>
+		<main className='p-10 h-full flex bg-bgHero items-center min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto justify-center m-auto'>
 				<Image
 					className='w-[220px] '

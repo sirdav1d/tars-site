@@ -7,7 +7,6 @@ export const drawerAnimation: Variants = {
 		transform: 'translateX(0px)',
 		opacity: 1,
 		width: '75%',
-	
 	},
 	closed: {
 		opacity: 0,
@@ -16,10 +15,10 @@ export const drawerAnimation: Variants = {
 	},
 };
 
-export const CardAnimation = {
+export const CardAnimation: Variants = {
 	open: {
 		height: 280,
-		zIndex: '88888',
+		zIndex: 88888888888888,
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,

@@ -13,10 +13,12 @@ export default function ServiceSection() {
 			<div className='flex flex-col lg:gap-10 justify-between w-full max-w-[1440px] mx-auto pb-3 '>
 				<Title headline='Serviços Que Vão Impulsionar o Seu Negócio' />
 
-				<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 lg:h-[900px] xl:h-[480px]'>
+				<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 lg:h-[900px] xl:h-[480px] '>
 					{servicesData.map((s, index) => {
 						return (
-							<ul key={index}>
+							<ul
+								key={index}
+								className=' flex items-center justify-center'>
 								<li className='md:hidden'>
 									<CardMobile data={s} />
 								</li>
