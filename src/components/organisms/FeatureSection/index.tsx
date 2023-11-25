@@ -1,8 +1,7 @@
 /** @format */
-'use client';
 
+import LottieComponent from '@/components/atoms/lottie';
 import Title from '@/components/atoms/title';
-import Lottie from 'lottie-react';
 
 interface Benefit {
 	head?: string;
@@ -30,7 +29,7 @@ export default function FeatureSection(props: FeatureProps) {
 						<Title headline={props.title} />
 						<p className='text-base leading-7'>{props.description}</p>
 					</div>
-					<div className='flex gap-6 xl:gap-12 flex-col lg:flex-row '>
+					<ul className='flex gap-6 xl:gap-12 flex-col lg:flex-row '>
 						{props.benefits?.map((benefit, index) => {
 							return (
 								<li key={index}>
@@ -38,21 +37,18 @@ export default function FeatureSection(props: FeatureProps) {
 										<div className='flex flex-col lg:gap-2'>
 											{benefit.icon}
 
-											<h4 className='font-montserratTitle font-bold text-lg'>
+											<h5 className='font-montserratTitle font-bold text-lg'>
 												{benefit.head}
-											</h4>
+											</h5>
 										</div>
 										<p className='text-sm'>{benefit.text}</p>
 									</div>
 								</li>
 							);
 						})}
-					</div>
+					</ul>
 				</div>
-				<Lottie
-					animationData={props.lottie}
-					className='w-full md:w-1/3 xl:w-1/2 mx-auto object-contain scale-90'
-				/>
+				<LottieComponent lottie={props.lottie} />
 			</div>
 		</div>
 	);

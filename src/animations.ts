@@ -8,7 +8,7 @@ export const drawerAnimation: Variants = {
 		opacity: 1,
 		width: '75%',
 		transition: {
-			duration: 0.5,
+			duration: 0.3,
 			when: 'beforeChildren',
 		},
 	},
@@ -16,7 +16,6 @@ export const drawerAnimation: Variants = {
 		opacity: 0,
 		transform: 'translateX(100%)',
 		width: '0px',
-		transition: { duration: 0.5 },
 	},
 };
 
@@ -121,36 +120,6 @@ export const SubHeadAnimation = {
 	},
 };
 
-export const TitleAnimation = {
-	open: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			duration: 0.4,
-			delay: 0.2,
-		},
-	},
-	close: {
-		x: '-40px',
-		opacity: 0,
-	},
-};
-
-export const ParagraphAnimation = {
-	open: {
-		x: 0,
-		opacity: 1,
-		transition: {
-			duration: 0.4,
-			delay: 0.4,
-		},
-	},
-	close: {
-		x: '-40px',
-		opacity: 0,
-	},
-};
-
 export const TitleSpanAnimation = {
 	open: {
 		x: 0,
@@ -163,28 +132,6 @@ export const TitleSpanAnimation = {
 	close: {
 		x: -80,
 		width: 0,
-		opacity: 0,
-	},
-};
-
-export const MVVAnimation = {
-	open: {
-		x: 0,
-		opacity: 1,
-	},
-	close: {
-		x: -80,
-		opacity: 0,
-	},
-};
-
-export const WhoImageAnimation = {
-	open: {
-		x: 0,
-		opacity: 1,
-	},
-	close: {
-		x: 80,
 		opacity: 0,
 	},
 };
@@ -207,10 +154,7 @@ export const SpanHeadAnimation: Variants = {
 		opacity: 1,
 	},
 	exit: {
-		y: 30,
+		y: 20,
 		opacity: 0,
-		transition: {
-			duration: 0.3,
-		},
 	},
 };

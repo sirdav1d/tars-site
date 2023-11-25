@@ -1,3 +1,5 @@
+/** @format */
+
 import Footer from '@/components/atoms/footer';
 import FormComponent from '@/components/molecules/form';
 import SocialMediaList from '@/components/molecules/socialMediasList';

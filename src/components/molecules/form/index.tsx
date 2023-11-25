@@ -1,11 +1,9 @@
 /** @format */
 
 'use client';
-import { SubHeadAnimation } from '@/animations';
 import Button from '@/components/atoms/button';
 import Label from '@/components/atoms/label';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import * as Yup from 'yup';
@@ -87,13 +85,7 @@ export default function FormComponent() {
 							<h2 className={'text-center text-xl font-bold'}>
 								Desbloqueie o Potencial da Sua Empresa
 							</h2>
-							<motion.span
-								variants={SubHeadAnimation}
-								initial='close'
-								whileInView={'open'}
-								viewport={{ once: true, amount: 'all' }}
-								className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons'
-							/>
+							<span className='w-[80px] lg:w-[120px] h-2 bg-brand-blue-500 rounded-full mt-1 drop-shadow-icons' />
 						</div>
 						<div className='flex flex-col py-3 gap-2'>
 							<Label
