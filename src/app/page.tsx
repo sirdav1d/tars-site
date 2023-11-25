@@ -10,7 +10,6 @@ import WhoSection from '@/components/organisms/WhoSection';
 import { GiTargeting } from 'react-icons/gi';
 import { LiaFunnelDollarSolid } from 'react-icons/lia';
 import { PiHandshakeLight, PiTrophyLight, PiGearLight } from 'react-icons/pi';
-
 import lpLottie from '../../public/lotties/lpLottie.json';
 import instLottie from '../../public/lotties/institucuionalLottie.json';
 import blogLottie from '../../public/lotties/blogLottie.json';

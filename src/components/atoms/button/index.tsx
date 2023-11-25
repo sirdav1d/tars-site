@@ -1,13 +1,12 @@
 /** @format */
 
 'use client';
-import { MouseEventHandler } from 'react';
-import { BsWhatsapp } from 'react-icons/bs';
+import { SubHeadAnimation } from '@/animations';
+import { motion } from 'framer-motion';
 import { BiDownload } from 'react-icons/bi';
+import { BsWhatsapp } from 'react-icons/bs';
 import { RiNavigationFill } from 'react-icons/ri';
 import LoadingBtn from '../loading';
-import { motion } from 'framer-motion';
-import { SubHeadAnimation } from '@/animations';
 
 interface ButtonProps {
 	text: string;
@@ -15,7 +14,6 @@ interface ButtonProps {
 	link?: string;
 	disabled?: boolean;
 	loading?: boolean;
-	onclick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function Button({
@@ -24,7 +22,6 @@ export default function Button({
 	disabled,
 	link = 'https://api.whatsapp.com/send?phone=5511985083609&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento.',
 	loading,
-	onclick,
 }: ButtonProps) {
 	if (role === 'whatsapp') {
 		return (

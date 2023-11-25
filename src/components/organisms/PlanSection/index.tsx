@@ -16,7 +16,7 @@ export default function PlanSection() {
 				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
 					<div className='flex flex-col w-full gap-10'>
 						<Title headline={'Conheça os Diferenciais da Nossa Abordagem'} />
-						<div className='flex flex-col gap-3'>
+						<ul className='flex flex-col gap-3'>
 							{benefitsBussiness.text.map((t, index) => {
 								return (
 									<li
@@ -31,7 +31,7 @@ export default function PlanSection() {
 									</li>
 								);
 							})}
-						</div>
+						</ul>
 					</div>
 					<LottieComponent lottie={plansLottie} />
 				</div>

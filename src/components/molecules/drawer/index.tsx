@@ -1,3 +1,5 @@
+/** @format */
+
 'use client';
 import { useState } from 'react';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
@@ -27,6 +29,7 @@ export default function Drawer() {
 		<>
 			<button
 				className='p-4'
+				aria-label='Botão de Menu'
 				onClick={handleClick}>
 				<IoMdMenu size={40} />
 			</button>
