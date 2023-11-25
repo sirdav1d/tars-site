@@ -8,7 +8,7 @@ interface TitleProps {
 
 export default function TitleComponent(props: TitleProps) {
 	return (
-		<div className='flex flex-col w-full py-3 '>
+		<div className='flex flex-col w-full md:w-auto py-3'>
 			<h2 className={`font-bold text-2xl lg:text-3xl font-montserratTitle`}>
 				{props.headline}
 			</h2>

@@ -15,18 +15,17 @@ export default function WhoSection() {
 	return (
 		<div
 			id='who'
-			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-14 items-center h-fit pt-10'>
-			<div className='flex items-center justify-between gap-5 max-w-[1060px] mx-auto h-fit '>
-				<div className='flex flex-col w-full gap-5 '>
-					<Title headline={'Sua Jornada Digital Começa Aqui'} />
-					<p className='leading-7 xl:text-base text-sm'>
-						Nossa agência é a escolha ideal para quem busca resultados reais.
-						Com expertise em web design e marketing digital, criamos websites de
-						alto impacto que não apenas impressionam, mas também geram
-						conversões significativas. Nossa abordagem focada no cliente garante
-						que você participe ativamente do processo de construção do seu
-						projeto web, para que o resultado final atenda exatamente às suas
-						necessidades e objetivos
+			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-20 items-center h-fit pt-10'>
+			<div className='flex items-center justify-between  max-w-[1060px] mx-auto h-fit '>
+				<div className='flex flex-col w-full gap-5 items-center mx-auto justify-center'>
+					<Title headline={'Nossa Jornada Digital Começa Aqui'} />
+					<p className='leading-7 md:text-base text-sm md:text-center'>
+						Com especialistas em web design, desenvolvimento web e marketing
+						digital, criamos websites de alto impacto que não apenas
+						impressionam, mas também geram conversões significativas. Nossa
+						abordagem focada no cliente garante que você participe ativamente do
+						processo de construção do seu site, para que o resultado final seja
+						uma extensão da sua visão e valores na web.
 					</p>
 				</div>
 			</div>
