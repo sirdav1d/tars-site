@@ -120,22 +120,6 @@ export const SubHeadAnimation = {
 	},
 };
 
-export const TitleSpanAnimation = {
-	open: {
-		x: 0,
-		width: 120,
-		opacity: 1,
-		transition: {
-			delay: 0.8,
-		},
-	},
-	close: {
-		x: -80,
-		width: 0,
-		opacity: 0,
-	},
-};
-
 export const PlansCardAnimation = {
 	open: {
 		y: 0,
