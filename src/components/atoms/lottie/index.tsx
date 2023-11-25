@@ -1,8 +1,13 @@
 /** @format */
 
 'use client';
+import loadable from '@loadable/component';
+import { AnimatePresence } from 'framer-motion';
 
-import Lottie from 'lottie-react';
+const Lottie = loadable(() => import('lottie-react'), {
+	ssr: true,
+	fallback: <></>,
+});
 
 interface LottieProps {
 	lottie: any;
@@ -10,8 +15,8 @@ interface LottieProps {
 
 export default function LottieComponent(props: LottieProps) {
 	return (
-		<>
+		<AnimatePresence mode='wait'>
 			<Lottie animationData={props.lottie} />
-		</>
+		</AnimatePresence>
 	);
 }

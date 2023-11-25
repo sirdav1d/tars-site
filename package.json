@@ -10,6 +10,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@loadable/component": "^5.15.3",
+		"@loadable/server": "^5.16.1",
 		"@types/node": "^20.5.0",
 		"@types/react-dom": "^18.2.17",
 		"autoprefixer": "^10.4.15",
@@ -32,8 +34,11 @@
 		"yup": "^1.2.0"
 	},
 	"devDependencies": {
+		"@loadable/babel-plugin": "^5.16.1",
+		"@loadable/webpack-plugin": "^5.15.2",
 		"@rocketseat/eslint-config": "^2.1.0",
 		"@types/gtag.js": "^0.0.18",
+		"@types/loadable__component": "^5.13.7",
 		"@types/react": "^18.2.22",
 		"prettier-plugin-tailwindcss": "^0.5.3"
 	}

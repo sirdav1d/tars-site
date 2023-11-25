@@ -10,6 +10,7 @@ export default function Headline() {
 	const text = [' Performance', ' Liderança', ' Oportunidades'];
 	const [textHero, setTextHero] = useState(text[0]);
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	function textSwitch() {
 		setTimeout(() => {
 			if (textHero === text[0]) {
@@ -31,19 +32,19 @@ export default function Headline() {
 
 	useEffect(() => {
 		textSwitch();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [textHero]);
+	}, [textHero, textSwitch]);
 
 	return (
-		<div className=' flex gap-3  h-full '>
-			<motion.h1
+		<AnimatePresence mode='wait'>
+			<motion.div
 				animate={{ opacity: 1, x: 0 }}
 				initial={{ opacity: 0, x: -150 }}
-				transition={{ delay: 0.2, duration: 0.4 }}
-				className={`font-bold  text-3xl xl:text-5xl 2xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
-				Oferecemos a chave para o sucesso digital, com serviços que garantem_
-				<br />
-				<AnimatePresence >
+				transition={{ delay: 0.5, duration: 0.8 }}
+				className=' flex gap-3  h-full '>
+				<h1
+					className={`font-bold  text-3xl xl:text-5xl 2xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
+					Oferecemos a chave para o sucesso digital, com serviços que garantem_
+					<br />
 					<motion.span
 						key={textHero}
 						variants={SpanHeadAnimation}
@@ -53,8 +54,8 @@ export default function Headline() {
 						className='text-brand-red-500 absolute left-0  md:bottom-auto md:left-auto font-bold text-3xl leading-loose xl:text-5xl mt-4 '>
 						{`<${textHero} />`}
 					</motion.span>
-				</AnimatePresence>
-			</motion.h1>
-		</div>
+				</h1>
+			</motion.div>
+		</AnimatePresence>
 	);
 }

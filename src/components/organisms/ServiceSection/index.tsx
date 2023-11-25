@@ -16,18 +16,13 @@ export default function ServiceSection() {
 				<div className='grid gap-10 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-4 lg:grid-rows-2 mt-6 lg:h-[900px] xl:h-[480px]'>
 					{servicesData.map((s, index) => {
 						return (
-							<>
-								<li
-									key={s.name}
-									className='md:hidden'>
+							<ul key={index}>
+								<li className='md:hidden'>
 									<CardMobile data={s} />
 								</li>
 
-								<Card
-									key={index}
-									data={s}
-								/>
-							</>
+								<Card data={s} />
+							</ul>
 						);
 					})}
 				</div>
