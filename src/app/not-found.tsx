@@ -1,6 +1,7 @@
+/** @format */
+
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
@@ -22,7 +23,9 @@ export default function NotFound() {
 				<h2 className='text-4xl lg:text-6xl text-center font-bold mt-20 mb-5'>
 					Página não encontrada!
 				</h2>
-				<p className='text-center font-semibold'>Clique no link abaixo para retornar</p>
+				<p className='text-center font-semibold'>
+					Clique no link abaixo para retornar
+				</p>
 
 				<div className='w-full items-center font-bold flex justify-center  m-4 mb-20 lg:mb-0'>
 					<a

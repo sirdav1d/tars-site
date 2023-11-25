@@ -1,9 +1,10 @@
+/** @format */
+
 import Button from '@/components/atoms/button';
 import Footer from '@/components/atoms/footer';
 import SocialMediaList from '@/components/molecules/socialMediasList';
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
 	return (
-		<main className='h-full flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full pb-48 text-brand-neutral-50'>
+		<main className='h-full bg-bgHero flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full pb-48 text-brand-neutral-50'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-6'>
 				<Image
 					className='w-[220px] '
@@ -64,7 +65,6 @@ export default function ThanksPage() {
 				</div>
 				<SocialMediaList />
 			</div>
-
 			<Footer />
 		</main>
 	);
