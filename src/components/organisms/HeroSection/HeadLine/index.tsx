@@ -38,11 +38,7 @@ export default function Headline() {
 		<AnimatePresence
 			mode='wait'
 			presenceAffectsLayout={true}>
-			<motion.div
-				animate={{ opacity: 1, x: 0 }}
-				initial={{ opacity: 0, x: -80 }}
-				transition={{ delay: 0.8, duration: 0.8 }}
-				className=' flex gap-3  h-full '>
+			<div className=' flex gap-3  h-full '>
 				<h1
 					className={`font-bold  text-3xl xl:text-5xl 2xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
 					Oferecemos a chave para o sucesso digital, com serviços que garantem_
@@ -57,7 +53,7 @@ export default function Headline() {
 						{`<${textHero} />`}
 					</motion.span>
 				</h1>
-			</motion.div>
+			</div>
 		</AnimatePresence>
 	);
 }

@@ -7,10 +7,7 @@ export const drawerAnimation: Variants = {
 		transform: 'translateX(0px)',
 		opacity: 1,
 		width: '75%',
-		transition: {
-			duration: 0.3,
-			when: 'beforeChildren',
-		},
+	
 	},
 	closed: {
 		opacity: 0,
@@ -110,8 +107,8 @@ export const SubHeadAnimation = {
 		x: 0,
 		opacity: 1,
 		transition: {
-			duration: 0.4,
-			delay: 0.3,
+			duration: 0.3,
+			delay: 0.2,
 		},
 	},
 	close: {
