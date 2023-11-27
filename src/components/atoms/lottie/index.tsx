@@ -2,7 +2,6 @@
 
 'use client';
 import loadable from '@loadable/component';
-import { AnimatePresence } from 'framer-motion';
 
 const Lottie = loadable(() => import('lottie-react'), {
 	ssr: false,

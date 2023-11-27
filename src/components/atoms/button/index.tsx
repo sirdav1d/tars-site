@@ -115,7 +115,7 @@ export default function Button({
 	if (role === 'thanks') {
 		return (
 			<a
-				className={`p-4 bg-bgButtonHero cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md transition duration-300 w-fit text-md font-bold tracking-wide font-montserratTitle`}
+				className={`p-4 bg-bgButtonHero bg-btnSize bg-left hover:bg-right transition-all cursor-pointer rounded flex gap-2 items-center hover:bg-brand-red-300 text-md duration-500 w-fit text-md font-bold tracking-wide font-montserratTitle`}
 				href='/resources/trafego.pdf'
 				target='_blank'
 				referrerPolicy='no-referrer'>

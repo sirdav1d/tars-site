@@ -44,10 +44,14 @@ export default function BannerLGPD() {
 	}
 
 	return (
-		<AnimatePresence mode='popLayout'>
+		<AnimatePresence mode='wait'>
 			{canSHow && (
 				<motion.div
-					animate={{ y: 0, opacity: 1, transition: { duration: 0.3 } }}
+					animate={{
+						y: 0,
+						opacity: 1,
+						transition: { duration: 0.3, delay: 0.8 },
+					}}
 					initial={{ y: -80, opacity: 0 }}
 					exit={{ y: 80, opacity: 0, transition: { duration: 0.3 } }}
 					className={`fixed bottom-0 center 'flex'  items-center w-full mx-auto h-fit text-brand-neutral-100 text-xs lg:text-sm p-3  z-[999999999999999]`}>
