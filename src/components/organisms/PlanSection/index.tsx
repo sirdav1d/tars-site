@@ -11,9 +11,9 @@ export default function PlanSection() {
 	return (
 		<main
 			id='plans'
-			className=' pt-12 text-brand-neutral-900 flex flex-col w-screen relative bg-brand-neutral-100 gap-6 items-center justify-center '>
-			<div className='w-full max-w-[1440px] mx-auto  px-5 '>
-				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row'>
+			className=' pt-12 md:px-14 xl:px-20 px-5 text-brand-neutral-900 flex flex-col w-screen relative bg-brand-neutral-100 gap-6 items-center justify-center '>
+			<div className='w-full max-w-[1440px] mx-auto'>
+				<div className='flex items-center justify-between flex-col gap-5 lg:flex-row w-full'>
 					<div className='flex flex-col w-full gap-10'>
 						<Title headline={'Conheça os Diferenciais da Nossa Abordagem'} />
 						<ul className='flex flex-col gap-3'>
@@ -39,7 +39,7 @@ export default function PlanSection() {
 					<Title headline='Adquira o Plano Ideal Para Você e Sua Equipe' />
 				</div>
 
-				<div className=' lg:gap-2 gap-5 justify-center flex flex-wrap items-center pb-10 mx-auto '>
+				<div className=' lg:gap-2 gap-5 justify-center xl:justify-between flex flex-wrap items-center pb-10 mx-auto '>
 					<PlanCard
 						mainProduct='Site Página Única'
 						mainDescription='Single Page Application (SPA)'

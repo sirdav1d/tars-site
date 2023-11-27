@@ -15,7 +15,7 @@ export default function WhoSection() {
 	return (
 		<div
 			id='who'
-			className=' rounded flex px-6   xl:px-20 flex-col justify-center gap-20 items-center h-fit pt-10'>
+			className=' rounded flex md:px-14 xl:px-20 px-5 flex-col justify-center gap-20 items-center h-fit pt-10'>
 			<div className='flex items-center justify-between  max-w-[1060px] mx-auto h-fit '>
 				<div className='flex flex-col w-full gap-5 items-center mx-auto justify-center'>
 					<Title headline={'Nossa Jornada Digital Começa Aqui'} />

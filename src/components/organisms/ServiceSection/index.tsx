@@ -9,7 +9,7 @@ export default function ServiceSection() {
 	return (
 		<div
 			id='service'
-			className='pb-20 pt-10 flex flex-col gap-10 items-center justify-center px-5 '>
+			className='pb-20 pt-10 flex flex-col gap-10 items-center justify-center md:px-14 xl:px-20 px-5  '>
 			<div className='flex flex-col lg:gap-10 justify-between w-full max-w-[1440px] mx-auto pb-3 '>
 				<Title headline='Serviços Que Vão Impulsionar o Seu Negócio' />
 
