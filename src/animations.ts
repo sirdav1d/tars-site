@@ -18,7 +18,7 @@ export const drawerAnimation: Variants = {
 export const CardAnimation: Variants = {
 	open: {
 		height: 280,
-		zIndex: 88888888,
+		zIndex: 40,
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
 			delay: 0.3,
