@@ -31,7 +31,10 @@ export default function Drawer() {
 				className='p-4'
 				aria-label='Botão de Menu'
 				onClick={handleClick}>
-				<IoMdMenu size={40} />
+				<IoMdMenu
+					size={40}
+					color={'#fff'}
+				/>
 			</button>
 
 			<motion.div

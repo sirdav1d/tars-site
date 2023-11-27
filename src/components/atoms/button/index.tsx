@@ -26,7 +26,7 @@ export default function Button({
 	if (role === 'whatsapp') {
 		return (
 			<a
-				className={`p-4 bg-green-600 rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  font-montserratTitle`}
+				className={`p-4 bg-green-700 text-white rounded flex gap-3 items-center justify-center min-w-[260px] hover:bg-green-500 text-md transition duration-300 font-bold tracking-wide  font-montserratTitle`}
 				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>

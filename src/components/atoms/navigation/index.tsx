@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navigation() {
 	return (
 		<ul
-			className={` font-montserratTitle flex gap-10 text-lg lg:gap-3 font-semibold lg:font-normal lg:text-md xl:text-lg xl:gap-10 flex-col lg:flex-row h-1/2  w-full items-center justify-center `}>
+			className={` font-montserratTitle flex gap-10 text-lg lg:gap-3 font-semibold lg:font-normal lg:text-md xl:text-lg xl:gap-10 flex-col lg:flex-row h-1/2  w-full items-center justify-center text-white `}>
 			<li
 				key={'home'}
 				className='border-b border-transparent  hover:text-brand-red-500 hover:border-brand-red-500 transition duration-300 '>

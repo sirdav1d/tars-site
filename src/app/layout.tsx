@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
 import GoogleADS from '@/components/google/GoogleADS';
+import Header from '@/components/molecules/header';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({
 			<GoogleAnalytics GA_MEASUREMENT_ID={'G-YG9ZZ2CMJ4'} />
 			<GoogleADS ADS_MEASUREMENT_ID={'AW-11357924550'} />
 			<body className={`${poppins.className} ${montSerrat.className}`}>
+				<Header />
 				{children}
 				<BannerLGPD />
 			</body>
