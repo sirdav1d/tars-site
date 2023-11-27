@@ -40,7 +40,7 @@ export default function Headline() {
 			presenceAffectsLayout={true}>
 			<div className=' flex gap-3  h-full '>
 				<h1
-					className={`font-bold  text-2xl md:text-4xl xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
+					className={`font-bold  text-3xl md:text-4xl xl:text-6xl h-full mx-auto text-brand-neutral-50  text-left `}>
 					Oferecemos a chave para o sucesso digital, com serviços que garantem_
 					<br />
 					<motion.span
