@@ -15,6 +15,7 @@ export default function HeroSection() {
 						<Button
 							role='hero'
 							text={'Começar Agora'}
+							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
 						/>
 					</div>
 					<div className='w-full hidden md:block object-contain'></div>
