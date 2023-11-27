@@ -1,7 +1,5 @@
 /** @format */
 import Button from '@/components/atoms/button';
-import LottieComponent from '@/components/atoms/lottie';
-import heroLottie from '../../../../public/lotties/heroLottie.json';
 import Headline from './HeadLine';
 
 export default function HeroSection() {
@@ -19,9 +17,7 @@ export default function HeroSection() {
 							text={'Começar Agora'}
 						/>
 					</div>
-					<div className='w-full hidden md:block object-contain'>
-						{/* <LottieComponent lottie={heroLottie} /> */}
-					</div>
+					<div className='w-full hidden md:block object-contain'></div>
 				</div>
 			</div>
 		</main>
