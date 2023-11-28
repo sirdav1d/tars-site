@@ -8,7 +8,7 @@ import logo from '../../../../public/logos/logoHorizontal.webp';
 
 export default function Footer() {
 	return (
-		<div className='h-fit py-10 text-white w-full mx-auto overflow-hidden px-5 lg:px-14'>
+		<div id='contact' className='h-fit py-10 text-white w-full mx-auto overflow-hidden px-5 lg:px-14'>
 			<div className=' flex flex-col gap-5 w-full max-w-[1440px] mx-auto '>
 				<Image
 					src={logo}
