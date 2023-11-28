@@ -17,7 +17,7 @@ export default function Footer() {
 					height={400}
 					className='grayscale'
 				/>
-				<div className='flex flex-col lg:flex-row h-full w-full gap-10 justify-center lg:gap-80 lg:justify-start '>
+				<div className='flex flex-col md:flex-row h-full w-full gap-10 justify-center items-center xl:gap-80 lg:justify-start '>
 					<div className='flex flex-col gap-2'>
 						<SocialMediaList />
 						<h3 className='font-bold lg:text-2xl text-lg mt-3'>Endereços</h3>
@@ -41,7 +41,7 @@ export default function Footer() {
 				</div>
 
 				<span className='w-full h-[2px] bg-white/20 rounded-full' />
-				<div className='flex flex-col gap-3 lg:flex-row  justify-between text-stone-300 text-[9px] lg:text-sm'>
+				<div className='flex gap-3 flex-col sm:flex-row  justify-between text-stone-300 text-[8px] lg:text-sm'>
 					<p>
 						Desenvolvido pela{' '}
 						<a
@@ -53,7 +53,7 @@ export default function Footer() {
 						</a>
 						{''}2023 Todos os Direitos Reservados
 					</p>
-					<div className='flex gap-5 underline text-stone-300 text-[9px] lg:text-sm items-center justify-center lg:justify-normal'>
+					<div className='flex gap-5 underline text-stone-300 text-[8px] lg:text-sm '>
 						<a
 							className='hover:text-white'
 							href='/resources/Politicas.pdf'

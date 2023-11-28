@@ -70,7 +70,7 @@ export const servicesData: ServicesProps[] = [
 
 export const benefitsBussiness = {
 	text: [
-		'WEB DESIGN RESPONSIVO ÚNICO',
+		'WEB DESIGN RESPONSIVO',
 		'OTIMIZAÇÃO SEO',
 		'ADEQUAÇÃO LGPD',
 		'SSL GRATUITA',
@@ -79,5 +79,6 @@ export const benefitsBussiness = {
 		'DOMÍNIO GRÁTIS',
 		'INTEGRAÇÃO COM BANCO DE DADOS',
 		'GESTÃO DE TRÁFEGO',
+		'ATENDIMENTO HUMANIZADO',
 	],
 };

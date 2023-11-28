@@ -22,7 +22,7 @@ export default function HeroSection() {
 					</div>
 					<div className='w-full hidden lg:block object-contain animate-bounceEaseAnimation'>
 						<Image
-							className=' object-contain xl:scale-125'
+							className=' object-contain xl:scale-110 drop-shadow-spanCards'
 							src={heroImage}
 							width={900}
 							height={900}

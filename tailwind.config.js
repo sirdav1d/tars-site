@@ -35,7 +35,7 @@ module.exports = {
       keyframes: {
         'bounceEase': { '0%': { transform: 'translateY(6px)', opacity: .7 }, '100%': { transform: 'translateY(-6px)', opacity: 1 } }
       },
-      animation: { bounceEaseAnimation: 'bounceEase 5s infinite linear alternate-reverse ' },
+      animation: { bounceEaseAnimation: 'bounceEase 3s infinite linear alternate-reverse ' },
 
 
       colors: {
