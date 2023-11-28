@@ -15,14 +15,8 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
 	return (
-		<main className='h-full bg-bgHero flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full pb-48 text-brand-neutral-50'>
+		<main className='h-full pt-14 bg-bgHero flex flex-col justify-center items-center min-h-screen overflow-x-hidden relative w-full pb-48 text-brand-neutral-50'>
 			<div className='flex flex-col items-center p-6 max-w-[1440px] mx-auto mb-6'>
-				<Image
-					className='w-[220px] '
-					src={'/logos/logoHorizontal.webp'}
-					width={480}
-					height={100}
-					alt='logo tars projetos'></Image>
 				<div className='flex my-12 mx-0 lg:mx-12 lg:mt:0 gap-10 flex-col lg:flex-row max-w-[1024px] items-center justify-center '>
 					<div className='flex w-full lg:w-2/3  flex-col gap-5'>
 						<div className='flex flex-col gap-4'>
@@ -63,9 +57,7 @@ export default function ThanksPage() {
 						/>
 					</div>
 				</div>
-				<SocialMediaList />
 			</div>
-			<Footer />
 		</main>
 	);
 }

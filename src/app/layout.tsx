@@ -7,6 +7,7 @@ import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
 import GoogleADS from '@/components/google/GoogleADS';
 import Header from '@/components/molecules/header';
+import Footer from '@/components/atoms/footer';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -49,6 +50,7 @@ export default function RootLayout({
 				<Header />
 				{children}
 				<BannerLGPD />
+				<Footer />
 			</body>
 		</html>
 	);

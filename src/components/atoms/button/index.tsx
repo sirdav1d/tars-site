@@ -96,7 +96,7 @@ export default function Button({
 			<button
 				disabled={disabled}
 				type='submit'
-				className={`p-3 bg-bgButtonHero bg-btnSize bg-left  rounded z-50 disabled:grayscale flex gap-2 items-center justify-center w-full text-centertext-md transition duration-300 mt-3 text-lg font-bold tracking-wide font-montserratTitle cursor-pointer`}>
+				className={`p-3 bg-bgButtonHero bg-btnSize bg-left hover:bg-right rounded z-50 disabled:grayscale flex gap-2 items-center justify-center w-full text-centertext-md transition-all duration-500 mt-3 text-lg font-bold tracking-wide font-montserratTitle cursor-pointer`}>
 				{loading ? (
 					<LoadingBtn />
 				) : (

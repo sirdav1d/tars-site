@@ -1,7 +1,7 @@
 /** @format */
 
 import CTA from '@/components/atoms/cta';
-import ContactSection from '@/components/organisms/ContactSection';
+import Footer from '@/components/atoms/footer';
 import FeatureSection from '@/components/organisms/FeatureSection';
 import HeroSection from '@/components/organisms/HeroSection';
 import PlanSection from '@/components/organisms/PlanSection';
@@ -127,7 +127,7 @@ export default function Home() {
 			<CTA />
 			<ServiceSection />
 			<PlanSection />
-			<ContactSection />
+		
 		</main>
 	);
 }
