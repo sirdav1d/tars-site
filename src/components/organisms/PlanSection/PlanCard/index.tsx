@@ -24,7 +24,7 @@ export default function PlanCard({
 		<>
 			<div
 				data-role={role}
-				className='z-30  w-[288px] h-[412px] rounded-lg bg-white border border-brand-neutral-100 backdrop-blur-sm flex flex-col justify-between   items-center shadow-xl'>
+				className='z-30 w-full my-5 xl:w-[280px] h-[412px] rounded-lg bg-white border border-brand-neutral-100 backdrop-blur-sm flex flex-col justify-between   items-center shadow-xl'>
 				<div className='flex items-center justify-center bg-brand-neutral-950 w-full rounded-t-lg p-3'>
 					<h3
 						className={`text-xl text-center font-bold drop-shadow-lg text-brand-neutral-50 `}>

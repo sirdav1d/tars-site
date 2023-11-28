@@ -41,7 +41,7 @@ export default function PlanSection() {
 					<Title headline='Adquira o Plano Ideal Para Você e Sua Equipe' />
 				</div>
 
-				<div className=' grid xl:grid-cols-4 sm:grid-cols-2 pb-10 mx-auto '>
+				<div className=' grid xl:grid-cols-4 sm:grid-cols-2 pb-10 mx-auto gap-5 '>
 					<PlanCard
 						mainProduct='Site Página Única'
 						mainDescription='Single Page Application (SPA)'
