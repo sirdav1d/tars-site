@@ -12,6 +12,7 @@ module.exports = {
         'spanCards': '0px 0px 8px #00A0FF',
         'cards': '0px 0px 40px #00A0FF',
         'btnClose': '0px 0px 12px #F24058',
+        'blackShadow': '0px 0px 8px #242424'
 
       },
       boxShadow: {
@@ -31,6 +32,11 @@ module.exports = {
         poppinsBody: 'var(--poppins-body)',
         montserratTitle: 'var(--montserrat-title)',
       },
+      keyframes: {
+        'bounceEase': { '0%': { transform: 'translateY(6px)', opacity: .7 }, '100%': { transform: 'translateY(-6px)', opacity: 1 } }
+      },
+      animation: { bounceEaseAnimation: 'bounceEase 5s infinite linear alternate-reverse ' },
+
 
       colors: {
         brand: {
@@ -66,5 +72,5 @@ module.exports = {
     },
   },
   plugins: []
-  ,
+
 }

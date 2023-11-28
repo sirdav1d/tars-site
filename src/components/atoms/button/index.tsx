@@ -61,7 +61,7 @@ export default function Button({
 				initial='close'
 				whileInView='open'
 				viewport={{ amount: 0.9, once: true }}
-				className={`p-4 bg-bgButton bg-btnSize bg-left hover:bg-right cursor-pointer rounded flex gap-2 items-center text-md transition-all ease-linear duration-500 w-fit text-center text-md font-bold tracking-wide font-montserratTitle`}
+				className={`p-4 bg-bgButton bg-btnSize bg-left hover:bg-right cursor-pointer rounded flex gap-2 items-center text-lg transition-all ease-linear duration-500 w-fit text-center text-md font-bold tracking-wide font-montserratTitle`}
 				href={link}
 				target='_blank'
 				referrerPolicy='no-referrer'>
