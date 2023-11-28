@@ -8,11 +8,15 @@ import PlanSection from '@/components/organisms/PlanSection';
 import ServiceSection from '@/components/organisms/ServiceSection';
 import WhoSection from '@/components/organisms/WhoSection';
 import { GiTargeting } from 'react-icons/gi';
-import { LiaFunnelDollarSolid } from 'react-icons/lia';
-import { PiHandshakeLight, PiTrophyLight, PiGearLight } from 'react-icons/pi';
-import lpLottie from '../../public/lotties/lpLottie.json';
-import instLottie from '../../public/lotties/institucuionalLottie.json';
+import { LiaConnectdevelop, LiaFunnelDollarSolid } from 'react-icons/lia';
+import {
+	PiHandshakeLight,
+	PiLighthouseLight,
+	PiShieldCheckLight,
+} from 'react-icons/pi';
 import blogLottie from '../../public/lotties/blogLottie.json';
+import instLottie from '../../public/lotties/institucuionalLottie.json';
+import lpLottie from '../../public/lotties/lpLottie.json';
 
 export default function Home() {
 	return (
@@ -56,6 +60,30 @@ export default function Home() {
 				side='rigth'
 				lottie={instLottie}
 				title={'Conquiste Uma Presença Institucional Online que Gera Confiança'}
+				benefits={[
+					{
+						head: 'Credibilidade e Confiança',
+						icon: (
+							<PiShieldCheckLight
+								size={40}
+								color={'#00A0FF'}
+								className='drop-shadow-cards animate-pulse'
+							/>
+						),
+						text: 'Um site institucional cria uma presença sólida e confiável, estabelecendo a credibilidade da sua empresa e construindo confiança entre você e seu público-alvo.',
+					},
+					{
+						head: 'Integração com Redes Sociais',
+						icon: (
+							<LiaConnectdevelop
+								size={40}
+								color={'#00A0FF'}
+								className='drop-shadow-cards animate-pulse'
+							/>
+						),
+						text: 'Facilite o compartilhamento de conteúdo através da integração com plataformas de redes sociais, ampliando o alcance da sua mensagem e fortalecendo a presença da sua marca online.',
+					},
+				]}
 				description={
 					'Ter um site institucional não é apenas uma presença online; é a porta de entrada para o sucesso nos negócios. Imagine sua empresa tendo uma vitrine digital elegante, aberta 24 horas por dia, 7 dias por semana, acessível à um público global.'
 				}
@@ -79,26 +107,19 @@ export default function Home() {
 								className='drop-shadow-cards animate-pulse'
 							/>
 						),
+						text: 'Ofereça uma experiência personalizada, adaptando sua mensagem e serviços para atender às expectativas individuais do seu público-alvo.',
 					},
-					{
-						head: 'Demonstração de Autoridade',
-						icon: (
-							<PiTrophyLight
-								size={40}
-								color={'#00A0FF'}
-								className='drop-shadow-cards animate-pulse'
-							/>
-						),
-					},
+
 					{
 						head: 'Apoio à Estratégia de Marketing',
 						icon: (
-							<PiGearLight
+							<PiLighthouseLight
 								size={40}
 								color={'#00A0FF'}
 								className='drop-shadow-cards animate-pulse'
 							/>
 						),
+						text: 'Nosso apoio à estratégia de marketing é um catalisador para a eficácia, proporcionando insights valiosos e ajustes contínuos para alcançar suas metas',
 					},
 				]}
 			/>
