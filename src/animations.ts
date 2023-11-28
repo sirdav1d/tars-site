@@ -111,7 +111,7 @@ export const SubHeadAnimation = {
 		},
 	},
 	close: {
-		x: 80,
+		x: 40,
 		opacity: 0,
 	},
 };
