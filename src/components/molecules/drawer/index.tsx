@@ -29,6 +29,7 @@ export default function Drawer() {
 		<>
 			<button
 				className='p-4'
+				aria-labelledby='Botão de Menu'
 				aria-label='Botão de Menu'
 				onClick={handleClick}>
 				<IoMdMenu

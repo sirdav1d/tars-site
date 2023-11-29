@@ -2,7 +2,7 @@
 import Button from '@/components/atoms/button';
 import Headline from './HeadLine';
 import Image from 'next/image';
-import heroImage from '../../../../public/images/heroImage2.png';
+import heroImage from '../../../../public/images/heroImage2.webp';
 
 export default function HeroSection() {
 	return (
