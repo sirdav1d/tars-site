@@ -8,7 +8,9 @@ import logo from '../../../../public/logos/logoHorizontal.webp';
 
 export default function Footer() {
 	return (
-		<div id='contact' className='h-fit py-10 text-white w-full mx-auto overflow-hidden px-5 lg:px-14'>
+		<div
+			id='contact'
+			className='h-fit py-10 text-white w-full mx-auto overflow-hidden px-5 lg:px-14'>
 			<div className=' flex flex-col gap-5 w-full max-w-[1440px] mx-auto '>
 				<Image
 					src={logo}
@@ -17,9 +19,8 @@ export default function Footer() {
 					height={400}
 					className='grayscale'
 				/>
-				<div className='flex flex-col md:flex-row h-full w-full gap-10 justify-center items-center xl:gap-80 lg:justify-start '>
+				<div className='flex flex-col-reverse md:flex-row h-full w-full gap-10 justify-center items-center xl:gap-80 lg:justify-start '>
 					<div className='flex flex-col gap-2'>
-						<SocialMediaList />
 						<h3 className='font-bold lg:text-2xl text-lg mt-3'>Endereços</h3>
 						<p className='text-stone-200 text-xs lg:text-base flex flex-col gap-3'>
 							São Paulo/SP – Rua Manuel Rodrigues Santiago, 105 Cep 08142-238
@@ -36,6 +37,7 @@ export default function Footer() {
 							<h3 className='font-bold lg:text-2xl text-lg mt-3'>Site Map</h3>
 							<LinksUs />
 						</div>
+						<SocialMediaList />
 					</div>
 					<FormComponent />
 				</div>
