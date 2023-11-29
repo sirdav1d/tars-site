@@ -78,7 +78,7 @@ export default function BannerLGPD() {
 							<button
 								onClick={() => handleAccept()}
 								type='button'
-								className={`w-fit px-4 py-2 lg:w-28 lg:h-12 bg-red-600 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center text-center hover:bg-brand-red-500  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
+								className={`w-fit px-4 py-2 lg:w-28 lg:h-12 bg-brand-red-900 rounded-full z-50 disabled:grayscale disabled:hover:bg-brand-red-500 flex gap-2 items-center justify-center text-center hover:bg-brand-red-500  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
 								<p className='flex gap-3 items-center justify-center drop-shadow'>
 									Aceitar
 								</p>

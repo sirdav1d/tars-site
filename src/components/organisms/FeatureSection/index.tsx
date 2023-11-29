@@ -37,9 +37,9 @@ export default function FeatureSection(props: FeatureProps) {
 										<div className='flex flex-col lg:gap-2'>
 											{benefit.icon}
 
-											<h5 className='font-montserratTitle font-bold text-lg'>
+											<h3 className='font-montserratTitle font-bold text-lg'>
 												{benefit.head}
-											</h5>
+											</h3>
 										</div>
 										<p className='text-sm'>{benefit.text}</p>
 									</div>
