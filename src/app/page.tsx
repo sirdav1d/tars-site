@@ -1,7 +1,6 @@
 /** @format */
 
 import CTA from '@/components/atoms/cta';
-import Footer from '@/components/atoms/footer';
 import FeatureSection from '@/components/organisms/FeatureSection';
 import HeroSection from '@/components/organisms/HeroSection';
 import PlanSection from '@/components/organisms/PlanSection';
@@ -14,18 +13,18 @@ import {
 	PiLighthouseLight,
 	PiShieldCheckLight,
 } from 'react-icons/pi';
-import blogLottie from '../../public/lotties/blogLottie.json';
-import instLottie from '../../public/lotties/institucuionalLottie.json';
-import lpLottie from '../../public/lotties/lpLottie.json';
+import imgBlog from '../../public/images/blogImage.webp';
+import imgLP from '../../public/images/lpImage.webp';
+import imgSite from '../../public/images/siteImage.webp';
 
 export default function Home() {
 	return (
-		<main className='min-h-screen overflow-x-hidden relative w-ful text-brand-neutral-50 '>
+		<main className='min-h-screen overflow-x-hidden relative w-full text-brand-neutral-50 '>
 			<HeroSection />
 			<WhoSection />
 			<FeatureSection
 				side='left'
-				lottie={lpLottie}
+				img={imgLP}
 				benefits={[
 					{
 						head: 'Geração de Leads',
@@ -58,7 +57,7 @@ export default function Home() {
 
 			<FeatureSection
 				side='rigth'
-				lottie={instLottie}
+				img={imgSite}
 				title={'Conquiste Uma Presença Institucional Online que Gera Confiança'}
 				benefits={[
 					{
@@ -90,7 +89,7 @@ export default function Home() {
 			/>
 			<FeatureSection
 				side='left'
-				lottie={blogLottie}
+				img={imgBlog}
 				title={
 					'Descubra Como Um Blog Empresarial Pode Conquistar e Fidelizar Clientes'
 				}
@@ -123,11 +122,9 @@ export default function Home() {
 					},
 				]}
 			/>
-
 			<CTA />
 			<ServiceSection />
 			<PlanSection />
-		
 		</main>
 	);
 }

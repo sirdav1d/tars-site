@@ -2,16 +2,16 @@
 import Button from '@/components/atoms/button';
 import Headline from './HeadLine';
 import Image from 'next/image';
-import heroImage from '../../../../public/images/heroImage2.webp';
+import heroImage from '../../../../public/images/imageHerowebp.webp';
 
 export default function HeroSection() {
 	return (
 		<main
 			id='home'
 			className=' h-screen bg-cover bg-bgHero flex items-center md:px-14 px-4 '>
-			<div className='flex flex-col w-full gap-40 md:gap-8 lg:gap-0   max-w-[1440px] md:mx-auto justify-between items-center h-full'>
-				<div className='flex mt-14 items-center justify-between drop-shadow-md relative h-full '>
-					<div className='flex flex-col gap-28 md:gap-40 '>
+			<div className='flex flex-col w-full gap-40 md:gap-8 lg:gap-0 max-w-7xl md:mx-auto justify-between items-center min-h-screen  h-full'>
+				<div className='flex mt-14 items-center justify-between drop-shadow-md relative w-full h-full  '>
+					<div className='flex flex-col gap-28 md:gap-40  lg:w-1/2'>
 						<Headline />
 
 						<Button
@@ -20,12 +20,12 @@ export default function HeroSection() {
 							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
 						/>
 					</div>
-					<div className='w-full hidden lg:block object-contain animate-bounceEaseAnimation'>
+					<div className='w-1/2 hidden lg:flex items-center justify-end object-contain animate-bounceEaseAnimation'>
 						<Image
-							className=' object-contain xl:scale-110 drop-shadow-spanCards'
+							className=' object-contain'
 							src={heroImage}
-							width={900}
-							height={900}
+							width={440}
+							height={440}
 							alt='Imagem de flat design de equipe trabalhando'
 						/>
 					</div>

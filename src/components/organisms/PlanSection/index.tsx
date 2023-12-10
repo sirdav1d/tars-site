@@ -1,6 +1,5 @@
 /** @format */
 
-import LottieComponent from '@/components/atoms/lottie';
 import Title from '@/components/atoms/title';
 import { benefitsBussiness } from '@/mock/services.data';
 import { BiMedal } from 'react-icons/bi';
@@ -12,7 +11,7 @@ export default function PlanSection() {
 		<main
 			id='plans'
 			className=' pt-12 md:px-14 xl:px-20 px-5 text-brand-neutral-900 flex flex-col w-screen relative bg-brand-neutral-100 gap-6 items-center justify-center '>
-			<div className='w-full max-w-[1440px] mx-auto'>
+			<div className='w-full max-w-7xl mx-auto'>
 				<div className='flex items-end justify-between flex-col gap-5 lg:flex-row w-full'>
 					<div className='flex flex-col w-full gap-10'>
 						<Title headline={'Conheça os Diferenciais da Nossa Abordagem'} />
@@ -34,10 +33,10 @@ export default function PlanSection() {
 						</ul>
 					</div>
 					<div className='lg:w-1/2'>
-						<LottieComponent lottie={plansLottie} />
+						{/* <LottieComponent lottie={plansLottie} /> */}
 					</div>
 				</div>
-				<div className='mt-14 mx-5 text-brand-neutral-900 mb-10'>
+				<div className='mt-14 text-brand-neutral-900 mb-10'>
 					<Title headline='Adquira o Plano Ideal Para Você e Sua Equipe' />
 				</div>
 
@@ -72,7 +71,7 @@ export default function PlanSection() {
 						mainProduct='Config. Google ADS'
 						mainDescription='Primeira Campanha Gratuita, Configurada e integrada ao seu site'
 						mainPrice='R$1.000,00 por mês'
-						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20empresarial.'
+						link='https://api.whatsapp.com/send?phone=5521967821268&text=Ol%C3%A1,%20estava%20no%20seu%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20trafego.'
 						key='trafego'
 						role='Tráfego'
 					/>

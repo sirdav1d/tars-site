@@ -11,7 +11,7 @@ export default function Footer() {
 		<div
 			id='contact'
 			className='h-fit py-10 text-white w-full mx-auto overflow-hidden px-5 lg:px-14'>
-			<div className=' flex flex-col gap-5 w-full max-w-[1440px] mx-auto '>
+			<div className=' flex flex-col gap-5 w-full max-w-7xl mx-auto '>
 				<Image
 					src={logo}
 					alt='logo Tars Projeto LTDA'
