@@ -12,7 +12,7 @@ export default function Headline() {
 					<br />
 					<span
 						aria-label='Liderança, Performance e Oportunidades'
-						className='text-brand-red-500 absolute left-0 md:bottom-auto md:left-auto font-bold text-2xl leading-loose md:text-4xl mt-4 '>
+						className='text-brand-red-500 absolute left-0 md:bottom-auto md:left-auto font-bold text-3xl leading-loose md:text-4xl mt-4 '>
 						<TypeAnimationComponent />
 					</span>
 				</h1>
