@@ -3,7 +3,6 @@
 import Title from '@/components/atoms/title';
 import { benefitsBussiness } from '@/mock/services.data';
 import { BiMedal } from 'react-icons/bi';
-import plansLottie from '../../../../public/lotties/plansLottie.json';
 import PlanCard from './PlanCard';
 
 export default function PlanSection() {
