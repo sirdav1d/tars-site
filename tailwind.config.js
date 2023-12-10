@@ -12,7 +12,8 @@ module.exports = {
         'spanCards': '0px 0px 8px #00A0FF',
         'cards': '0px 0px 40px #00A0FF',
         'btnClose': '0px 0px 12px #F24058',
-        'blackShadow': '0px 0px 8px #242424'
+        'blackShadow': '0px 0px 8px #242424',
+        'img': '0px 4px 8px #00A0FF',
 
       },
       boxShadow: {

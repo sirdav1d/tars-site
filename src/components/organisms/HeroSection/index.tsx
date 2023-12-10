@@ -2,7 +2,7 @@
 import Button from '@/components/atoms/button';
 import Headline from './HeadLine';
 import Image from 'next/image';
-import heroImage from '../../../../public/images/imageHerowebp.webp';
+import heroImage from '../../../../public/images/business.png';
 
 export default function HeroSection() {
 	return (
@@ -22,7 +22,7 @@ export default function HeroSection() {
 					</div>
 					<div className='w-1/2 hidden lg:flex items-center justify-end object-contain animate-bounceEaseAnimation'>
 						<Image
-							className=' object-contain'
+							className=' object-contain drop-shadow-img'
 							src={heroImage}
 							width={440}
 							height={440}

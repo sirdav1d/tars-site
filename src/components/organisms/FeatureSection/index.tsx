@@ -51,9 +51,9 @@ export default function FeatureSection(props: FeatureProps) {
 				<Image
 					src={props.img}
 					alt={props.title}
-					width={340}
-					height={340}
-					className='object-contain animate-bounceEaseAnimation'></Image>
+					width={364}
+					height={364}
+					className='object-contain animate-bounceEaseAnimation drop-shadow-teste'></Image>
 			</div>
 		</div>
 	);

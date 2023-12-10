@@ -13,9 +13,9 @@ import {
 	PiLighthouseLight,
 	PiShieldCheckLight,
 } from 'react-icons/pi';
-import imgBlog from '../../public/images/blogImage.webp';
-import imgLP from '../../public/images/lpImage.webp';
-import imgSite from '../../public/images/siteImage.webp';
+import imgBlog from '../../public/images/Developer.png';
+import imgLP from '../../public/images/LandingPage.png';
+import imgSite from '../../public/images/Version.png';
 
 export default function Home() {
 	return (
