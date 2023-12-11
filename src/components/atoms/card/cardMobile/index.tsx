@@ -25,7 +25,7 @@ export default function CardMobile({ data }: CardProps) {
 					alt={data.name}
 				/>
 
-				<p className='text-sm font-light text-center leading-normal tracking-wide'>
+				<p className='prose-base font-light text-center'>
 					{data.description}
 				</p>
 			</div>

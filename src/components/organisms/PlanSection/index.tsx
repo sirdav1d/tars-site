@@ -25,7 +25,7 @@ export default function PlanSection() {
 											color={'#00A0FF'}
 											className='drop-shadow-cards animate-pulse'
 										/>
-										<p className='font-bold text-xs xl:text-base'>{t}</p>
+										<p className='font-bold text-sm xl:text-base'>{t}</p>
 									</li>
 								);
 							})}

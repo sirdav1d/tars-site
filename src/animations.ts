@@ -17,27 +17,27 @@ export const drawerAnimation: Variants = {
 
 export const CardAnimation: Variants = {
 	open: {
-		height: 280,
+		height: 320,
 		zIndex: 40,
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
-			delay: 0.3,
+			delay: 0.4,
 			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},
 	},
 	close: {
 		transition: {
-			delay: 0.3,
+			delay: 0.4,
 		},
 	},
 };
 
 export const CardTitle = {
 	open: {
-		y: -100,
+		y: -120,
 		transition: {
-			delay: 0.4,
+			delay: 0.5,
 		},
 	},
 	close: {

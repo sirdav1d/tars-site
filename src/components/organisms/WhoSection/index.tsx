@@ -19,7 +19,7 @@ export default function WhoSection() {
 			<div className='flex items-center justify-between  max-w-7xl mx-auto h-fit '>
 				<div className='flex flex-col w-full gap-3 items-center mx-auto justify-center'>
 					<Title headline={'Nossa Jornada Digital Começa Aqui'} />
-					<p className='leading-7 text-sm md:text-center md:text-base'>
+					<p className='prose-base text-neutral-100'>
 						Com especialistas em web design, desenvolvimento web e marketing
 						digital, criamos websites de alto impacto que não apenas
 						impressionam, mas também geram conversões significativas. Nossa
@@ -29,7 +29,7 @@ export default function WhoSection() {
 					</p>
 				</div>
 			</div>
-			<div className='flex flex-col lg:flex-row justify-between gap-10 w-full max-w-7xl mx-auto pb-3'>
+			<div className='flex flex-col lg:flex-row items-start justify-start gap-10 w-full max-w-7xl mx-auto pb-3'>
 				<div className='flex gap-14 flex-col md:flex-row'>
 					<div className='flex flex-col gap-10 w-full lg:w-1/2'>
 						<Title

@@ -41,13 +41,13 @@ export default function Card({ data }: CardProps) {
 					<Image
 						className='drop-shadow-cards animate-bounce'
 						src={data.url}
-						width={56}
-						height={56}
+						width={48}
+						height={48}
 						alt={data.name}></Image>
 				</motion.div>
 				<motion.p
 					variants={CardDescription}
-					className='text-xs font-light text-center opacity-0 leading-normal tracking-wide'>
+					className='prose-sm font-light text-center opacity-0'>
 					{data.description}
 				</motion.p>
 			</div>

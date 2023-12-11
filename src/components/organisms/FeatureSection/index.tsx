@@ -27,7 +27,7 @@ export default function FeatureSection(props: FeatureProps) {
 				<div className='flex flex-col justify-between h-full gap-10 lg:w-1/2'>
 					<div className='flex flex-col gap-5'>
 						<Title headline={props.title} />
-						<p className='text-base leading-7'>{props.description}</p>
+						<p className='prose-base text-neutral-100'>{props.description}</p>
 					</div>
 					<ul className='flex gap-6 xl:gap-12 flex-col lg:flex-row '>
 						{props.benefits?.map((benefit, index) => {
@@ -37,11 +37,11 @@ export default function FeatureSection(props: FeatureProps) {
 										<div className='flex flex-col gap-3'>
 											{benefit.icon}
 
-											<h3 className='font-montserratTitle font-bold text-lg'>
+											<h3 className='font-montserratTitle font-bold text-lg mb-2'>
 												{benefit.head}
 											</h3>
 										</div>
-										<p className='text-sm'>{benefit.text}</p>
+										<p className='prose-sm text-neutral-100'>{benefit.text}</p>
 									</div>
 								</li>
 							);
@@ -53,7 +53,7 @@ export default function FeatureSection(props: FeatureProps) {
 					alt={props.title}
 					width={364}
 					height={364}
-					className='object-contain animate-bounceEaseAnimation drop-shadow-img'></Image>
+					className='object-contain animate-bounceEaseAnimation drop-shadow-img w-[364px] xl:w-[428px]'></Image>
 			</div>
 		</div>
 	);

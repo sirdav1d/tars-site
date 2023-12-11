@@ -34,9 +34,9 @@ module.exports = {
         montserratTitle: 'var(--montserrat-title)',
       },
       keyframes: {
-        'bounceEase': { '0%': { transform: 'translateY(6px)', opacity: .7 }, '100%': { transform: 'translateY(-6px)', opacity: 1 } }
+        'bounceEase': { '0%': { transform: 'translateY(6px)' }, '100%': { transform: 'translateY(-6px)' } }
       },
-      animation: { bounceEaseAnimation: 'bounceEase 3s infinite linear alternate-reverse ' },
+      animation: { bounceEaseAnimation: 'bounceEase 4s infinite linear alternate-reverse ' },
 
 
       colors: {
@@ -72,6 +72,6 @@ module.exports = {
       }
     },
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 
 }
