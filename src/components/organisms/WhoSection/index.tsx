@@ -55,6 +55,7 @@ export default function WhoSection() {
 						variants={StepWrapperFadeAnimation}
 						initial='close'
 						whileInView={'open'}
+						viewport={{ once: true }}
 						className='flex flex-col gap-8 w-full lg:w-1/2'>
 						<MotionDiv variants={StepComponentFadeAnimation}>
 							<StepComponent

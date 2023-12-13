@@ -1,13 +1,11 @@
 /** @format */
 
-import { FadeAnimation } from '@/animations';
-import { MotionDiv } from '@/components/atoms/MotionDiv';
 import { TypeAnimationComponent } from '@/components/atoms/typeAnimationComponent';
 
 export default function Headline() {
 	return (
 		<>
-			<MotionDiv variants={FadeAnimation} initial='close' animate='open' className='flex gap-3  h-full'>
+			<div className='flex gap-3  h-full'>
 				<h1
 					className={`font-bold  text-3xl md:text-4xl h-full mx-auto text-brand-neutral-50  text-left `}>
 					Oferecemos a chave para o sucesso digital, com serviços que garantem_
@@ -18,7 +16,7 @@ export default function Headline() {
 						<TypeAnimationComponent />
 					</span>
 				</h1>
-			</MotionDiv>
+			</div>
 		</>
 	);
 }
