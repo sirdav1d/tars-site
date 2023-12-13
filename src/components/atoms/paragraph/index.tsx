@@ -5,7 +5,7 @@ import { MotionDiv } from '../MotionDiv';
 import { ParagraphFadeAnimation } from '@/animations';
 
 interface ParagraphProps {
-	children: string;
+	children: string | any;
 	className: string;
 }
 
