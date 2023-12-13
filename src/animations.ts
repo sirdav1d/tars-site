@@ -101,6 +101,22 @@ export const FadeAnimation = {
 	},
 };
 
+export const ParagraphFadeAnimation = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.3,
+			duration: 0.8,
+			type: 'spring',
+		},
+	},
+	close: {
+		x: '-40px',
+		opacity: 0,
+	},
+};
+
 export const SubHeadAnimation = {
 	open: {
 		x: 0,
@@ -135,6 +151,33 @@ export const SpanHeadAnimation: Variants = {
 	},
 	exit: {
 		y: 20,
+		opacity: 0,
+	},
+};
+
+export const StepWrapperFadeAnimation: Variants = {
+	open: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			type: 'spring',
+			delayChildren: 0.3,
+			staggerChildren: 0.3,
+		},
+	},
+	close: {
+		x: '60px',
+		opacity: 0,
+	},
+};
+
+export const StepComponentFadeAnimation: Variants = {
+	open: {
+		x: 0,
+		opacity: 1,
+	},
+	close: {
+		x: '60px',
 		opacity: 0,
 	},
 };

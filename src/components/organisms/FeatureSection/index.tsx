@@ -1,5 +1,6 @@
 /** @format */
 
+import Paragraph from '@/components/atoms/paragraph';
 import Title from '@/components/atoms/title';
 import Image from 'next/image';
 
@@ -27,7 +28,9 @@ export default function FeatureSection(props: FeatureProps) {
 				<div className='flex flex-col justify-between h-full gap-10 lg:w-1/2'>
 					<div className='flex flex-col gap-5'>
 						<Title headline={props.title} />
-						<p className='prose-base text-neutral-100'>{props.description}</p>
+						<Paragraph className='prose-base text-neutral-100'>
+							{props.description}
+						</Paragraph>
 					</div>
 					<ul className='flex gap-6 xl:gap-12 flex-col lg:flex-row '>
 						{props.benefits?.map((benefit, index) => {
@@ -41,7 +44,9 @@ export default function FeatureSection(props: FeatureProps) {
 												{benefit.head}
 											</h3>
 										</div>
-										<p className='prose-sm text-neutral-100'>{benefit.text}</p>
+										<Paragraph className='prose-sm text-neutral-100'>
+											{benefit.text}
+										</Paragraph>
 									</div>
 								</li>
 							);

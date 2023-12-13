@@ -17,7 +17,7 @@ export default function HeroSection() {
 						<Button
 							role='hero'
 							text={'Começar Agora'}
-							link='https://docs.google.com/forms/d/1MwKcGFfHl8QWyZdNT56Gh7Ib4yC4AqNFE-V-7QfiakM/prefill'
+							link='https://forms.gle/yqvmJYZqK88aRWk26'
 						/>
 					</div>
 					<div className='w-1/2 hidden lg:flex items-center justify-end object-contain animate-bounceEaseAnimation'>
