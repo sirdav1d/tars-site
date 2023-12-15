@@ -16,6 +16,7 @@ import {
 import imgBlog from '../../public/images/Developer.png';
 import imgLP from '../../public/images/LandingPage.png';
 import imgSite from '../../public/images/Version.png';
+import Footer from '@/components/atoms/footer';
 
 export default function Home() {
 	return (
@@ -125,6 +126,7 @@ export default function Home() {
 			<CTA />
 			<ServiceSection />
 			<PlanSection />
+			<Footer />
 		</main>
 	);
 }

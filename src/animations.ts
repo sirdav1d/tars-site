@@ -21,7 +21,7 @@ export const CardAnimation: Variants = {
 		zIndex: 40,
 		boxShadow: '0px 0px 16px #00A0FF',
 		transition: {
-			delay: 0.4,
+			delay: 0.2,
 			delayChildren: 0.4,
 			staggerChildren: 0.2,
 		},

@@ -1,13 +1,13 @@
 /** @format */
 
 import BannerLGPD from '@/components/atoms/banner';
+import FinalTag from '@/components/atoms/finalTag';
+import GoogleADS from '@/components/google/GoogleADS';
 import GoogleAnalytics from '@/components/google/GoogleAnalytics';
+import Header from '@/components/molecules/header';
 import type { Metadata } from 'next';
 import { Montserrat, Poppins } from 'next/font/google';
 import './globals.css';
-import GoogleADS from '@/components/google/GoogleADS';
-import Header from '@/components/molecules/header';
-import Footer from '@/components/atoms/footer';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -50,7 +50,7 @@ export default function RootLayout({
 				<Header />
 				{children}
 				<BannerLGPD />
-				<Footer />
+				<FinalTag />
 			</body>
 		</html>
 	);
