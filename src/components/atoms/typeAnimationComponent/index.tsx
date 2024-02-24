@@ -7,11 +7,11 @@ export const TypeAnimationComponent = () => {
 	return (
 		<TypeAnimation
 			sequence={[
-				' Performance', // Types 'One'
+				' Realidade Digital', // Types 'One'
 				1000, // Waits 1s
-				' Liderança', // Deletes 'One' and types 'Two'
+				' Resultados Tangíveis', // Deletes 'One' and types 'Two'
 				1000, // Waits 2s
-				' Oportunidades', // Types 'Three' without deleting 'Two'
+				' Projetos Escaláveis', // Types 'Three' without deleting 'Two'
 				2000,
 			]}
 			wrapper='span'
